@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="7" tests="7" time="0.591">
-    <testcase classname="US013 test" name="tc059" time="0.122">
-        <skipped><![CDATA[Given user clicks todays deal page..........................................undefined
-Then user asserts there are 4 parcels in page...............................undefined
-]]></skipped>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="0.585">
+    <testcase classname="US013 test" name="tc059" time="0.128">
+        <system-out><![CDATA[Given user clicks todays deal page..........................................skipped
+Then user asserts there are 4 parcels in page...............................skipped
+]]></system-out>
     </testcase>
-    <testcase classname="US013 test" name="tc060" time="0.018">
-        <skipped><![CDATA[Given user clicks todays deal page..........................................undefined
-Then user clicks view more link.............................................undefined
-And user veryfies the website...............................................undefined
-]]></skipped>
+    <testcase classname="US013 test" name="tc060" time="0.01">
+        <system-out><![CDATA[Given user clicks todays deal page..........................................skipped
+Then user clicks view more link.............................................skipped
+And user veryfies the website...............................................skipped
+]]></system-out>
     </testcase>
-    <testcase classname="US013 test" name="tc061" time="0.016">
-        <skipped><![CDATA[Given user clicks todays deal page..........................................undefined
-Then user clicks view more link.............................................undefined
-Then user clicks min price link.............................................undefined
-And user veryfies parcels are listed from min price to max price............undefined
-]]></skipped>
+    <testcase classname="US013 test" name="tc061" time="0.01">
+        <system-out><![CDATA[Given user clicks todays deal page..........................................skipped
+Then user clicks view more link.............................................skipped
+Then user clicks min price link.............................................skipped
+And user veryfies parcels are listed from min price to max price............skipped
+]]></system-out>
     </testcase>
-    <testcase classname="US013 test" name="tc062" time="0.012">
-        <skipped><![CDATA[Given user clicks todays deal page..........................................undefined
-Then user clicks view more link.............................................undefined
-Then user clicks max price link.............................................undefined
-And user veryfies parcels are listed from max price to min price............undefined
-]]></skipped>
+    <testcase classname="US013 test" name="tc062" time="0.01">
+        <system-out><![CDATA[Given user clicks todays deal page..........................................skipped
+Then user clicks view more link.............................................skipped
+Then user clicks max price link.............................................skipped
+And user veryfies parcels are listed from max price to min price............skipped
+]]></system-out>
     </testcase>
-    <testcase classname="US013 test" name="tc063" time="0.011">
-        <skipped><![CDATA[Given user clicks todays deal page..........................................undefined
-Then user clicks view more link.............................................undefined
-Then user clicks left side M size...........................................undefined
-Then user veryfies at least one parcel are listed...........................undefined
-]]></skipped>
+    <testcase classname="US013 test" name="tc063" time="0.015">
+        <system-out><![CDATA[Given user clicks todays deal page..........................................skipped
+Then user clicks view more link.............................................skipped
+Then user clicks left side M size...........................................skipped
+Then user veryfies at least one parcel are listed...........................skipped
+]]></system-out>
     </testcase>
-    <testcase classname="US013 test" name="tc064" time="0.016">
-        <skipped><![CDATA[Given user clicks todays deal page..........................................undefined
-Then user clicks view more link.............................................undefined
-Then user clicks free shippping link........................................undefined
-And user veryfies minimum 9 parcels are listed..............................undefined
-]]></skipped>
+    <testcase classname="US013 test" name="tc064" time="0.011">
+        <system-out><![CDATA[Given user clicks todays deal page..........................................skipped
+Then user clicks view more link.............................................skipped
+Then user clicks free shippping link........................................skipped
+And user veryfies minimum 9 parcels are listed..............................skipped
+]]></system-out>
     </testcase>
-    <testcase classname="US013 test" name="tc065" time="0.014">
-        <skipped><![CDATA[Given user clicks todays deal page..........................................undefined
-Then user clicks view more link.............................................undefined
-Then user clicks home button................................................undefined
-And user verifies home page.................................................undefined
-]]></skipped>
+    <testcase classname="US013 test" name="tc065" time="0.01">
+        <system-out><![CDATA[Given user clicks todays deal page..........................................skipped
+Then user clicks view more link.............................................skipped
+Then user clicks home button................................................skipped
+And user verifies home page.................................................skipped
+]]></system-out>
     </testcase>
 </testsuite>
