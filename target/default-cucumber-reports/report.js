@@ -1,374 +1,180 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US013.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US006.feature");
 formatter.feature({
-  "name": "US013 test",
+  "name": "US006 test",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@US013"
+      "name": "@US006"
     }
   ]
 });
 formatter.scenario({
-  "name": "tc059",
+  "name": "tc024",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US013"
+      "name": "@US006"
     }
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
-  "name": "user clicks todays deal page",
+  "name": "user asserts searchBox text",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_todays_deal_page()"
+  "location": "stepdefinitions.US006StepDefinitions.user_asserts_searchBox_text()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user asserts there are 4 parcels in page",
+  "name": "user asserts searchbutton color",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.US013Test.user_asserts_there_are_parcels_in_page(java.lang.Integer)"
+  "location": "stepdefinitions.US006StepDefinitions.user_asserts_searchbutton_text()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
-  "name": "tc060",
+  "name": "tc025",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US013"
+      "name": "@US006"
     }
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
-  "name": "user clicks todays deal page",
+  "name": "user asserts in text box data can be sent",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_todays_deal_page()"
+  "location": "stepdefinitions.US006StepDefinitions.user_asserts_in_text_box_data_can_be_sent()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "tc026",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@US006"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
-  "name": "user clicks view more link",
+  "name": "user send data to seachBox",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinitions.US006StepDefinitions.user_send_data_to_seachBox()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks search Button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_view_more_link()"
+  "location": "stepdefinitions.US006StepDefinitions.user_clicks_search_Button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user veryfies the website",
+  "name": "user verifiy the data with results",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.US006StepDefinitions.user_verifiy_the_data_with_results()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "tc027",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@US006"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks Alle Categories Cellphones \u0026 Telecommunications",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinitions.US006StepDefinitions.user_clicks_Alle_Categories_Cellphones_Telecommunications()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user finds ipad",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.US013Test.user_veryfies_the_website()"
+  "location": "stepdefinitions.US006StepDefinitions.user_finds_ipad()"
+});
+formatter.result({
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c...y) 12.9-inch Display[]\u003e but was:\u003c...y) 12.9-inch Display[sdafas]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat stepdefinitions.US006StepDefinitions.user_finds_ipad(US006StepDefinitions.java:66)\r\n\tat ✽.user finds ipad(file:///C:/Users/SAM/IdeaProjects/GlbTrader/src/test/resources/features/US006.feature:17)\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "user verifiy the data with results",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.US006StepDefinitions.user_verifiy_the_data_with_results()"
 });
 formatter.result({
   "status": "skipped"
 });
+formatter.embedding("image/png", "embedded0.png", null);
 formatter.after({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "tc061",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US013"
-    }
-  ]
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks todays deal page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_todays_deal_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks view more link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_view_more_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks min price link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_min_price_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user veryfies parcels are listed from min price to max price",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_veryfies_parcels_are_listed_from_min_price_to_max_price()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "tc062",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US013"
-    }
-  ]
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks todays deal page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_todays_deal_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks view more link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_view_more_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks max price link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_max_price_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user veryfies parcels are listed from max price to min price",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_veryfies_parcels_are_listed_from_max_price_to_min_price()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "tc063",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US013"
-    }
-  ]
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks todays deal page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_todays_deal_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks view more link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_view_more_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks left side M size",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_left_side_M_size()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user veryfies at least one parcel are listed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_veryfies_at_least_one_parcel_are_listed()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "tc064",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US013"
-    }
-  ]
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks todays deal page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_todays_deal_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks view more link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_view_more_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks free shippping link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_free_shippping_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user veryfies minimum 9 parcels are listed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_veryfies_minimum_parcels_are_listed(java.lang.Integer)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "tc065",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US013"
-    }
-  ]
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks todays deal page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_todays_deal_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks view more link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_view_more_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks home button",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_clicks_home_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user verifies home page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.US013Test.user_verifies_home_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 });

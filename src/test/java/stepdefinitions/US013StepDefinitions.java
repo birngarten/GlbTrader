@@ -4,7 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pages.US013Page;
 
-public class US013Test {
+public class US013StepDefinitions {
 
     US013Page us013Page = new US013Page();
 

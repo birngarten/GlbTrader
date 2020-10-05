@@ -2,7 +2,7 @@
   Feature: US006 test
     Scenario: tc024
       Given user asserts searchBox text
-      Then user asserts searchbutton text
+      Then user asserts searchbutton color
 
     Scenario: tc025
       Given user asserts in text box data can be sent
