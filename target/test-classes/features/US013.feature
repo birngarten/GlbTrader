@@ -2,7 +2,7 @@
 Feature: US013 test
   Scenario: tc059
     Given user clicks todays deal page
-    Then user asserts there are 4 parcels in page
+    Then user asserts there are four parcels in page
 
   Scenario: tc060
     Given user clicks todays deal page

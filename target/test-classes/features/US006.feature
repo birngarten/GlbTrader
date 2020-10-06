@@ -1,10 +1,14 @@
 @US006
   Feature: US006 test
+
     Scenario: tc024
       Given user asserts searchBox text
       Then user asserts searchbutton color
 
     Scenario: tc025
+      Then user clicks search Button
+      Given user send Maniac Solid Mens Round data
+      Then user clicks search Button
       Given user asserts in text box data can be sent
 
     Scenario: tc026

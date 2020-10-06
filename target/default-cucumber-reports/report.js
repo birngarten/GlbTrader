@@ -65,6 +65,36 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
+  "name": "user clicks search Button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.US006StepDefinitions.user_clicks_search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user send Maniac Solid Mens Round data",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinitions.US006StepDefinitions.user_send_Maniac_Solid_Mens_Round_data()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks search Button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.US006StepDefinitions.user_clicks_search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
   "name": "user asserts in text box data can be sent",
   "keyword": "Given "
 });
@@ -160,7 +190,7 @@ formatter.match({
   "location": "stepdefinitions.US006StepDefinitions.user_finds_ipad()"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c...y) 12.9-inch Display[]\u003e but was:\u003c...y) 12.9-inch Display[sdafas]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat stepdefinitions.US006StepDefinitions.user_finds_ipad(US006StepDefinitions.java:66)\r\n\tat ✽.user finds ipad(file:///C:/Users/SAM/IdeaProjects/GlbTrader/src/test/resources/features/US006.feature:17)\r\n",
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c...y) 12.9-inch Display[]\u003e but was:\u003c...y) 12.9-inch Display[sdafas]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat stepdefinitions.US006StepDefinitions.user_finds_ipad(US006StepDefinitions.java:63)\r\n\tat ✽.user finds ipad(file:///C:/Users/SAM/IdeaProjects/GlbTrader/src/test/resources/features/US006.feature:21)\r\n",
   "status": "failed"
 });
 formatter.step({

@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="21.313">
-    <testcase classname="US006 test" name="tc024" time="9.717">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="22.818">
+    <testcase classname="US006 test" name="tc024" time="8.762">
         <system-out><![CDATA[Given user asserts searchBox text...........................................passed
 Then user asserts searchbutton color........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US006 test" name="tc025" time="2.971">
-        <system-out><![CDATA[Given user asserts in text box data can be sent.............................passed
+    <testcase classname="US006 test" name="tc025" time="3.991">
+        <system-out><![CDATA[Then user clicks search Button..............................................passed
+Given user send Maniac Solid Mens Round data................................passed
+Then user clicks search Button..............................................passed
+Given user asserts in text box data can be sent.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US006 test" name="tc026" time="2.856">
+    <testcase classname="US006 test" name="tc026" time="2.58">
         <system-out><![CDATA[Given user send data to seachBox............................................passed
 Then user clicks search Button..............................................passed
 Then user verifiy the data with results.....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US006 test" name="tc027" time="5.408">
+    <testcase classname="US006 test" name="tc027" time="7.133">
         <failure message="expected:&lt;...y) 12.9-inch Display[]&gt; but was:&lt;...y) 12.9-inch Display[sdafas]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given user clicks Alle Categories Cellphones & Telecommunications...........passed
 And user finds ipad.........................................................failed
 Then user verifiy the data with results.....................................skipped
@@ -24,8 +27,8 @@ StackTrace:
 org.junit.ComparisonFailure: expected:<...y) 12.9-inch Display[]> but was:<...y) 12.9-inch Display[sdafas]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepdefinitions.US006StepDefinitions.user_finds_ipad(US006StepDefinitions.java:66)
-	at ✽.user finds ipad(file:///C:/Users/SAM/IdeaProjects/GlbTrader/src/test/resources/features/US006.feature:17)
+	at stepdefinitions.US006StepDefinitions.user_finds_ipad(US006StepDefinitions.java:63)
+	at ✽.user finds ipad(file:///C:/Users/SAM/IdeaProjects/GlbTrader/src/test/resources/features/US006.feature:21)
 ]]></failure>
     </testcase>
 </testsuite>

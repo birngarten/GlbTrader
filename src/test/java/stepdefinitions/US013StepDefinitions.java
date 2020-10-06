@@ -13,7 +13,7 @@ public class US013StepDefinitions {
 
     }
 
-    @Then("user asserts there are {int} parcels in page")
+    @Then("user asserts there are four parcels in page")
     public void user_asserts_there_are_parcels_in_page(Integer int1) {
 
     }
