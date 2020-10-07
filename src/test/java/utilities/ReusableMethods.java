@@ -1,9 +1,6 @@
 package utilities;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -106,4 +103,45 @@ public class ReusableMethods {
         });
         return element;
     }
+
+    //======== Slider Ayarlama =========//
+    public static void setSliderBall(WebElement element, int sliderStartPoint, int target) {
+        Actions actions = new Actions(Driver.getDriver());
+        String value = "";
+        actions.clickAndHold(element).perform();
+        for (int i = 0; i < sliderStartPoint; i++) {
+            if (sliderStartPoint > 0) {
+                actions.sendKeys(Keys.ARROW_LEFT).perform();
+            }
+            value = element.getAttribute("value");
+            if (value.equals("0")) {
+                for (int j = 0; j < target; j++) {
+                    actions.sendKeys(Keys.ARROW_RIGHT).perform();
+                }
+            }
+        }
+    }
+
+    // ======= RGB to HEX ==== //
+
+    public static String getHexColor(WebElement element, String cssValue) {
+        String color = element.getCssValue(cssValue);
+        String hex = "";
+        int r, g, b = 0;
+        if (color.contains("rgba")) {
+            String[] numbers = color.replace("rgba(", "").replace(")", "").split(",");
+            r = Integer.parseInt(numbers[0].trim());
+            g = Integer.parseInt(numbers[1].trim());
+            b = Integer.parseInt(numbers[2].trim());
+            hex = "#" + Integer.toHexString(r) + Integer.toHexString(g) + Integer.toHexString(b);
+        } else {
+            String[] numbers = color.replace("rgb(", "").replace(")", "").split(",");
+            r = Integer.parseInt(numbers[0].trim());
+            g = Integer.parseInt(numbers[1].trim());
+            b = Integer.parseInt(numbers[2].trim());
+            hex = "#" + Integer.toHexString(r) + Integer.toHexString(g) + Integer.toHexString(b);
+        }
+        return hex;
+    }
+
 }
