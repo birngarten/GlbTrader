@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="22.818">
-    <testcase classname="US006 test" name="tc024" time="8.762">
-        <system-out><![CDATA[Given user asserts searchBox text...........................................passed
-Then user asserts searchbutton color........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="30.332">
+    <testcase classname="US013 test" name="tc059" time="11.444">
+        <system-out><![CDATA[Then user asserts there are four parcels in page............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US006 test" name="tc025" time="3.991">
-        <system-out><![CDATA[Then user clicks search Button..............................................passed
-Given user send Maniac Solid Mens Round data................................passed
-Then user clicks search Button..............................................passed
-Given user asserts in text box data can be sent.............................passed
+    <testcase classname="US013 test" name="tc060" time="2.807">
+        <system-out><![CDATA[Then user clicks view more link.............................................passed
+And user veryfies the website...............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US006 test" name="tc026" time="2.58">
-        <system-out><![CDATA[Given user send data to seachBox............................................passed
-Then user clicks search Button..............................................passed
-Then user verifiy the data with results.....................................passed
+    <testcase classname="US013 test" name="tc061" time="3.071">
+        <system-out><![CDATA[Then user clicks view more link.............................................passed
+Then user clicks min price link.............................................passed
+And user veryfies parcels are listed from min price to max price............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US006 test" name="tc027" time="7.133">
-        <failure message="expected:&lt;...y) 12.9-inch Display[]&gt; but was:&lt;...y) 12.9-inch Display[sdafas]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given user clicks Alle Categories Cellphones & Telecommunications...........passed
-And user finds ipad.........................................................failed
-Then user verifiy the data with results.....................................skipped
-
-StackTrace:
-org.junit.ComparisonFailure: expected:<...y) 12.9-inch Display[]> but was:<...y) 12.9-inch Display[sdafas]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepdefinitions.US006StepDefinitions.user_finds_ipad(US006StepDefinitions.java:63)
-	at ✽.user finds ipad(file:///C:/Users/SAM/IdeaProjects/GlbTrader/src/test/resources/features/US006.feature:21)
-]]></failure>
+    <testcase classname="US013 test" name="tc062" time="3.615">
+        <system-out><![CDATA[Then user clicks view more link.............................................passed
+Then user clicks max price link.............................................passed
+And user veryfies parcels are listed from max price to min price............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US013 test" name="tc063" time="3.192">
+        <system-out><![CDATA[Then user clicks view more link.............................................passed
+Then user clicks left side M size...........................................passed
+Then user veryfies at least one parcel are listed...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US013 test" name="tc064" time="2.828">
+        <system-out><![CDATA[Then user clicks view more link.............................................passed
+Then user clicks free shippping link........................................passed
+And user veryfies minimum nine parcels are listed...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US013 test" name="tc065" time="2.971">
+        <system-out><![CDATA[Then user clicks view more link.............................................passed
+Then user clicks home button................................................passed
+And user verifies home page.................................................passed
+]]></system-out>
     </testcase>
 </testsuite>

@@ -2,35 +2,34 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import pages.US013Page;
+import utilities.Driver;
 
 public class US013StepDefinitions {
 
     US013Page us013Page = new US013Page();
 
-    @Given("user clicks todays deal page")
-    public void user_clicks_todays_deal_page() {
-
-    }
 
     @Then("user asserts there are four parcels in page")
-    public void user_asserts_there_are_parcels_in_page(Integer int1) {
-
+    public void user_asserts_there_are_parcels_in_page() {
+        Assert.assertEquals(4, us013Page.TodaysDeals.size());
     }
 
     @Then("user clicks view more link")
     public void user_clicks_view_more_link() {
-
+        us013Page.viewMoreLink.click();
     }
 
     @Then("user veryfies the website")
     public void user_veryfies_the_website() {
-
+        Assert.assertEquals("https://www.glbtrader.com/deal.html",
+                Driver.getDriver().getCurrentUrl());
     }
 
     @Then("user clicks min price link")
     public void user_clicks_min_price_link() {
-
+        us013Page.minPriceLink.click();
     }
 
     @Then("user veryfies parcels are listed from min price to max price")
@@ -63,8 +62,8 @@ public class US013StepDefinitions {
 
     }
 
-    @Then("user veryfies minimum {int} parcels are listed")
-    public void user_veryfies_minimum_parcels_are_listed(Integer int1) {
+    @Then("user veryfies minimum nine parcels are listed")
+    public void user_veryfies_minimum_parcels_are_listed() {
 
     }
 
