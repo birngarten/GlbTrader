@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="30.332">
     <testcase classname="US013 test" name="tc059" time="11.444">
         <system-out><![CDATA[Then user asserts there are four parcels in page............................passed
@@ -37,6 +38,14 @@ And user veryfies minimum nine parcels are listed...........................pass
         <system-out><![CDATA[Then user clicks view more link.............................................passed
 Then user clicks home button................................................passed
 And user verifies home page.................................................passed
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.634">
+    <testcase classname="Seller Sign in testi" name="TC019 Sayfadaki text kutucuguna email yazilabilmeli ve Forgot Passwort butonuna tiklandiginda sayfa yenilenmelidir." time="28.055">
+        <system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
+Given tc19 user enter your email kusutunsa "email" yazsin...................passed
+And tc19 user enter your email kutusuna veri girdikten sonra Forgot Password tiklasin.passed
+Then tc19 user fortgot password tiklandikdan sonra sayfanin yenilendigi test edilsin.passed
+>>>>>>> master
 ]]></system-out>
     </testcase>
 </testsuite>

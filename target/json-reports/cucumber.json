@@ -3,6 +3,7 @@
     "line": 2,
     "elements": [
       {
+<<<<<<< HEAD
         "start_timestamp": "2020-10-06T18:52:28.850Z",
         "before": [
           {
@@ -58,11 +59,34 @@
         "tags": [
           {
             "name": "@US013"
+=======
+        "line": 4,
+        "name": "User GlobalTrader gider",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 16552000600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user Seller Sign in a  tiklar",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
+            },
+            "keyword": "Given "
+>>>>>>> master
           }
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2020-10-06T18:52:40.315Z",
+=======
+        "start_timestamp": "2020-10-07T16:16:27.688Z",
+>>>>>>> master
         "before": [
           {
             "result": {
@@ -71,6 +95,7 @@
             "match": {
               "location": "stepdefinitions.Hooks.setUp()"
             }
+<<<<<<< HEAD
           },
           {
             "result": {
@@ -90,6 +115,18 @@
           {
             "result": {
               "duration": 839048000,
+=======
+          }
+        ],
+        "line": 40,
+        "name": "TC019 Sayfadaki text kutucuguna email yazilabilmeli ve Forgot Passwort butonuna tiklandiginda sayfa yenilenmelidir.",
+        "description": "",
+        "id": "seller-sign-in-testi;tc019-sayfadaki-text-kutucuguna-email-yazilabilmeli-ve-forgot-passwort-butonuna-tiklandiginda-sayfa-yenilenmelidir.",
+        "after": [
+          {
+            "result": {
+              "duration": 290655400,
+>>>>>>> master
               "status": "passed"
             },
             "match": {
@@ -102,6 +139,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 848048500,
               "status": "passed"
             },
@@ -368,12 +406,52 @@
             "name": "user veryfies at least one parcel are listed",
             "match": {
               "location": "stepdefinitions.US013StepDefinitions.user_veryfies_at_least_one_parcel_are_listed()"
+=======
+              "duration": 3455449100,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "tc19 user enter your email kusutunsa \"email\" yazsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kusutunsa_yazsin(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3726154600,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "tc19 user enter your email kutusuna veri girdikten sonra Forgot Password tiklasin",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kutusuna_veri_girdikten_sonra_Forgot_Password_tiklasin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3841115600,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "tc19 user fortgot password tiklandikdan sonra sayfanin yenilendigi test edilsin",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.tc19_user_fortgot_password_tiklandikdan_sonra_sayfanin_yenilendigi_test_edilsin()"
+>>>>>>> master
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
             "name": "@US013"
           }
         ]
@@ -539,10 +617,17 @@
         "tags": [
           {
             "name": "@US013"
+=======
+            "name": "@SellerSignIn"
+          },
+          {
+            "name": "@SellerSign5"
+>>>>>>> master
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "US013 test",
     "description": "",
     "id": "us013-test",
@@ -551,6 +636,16 @@
     "tags": [
       {
         "name": "@US013",
+=======
+    "name": "Seller Sign in testi",
+    "description": "",
+    "id": "seller-sign-in-testi",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US004.feature",
+    "tags": [
+      {
+        "name": "@SellerSignIn",
+>>>>>>> master
         "type": "Tag",
         "location": {
           "line": 1,
