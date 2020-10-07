@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.001"/>
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.634">
+    <testcase classname="Seller Sign in testi" name="TC019 Sayfadaki text kutucuguna email yazilabilmeli ve Forgot Passwort butonuna tiklandiginda sayfa yenilenmelidir." time="28.055">
+        <system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
+Given tc19 user enter your email kusutunsa "email" yazsin...................passed
+And tc19 user enter your email kutusuna veri girdikten sonra Forgot Password tiklasin.passed
+Then tc19 user fortgot password tiklandikdan sonra sayfanin yenilendigi test edilsin.passed
+]]></system-out>
+    </testcase>
+</testsuite>
+>>>>>>> 261023d8332c62b490746f9c713046c462c41736
