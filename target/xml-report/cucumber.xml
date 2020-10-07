@@ -1,51 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="30.332">
-    <testcase classname="US013 test" name="tc059" time="11.444">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="66.813">
+    <testcase classname="US013 test" name="tc059" time="19.106">
         <system-out><![CDATA[Then user asserts there are four parcels in page............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US013 test" name="tc060" time="2.807">
+    <testcase classname="US013 test" name="tc060" time="3.5">
         <system-out><![CDATA[Then user clicks view more link.............................................passed
 And user veryfies the website...............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US013 test" name="tc061" time="3.071">
+    <testcase classname="US013 test" name="tc061" time="5.784">
         <system-out><![CDATA[Then user clicks view more link.............................................passed
 Then user clicks min price link.............................................passed
 And user veryfies parcels are listed from min price to max price............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US013 test" name="tc062" time="3.615">
+    <testcase classname="US013 test" name="tc062" time="5.42">
         <system-out><![CDATA[Then user clicks view more link.............................................passed
 Then user clicks max price link.............................................passed
 And user veryfies parcels are listed from max price to min price............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US013 test" name="tc063" time="3.192">
-        <system-out><![CDATA[Then user clicks view more link.............................................passed
+    <testcase classname="US013 test" name="tc063" time="23.816">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Then user clicks view more link.............................................passed
 Then user clicks left side M size...........................................passed
-Then user veryfies at least one parcel are listed...........................passed
-]]></system-out>
+Then user veryfies at least one parcel are listed...........................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.US013StepDefinitions.user_veryfies_at_least_one_parcel_are_listed(US013StepDefinitions.java:70)
+	at ✽.user veryfies at least one parcel are listed(file:///C:/Users/SAM/IdeaProjects/GlbTrader/src/test/resources/features/US013.feature:23)
+]]></failure>
     </testcase>
-    <testcase classname="US013 test" name="tc064" time="2.828">
+    <testcase classname="US013 test" name="tc064" time="4.278">
         <system-out><![CDATA[Then user clicks view more link.............................................passed
 Then user clicks free shippping link........................................passed
 And user veryfies minimum nine parcels are listed...........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US013 test" name="tc065" time="2.971">
+    <testcase classname="US013 test" name="tc065" time="4.298">
         <system-out><![CDATA[Then user clicks view more link.............................................passed
 Then user clicks home button................................................passed
 And user verifies home page.................................................passed
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.634">
-    <testcase classname="Seller Sign in testi" name="TC019 Sayfadaki text kutucuguna email yazilabilmeli ve Forgot Passwort butonuna tiklandiginda sayfa yenilenmelidir." time="28.055">
-        <system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
-Given tc19 user enter your email kusutunsa "email" yazsin...................passed
-And tc19 user enter your email kutusuna veri girdikten sonra Forgot Password tiklasin.passed
-Then tc19 user fortgot password tiklandikdan sonra sayfanin yenilendigi test edilsin.passed
->>>>>>> master
 ]]></system-out>
     </testcase>
 </testsuite>

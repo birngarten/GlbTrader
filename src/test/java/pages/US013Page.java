@@ -18,7 +18,18 @@ public class US013Page {
     public WebElement viewMoreLink;
     @FindBy(xpath = "//*[.=' Min. Price']")
     public WebElement minPriceLink;
-    @FindBy(xpath = "font10")
+    @FindBy(xpath = "//del[@class='font10']")
     public List<WebElement> prices;
+    @FindBy(xpath = "//*[.=' Max. Price']")
+    public WebElement maxPriceLink;
+    @FindBy(xpath = "//input[@value='M']")
+    public WebElement mSize;
+    @FindBy(xpath = "//div[@class='caption']")
+    public List<WebElement> searchResult;
+    @FindBy(xpath = "//*[.=' Free Shipping']")
+    public WebElement freeShippingLink;
+    @FindBy(xpath = "//img[@class='img-responsive text-center_xs']")
+    public WebElement homeLink;
+
 
 }
