@@ -1,71 +1,73 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US004.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US005.feature");
 formatter.feature({
-  "name": "Seller Sign in testi",
+  "name": "About us",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@SellerSignIn"
+      "name": "@us005"
     }
   ]
 });
-formatter.background({
-  "name": "User GlobalTrader gider",
+formatter.scenario({
+  "name": "US005 kullanici about us sayfasinda islem yapar",
   "description": "",
-  "keyword": "Background"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@us005"
+    }
+  ]
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user Seller Sign in a  tiklar",
+  "name": "kullanici \"https://www.glbtrader.com/\" sayfaya gider",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC019 Sayfadaki text kutucuguna email yazilabilmeli ve Forgot Passwort butonuna tiklandiginda sayfa yenilenmelidir.",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@SellerSignIn"
-    },
-    {
-      "name": "@SellerSign5"
-    }
-  ]
-});
-formatter.step({
-  "name": "tc19 user enter your email kusutunsa \"email\" yazsin",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kusutunsa_yazsin(java.lang.String)"
+  "location": "stepdefinitions.US005StepDefinition.kullanici_sayfaya_gider(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "tc19 user enter your email kutusuna veri girdikten sonra Forgot Password tiklasin",
+  "name": "TC020 kullanici about us sayfasi tiklandiginda acilabilir oldugunu verify eder",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kutusuna_veri_girdikten_sonra_Forgot_Password_tiklasin()"
+  "location": "stepdefinitions.US005StepDefinition.tc020_kullanici_about_us_sayfasi_tiklandiginda_acilabilir_oldugunu_verify_eder()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "tc19 user fortgot password tiklandikdan sonra sayfanin yenilendigi test edilsin",
+  "name": "TC021 kullanici about us title ve header about us olarak görüldügünü verify eder",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US005StepDefinition.tc021_kullanici_about_us_title_ve_header_about_us_olarak_görüldügünü_verify_eder()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "TC022 kullanici tel nosunun \"1-212-217-1900\" oldugunu verify eder",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US005StepDefinition.tc022_kullanici_tel_nosunun_oldugunu_verify_eder(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "TC023 kullanici metnin icerigini verify eder",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.US004StepDefinition.tc19_user_fortgot_password_tiklandikdan_sonra_sayfanin_yenilendigi_test_edilsin()"
+  "location": "stepdefinitions.US005StepDefinition.tc023_kullanici_metnin_icerigini_verify_eder()"
 });
 formatter.result({
   "status": "passed"
