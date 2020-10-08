@@ -1,0 +1,138 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-07T16:16:47.566Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7993900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "US007 kullanici computer \u0026 office menu linkinde urun aramasi yapar",
+        "description": "",
+        "id": "all-categories-computer-\u0026-office-menu-linkinde-test-yapma;us007-kullanici-computer-\u0026-office-menu-linkinde-urun-aramasi-yapar",
+        "after": [
+          {
+            "result": {
+              "duration": 459715900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9615239800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici \"https://www.glbtrader.com/\" sayfaya gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.glbtrader.com/\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepdefinitions.US005StepDefinition.kullanici_sayfaya_gider(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 169895700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "tc029 kullanici all categories de dropbox secenek sayisini bulur",
+            "match": {
+              "location": "stepdefinitions.US007StepDefinition.tc029_kullanici_all_categories_de_dropbox_secenek_sayisini_bulur()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1021372000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "tc030 kullanici besinci sirada computer\u0026office secer ve bir urun ismi girip sonuc alir",
+            "match": {
+              "location": "stepdefinitions.US007StepDefinition.tc030_kullanici_besinci_sirada_computer_office_secer_ve_bir_urun_ismi_girip_sonuc_alir()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1015754100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "tc031 kullanici computer\u0026office aranan urunun  sayfasinda  GLOBAL TRADER  logosu gorur",
+            "match": {
+              "location": "stepdefinitions.US007StepDefinition.tc031_kullanici_computer_office_aranan_urunun_sayfasinda_GLOBAL_TRADER_logosu_gorur()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5807309700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "tc032 kullanici test case de belirlenen sartlara gore urun aramasi yapar",
+            "match": {
+              "location": "stepdefinitions.US007StepDefinition.tc032_kullanici_test_case_de_belirlenen_sartlara_gore_urun_aramasi_yapar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "tc033 kullanici aranan urunun sonuclarini test case de belirtilen sekilde kiyaslayarak test yapar",
+            "match": {
+              "location": "stepdefinitions.US007StepDefinition.tc033_kullanici_aranan_urunun_sonuclarini_test_case_de_belirtilen_sekilde_kiyaslayarak_test_yapar()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@us007"
+          }
+        ]
+      }
+    ],
+    "name": "All Categories Computer \u0026 Office Menu Linkinde Test Yapma",
+    "description": "",
+    "id": "all-categories-computer-\u0026-office-menu-linkinde-test-yapma",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US007.feature",
+    "tags": [
+      {
+        "name": "@us007",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
