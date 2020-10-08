@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.874">
-    <testcase classname="All Categories Computer &amp; Office Menu Linkinde Test Yapma" name="US007 kullanici computer &amp; office menu linkinde urun aramasi yapar" time="18.248">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.463">
+    <testcase classname="About us" name="US005 kullanici about us sayfasinda islem yapar" time="23.976">
         <system-out><![CDATA[Given kullanici "https://www.glbtrader.com/" sayfaya gider..................passed
-And tc029 kullanici all categories de dropbox secenek sayisini bulur........passed
-And tc030 kullanici besinci sirada computer&office secer ve bir urun ismi girip sonuc alir.passed
-And tc031 kullanici computer&office aranan urunun  sayfasinda  GLOBAL TRADER  logosu gorur.passed
-And tc032 kullanici test case de belirlenen sartlara gore urun aramasi yapar.passed
-Then tc033 kullanici aranan urunun sonuclarini test case de belirtilen sekilde kiyaslayarak test yapar.passed
+And TC020 kullanici about us sayfasi tiklandiginda acilabilir oldugunu verify eder.passed
+And TC021 kullanici about us title ve header about us olarak görüldügünü verify eder.passed
+And TC022 kullanici tel nosunun "1-212-217-1900" oldugunu verify eder.......passed
+Then TC023 kullanici metnin icerigini verify eder...........................passed
 ]]></system-out>
     </testcase>
 </testsuite>

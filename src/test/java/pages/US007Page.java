@@ -31,6 +31,21 @@ public class US007Page {
     @FindBy(xpath = "//div[@class='col-md-2 logo']")
     public WebElement glbTraderLogo;
 
+    @FindBy(partialLinkText = "Apple iPad Pro (256GB,")
+    public WebElement urunAllCategories;
+
+    @FindBy(partialLinkText = "(256GB, Wi-Fi + Cellular,")
+    public WebElement urunComputerOffice;
+
+    @FindBy(xpath = "//div[.=' Record Not Found.. ']")
+    public WebElement urunElectCompSupplies;
+
+    @FindBy(xpath = "//label[@class='list_price_set']")
+    public WebElement canonFiyat;
+
+    @FindBy(xpath = "//img[@style='display: inline-block;']")
+    public WebElement canonFoto;
+
 
 
 }
