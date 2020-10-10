@@ -6,31 +6,11 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "User GlobalTrader gider",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 16552000600,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user Seller Sign in a  tiklar",
-            "match": {
-              "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-07T16:16:27.688Z",
+        "start_timestamp": "2020-10-08T18:31:26.718Z",
         "before": [
           {
             "result": {
+              "duration": 2000500,
               "status": "passed"
             },
             "match": {
@@ -38,14 +18,14 @@
             }
           }
         ],
-        "line": 40,
-        "name": "TC019 Sayfadaki text kutucuguna email yazilabilmeli ve Forgot Passwort butonuna tiklandiginda sayfa yenilenmelidir.",
+        "line": 3,
+        "name": "US005 kullanici about us sayfasinda islem yapar",
         "description": "",
-        "id": "seller-sign-in-testi;tc019-sayfadaki-text-kutucuguna-email-yazilabilmeli-ve-forgot-passwort-butonuna-tiklandiginda-sayfa-yenilenmelidir.",
+        "id": "about-us;us005-kullanici-about-us-sayfasinda-islem-yapar",
         "after": [
           {
             "result": {
-              "duration": 290655400,
+              "duration": 494692500,
               "status": "passed"
             },
             "match": {
@@ -58,65 +38,92 @@
         "steps": [
           {
             "result": {
-              "duration": 3455449100,
+              "duration": 19301205700,
               "status": "passed"
             },
-            "line": 41,
-            "name": "tc19 user enter your email kusutunsa \"email\" yazsin",
+            "line": 4,
+            "name": "kullanici \"https://www.glbtrader.com/\" sayfaya gider",
             "match": {
               "arguments": [
                 {
-                  "val": "\"email\"",
-                  "offset": 37
+                  "val": "\"https://www.glbtrader.com/\"",
+                  "offset": 10
                 }
               ],
-              "location": "stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kusutunsa_yazsin(java.lang.String)"
+              "location": "stepdefinitions.US005StepDefinition.kullanici_sayfaya_gider(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3726154600,
+              "duration": 1902269900,
               "status": "passed"
             },
-            "line": 42,
-            "name": "tc19 user enter your email kutusuna veri girdikten sonra Forgot Password tiklasin",
+            "line": 5,
+            "name": "TC020 kullanici about us sayfasi tiklandiginda acilabilir oldugunu verify eder",
             "match": {
-              "location": "stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kutusuna_veri_girdikten_sonra_Forgot_Password_tiklasin()"
+              "location": "stepdefinitions.US005StepDefinition.tc020_kullanici_about_us_sayfasi_tiklandiginda_acilabilir_oldugunu_verify_eder()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3841115600,
+              "duration": 67956000,
               "status": "passed"
             },
-            "line": 43,
-            "name": "tc19 user fortgot password tiklandikdan sonra sayfanin yenilendigi test edilsin",
+            "line": 6,
+            "name": "TC021 kullanici about us title ve header about us olarak görüldügünü verify eder",
             "match": {
-              "location": "stepdefinitions.US004StepDefinition.tc19_user_fortgot_password_tiklandikdan_sonra_sayfanin_yenilendigi_test_edilsin()"
+              "location": "stepdefinitions.US005StepDefinition.tc021_kullanici_about_us_title_ve_header_about_us_olarak_görüldügünü_verify_eder()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34978400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "TC022 kullanici tel nosunun \"1-212-217-1900\" oldugunu verify eder",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1-212-217-1900\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.US005StepDefinition.tc022_kullanici_tel_nosunun_oldugunu_verify_eder(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2067068400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "TC023 kullanici metnin icerigini verify eder",
+            "match": {
+              "location": "stepdefinitions.US005StepDefinition.tc023_kullanici_metnin_icerigini_verify_eder()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@SellerSignIn"
-          },
-          {
-            "name": "@SellerSign5"
+            "name": "@us005"
           }
         ]
       }
     ],
-    "name": "Seller Sign in testi",
+    "name": "About us",
     "description": "",
-    "id": "seller-sign-in-testi",
+    "id": "about-us",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US004.feature",
+    "uri": "file:src/test/resources/features/US005.feature",
     "tags": [
       {
-        "name": "@SellerSignIn",
+        "name": "@us005",
         "type": "Tag",
         "location": {
           "line": 1,

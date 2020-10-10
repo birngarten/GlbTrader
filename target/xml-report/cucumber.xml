@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.001"/>
 =======
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.634">
@@ -8,6 +9,15 @@
 Given tc19 user enter your email kusutunsa "email" yazsin...................passed
 And tc19 user enter your email kutusuna veri girdikten sonra Forgot Password tiklasin.passed
 Then tc19 user fortgot password tiklandikdan sonra sayfanin yenilendigi test edilsin.passed
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.463">
+    <testcase classname="About us" name="US005 kullanici about us sayfasinda islem yapar" time="23.976">
+        <system-out><![CDATA[Given kullanici "https://www.glbtrader.com/" sayfaya gider..................passed
+And TC020 kullanici about us sayfasi tiklandiginda acilabilir oldugunu verify eder.passed
+And TC021 kullanici about us title ve header about us olarak görüldügünü verify eder.passed
+And TC022 kullanici tel nosunun "1-212-217-1900" oldugunu verify eder.......passed
+Then TC023 kullanici metnin icerigini verify eder...........................passed
+>>>>>>> 55df090e5b39eaf303391ee53f288a9b0e5cd301
 ]]></system-out>
     </testcase>
 </testsuite>
