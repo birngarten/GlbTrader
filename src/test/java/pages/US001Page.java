@@ -10,7 +10,7 @@ public class US001Page {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//div[@class='media-body sing_in']")
+    @FindBy(xpath = "//div//p//a")
     public WebElement signInButton;
 
 
@@ -20,4 +20,16 @@ public class US001Page {
     public WebElement passwordTextBox;
     @FindBy(xpath = "//button[@class='btn btn-lg btn-warning btn-block']")
     public WebElement loginSubmit;
+
+    @FindBy(xpath = "//div[@class='my_account_header']")
+    public WebElement MyAccountTitle;
+
+    @FindBy(xpath = "//*[@id='main_category']/ul/li[7]/a")
+    public WebElement MyAccountSignOut;
+
+
+    @FindBy(xpath = "//div[@class='alert alert-danger']")
+    public WebElement undefinedLogin;
+
+
 }

@@ -3,7 +3,7 @@
     "line": 4,
     "elements": [
       {
-        "start_timestamp": "2020-10-10T06:50:04.378Z",
+        "start_timestamp": "2020-10-10T19:42:06.235Z",
         "before": [
           {
             "result": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 5,
-        "name": "run positive test",
+        "name": "run Sign In test",
         "description": "",
-        "id": "sign-in;run-positive-test",
+        "id": "sign-in;run-sign-in-test",
         "after": [
           {
             "result": {
-              "duration": 5723000000,
+              "duration": 601000000,
               "status": "passed"
             },
             "match": {
@@ -35,257 +35,50 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
-            },
-            "line": 6,
-            "name": "user on sign in",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
+              "duration": 21454000000,
+              "status": "passed"
             },
             "line": 7,
-            "name": "user writes true email",
-            "match": {},
-            "keyword": "And "
+            "name": "user writes true email and true password",
+            "match": {
+              "location": "stepdefinitions.US001StepDefinitions.user_writes_true_email_and_true_password()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 3271000000,
+              "status": "passed"
             },
             "line": 8,
-            "name": "user writes true password",
-            "match": {},
+            "name": "user writes false email and true password",
+            "match": {
+              "location": "stepdefinitions.US001StepDefinitions.user_writes_false_email_and_true_password()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1659000000,
+              "status": "passed"
             },
             "line": 9,
-            "name": "user clicks login",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@UserSignIn"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-10T06:50:10.242Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
+            "name": "user writes true email and false password",
             "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "run negative test(with true only email)",
-        "description": "",
-        "id": "sign-in;run-negative-test(with-true-only-email)",
-        "after": [
-          {
-            "result": {
-              "duration": 97000000,
-              "status": "passed"
+              "location": "stepdefinitions.US001StepDefinitions.user_writes_true_email_and_false_password()"
             },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13,
-            "name": "user on sign in",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 14,
-            "name": "user writes true email",
-            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
-            },
-            "line": 15,
-            "name": "user writes false password",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 16,
-            "name": "user clicks login",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@UserSignIn"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-10T06:50:10.359Z",
-        "before": [
-          {
-            "result": {
+              "duration": 766000000,
               "status": "passed"
             },
+            "line": 10,
+            "name": "user writes false email and false password",
             "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 18,
-        "name": "run negative test(with true only password)",
-        "description": "",
-        "id": "sign-in;run-negative-test(with-true-only-password)",
-        "after": [
-          {
-            "result": {
-              "duration": 79000000,
-              "status": "passed"
+              "location": "stepdefinitions.US001StepDefinitions.user_writes_false_email_and_false_password()"
             },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 19,
-            "name": "user on sign in",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 20,
-            "name": "user writes false email",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 21,
-            "name": "user writes true password",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 22,
-            "name": "user clicks login",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@UserSignIn"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-10T06:50:10.457Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 24,
-        "name": "run negative test(with wrong email and pass.)",
-        "description": "",
-        "id": "sign-in;run-negative-test(with-wrong-email-and-pass.)",
-        "after": [
-          {
-            "result": {
-              "duration": 87000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 25,
-            "name": "user on sign in",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 26,
-            "name": "user writes false email",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 27,
-            "name": "user writes false password",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 28,
-            "name": "user clicks login",
-            "match": {},
             "keyword": "Then "
           }
         ],

@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="4" tests="4" time="6.655">
-<testcase classname="Sign In" name="run positive test" time="5.834">
-<skipped><![CDATA[Given user on sign in.......................................................undefined
-And user writes true email..................................................undefined
-And user writes true password...............................................undefined
-Then user clicks login......................................................undefined
-]]></skipped>
-</testcase>
-<testcase classname="Sign In" name="run negative test(with true only email)" time="0.104">
-<skipped><![CDATA[Given user on sign in.......................................................undefined
-And user writes true email..................................................undefined
-And user writes false password..............................................undefined
-Then user clicks login......................................................undefined
-]]></skipped>
-</testcase>
-<testcase classname="Sign In" name="run negative test(with true only password)" time="0.085">
-<skipped><![CDATA[Given user on sign in.......................................................undefined
-And user writes false email.................................................undefined
-And user writes true password...............................................undefined
-Then user clicks login......................................................undefined
-]]></skipped>
-</testcase>
-<testcase classname="Sign In" name="run negative test(with wrong email and pass.)" time="0.092">
-<skipped><![CDATA[Given user on sign in.......................................................undefined
-And user writes false email.................................................undefined
-And user writes false password..............................................undefined
-Then user clicks login......................................................undefined
-]]></skipped>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.385">
+<testcase classname="Sign In" name="run Sign In test" time="27.848">
+<system-out><![CDATA[Given user writes true email and true password..............................passed
+And user writes false email and true password...............................passed
+And user writes true email and false password...............................passed
+Then user writes false email and false password.............................passed
+]]></system-out>
 </testcase>
 </testsuite>

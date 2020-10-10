@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "run positive test",
+  "name": "run Sign In test",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -23,180 +23,44 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user on sign in",
+  "name": "user writes true email and true password",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "stepdefinitions.US001StepDefinitions.user_writes_true_email_and_true_password()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user writes true email",
+  "name": "user writes false email and true password",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "stepdefinitions.US001StepDefinitions.user_writes_false_email_and_true_password()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user writes true password",
+  "name": "user writes true email and false password",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "stepdefinitions.US001StepDefinitions.user_writes_true_email_and_false_password()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user clicks login",
+  "name": "user writes false email and false password",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "stepdefinitions.US001StepDefinitions.user_writes_false_email_and_false_password()"
 });
-formatter.after({
+formatter.result({
   "status": "passed"
-});
-formatter.scenario({
-  "name": "run negative test(with true only email)",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@UserSignIn"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user on sign in",
-  "keyword": "Given "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user writes true email",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user writes false password",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks login",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "run negative test(with true only password)",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@UserSignIn"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user on sign in",
-  "keyword": "Given "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user writes false email",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user writes true password",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks login",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "run negative test(with wrong email and pass.)",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@UserSignIn"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user on sign in",
-  "keyword": "Given "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user writes false email",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user writes false password",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks login",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
 });
 formatter.after({
   "status": "passed"
