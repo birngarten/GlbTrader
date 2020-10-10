@@ -3,14 +3,22 @@
 =======
 [
   {
-    "line": 2,
+    "line": 4,
     "elements": [
       {
+<<<<<<< HEAD
         "start_timestamp": "2020-10-08T18:31:26.718Z",
         "before": [
           {
             "result": {
               "duration": 2000500,
+=======
+        "start_timestamp": "2020-10-10T21:23:25.917Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+>>>>>>> zehra
               "status": "passed"
             },
             "match": {
@@ -18,6 +26,7 @@
             }
           }
         ],
+<<<<<<< HEAD
         "line": 3,
         "name": "US005 kullanici about us sayfasinda islem yapar",
         "description": "",
@@ -26,6 +35,16 @@
           {
             "result": {
               "duration": 494692500,
+=======
+        "line": 5,
+        "name": "run Sign In test",
+        "description": "",
+        "id": "sign-in;run-sign-in-test",
+        "after": [
+          {
+            "result": {
+              "duration": 597000000,
+>>>>>>> zehra
               "status": "passed"
             },
             "match": {
@@ -38,6 +57,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 19301205700,
               "status": "passed"
             },
@@ -51,11 +71,21 @@
                 }
               ],
               "location": "stepdefinitions.US005StepDefinition.kullanici_sayfaya_gider(java.lang.String)"
+=======
+              "duration": 13096000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "tc01 user writes true email and true password",
+            "match": {
+              "location": "stepdefinitions.US001StepDefinitions.tc01_user_writes_true_email_and_true_password()"
+>>>>>>> zehra
             },
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1902269900,
               "status": "passed"
             },
@@ -93,11 +123,21 @@
                 }
               ],
               "location": "stepdefinitions.US005StepDefinition.tc022_kullanici_tel_nosunun_oldugunu_verify_eder(java.lang.String)"
+=======
+              "duration": 2619000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "tc02 user writes false email and true password",
+            "match": {
+              "location": "stepdefinitions.US001StepDefinitions.tc02_user_writes_false_email_and_true_password()"
+>>>>>>> zehra
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 2067068400,
               "status": "passed"
             },
@@ -105,17 +145,43 @@
             "name": "TC023 kullanici metnin icerigini verify eder",
             "match": {
               "location": "stepdefinitions.US005StepDefinition.tc023_kullanici_metnin_icerigini_verify_eder()"
+=======
+              "duration": 1775000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "tc03 user writes true email and false password",
+            "match": {
+              "location": "stepdefinitions.US001StepDefinitions.tc03_user_writes_true_email_and_false_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 753000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "tc04 user writes false email and false password",
+            "match": {
+              "location": "stepdefinitions.US001StepDefinitions.tc04_user_writes_false_email_and_false_password()"
+>>>>>>> zehra
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
             "name": "@us005"
+=======
+            "name": "@UserSignIn"
+>>>>>>> zehra
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "About us",
     "description": "",
     "id": "about-us",
@@ -124,6 +190,16 @@
     "tags": [
       {
         "name": "@us005",
+=======
+    "name": "Sign In",
+    "description": "",
+    "id": "sign-in",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US001.feature",
+    "tags": [
+      {
+        "name": "@UserSignIn",
+>>>>>>> zehra
         "type": "Tag",
         "location": {
           "line": 1,
