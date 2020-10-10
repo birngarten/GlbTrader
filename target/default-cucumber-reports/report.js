@@ -1,74 +1,202 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US004.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US001.feature");
 formatter.feature({
-  "name": "Seller Sign in testi",
+  "name": "Sign In",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@SellerSignIn"
+      "name": "@UserSignIn"
     }
   ]
 });
-formatter.background({
-  "name": "User GlobalTrader gider",
+formatter.scenario({
+  "name": "run positive test",
   "description": "",
-  "keyword": "Background"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@UserSignIn"
+    }
+  ]
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user Seller Sign in a  tiklar",
+  "name": "user on sign in",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
-});
+formatter.match({});
 formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user writes true email",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user writes true password",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks login",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "TC019 Sayfadaki text kutucuguna email yazilabilmeli ve Forgot Passwort butonuna tiklandiginda sayfa yenilenmelidir.",
+  "name": "run negative test(with true only email)",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@SellerSignIn"
-    },
-    {
-      "name": "@SellerSign5"
+      "name": "@UserSignIn"
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
-  "name": "tc19 user enter your email kusutunsa \"email\" yazsin",
+  "name": "user on sign in",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kusutunsa_yazsin(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "tc19 user enter your email kutusuna veri girdikten sonra Forgot Password tiklasin",
+  "name": "user writes true email",
   "keyword": "And "
 });
-formatter.match({
-  "location": "stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kutusuna_veri_girdikten_sonra_Forgot_Password_tiklasin()"
-});
+formatter.match({});
 formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user writes false password",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks login",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "run negative test(with true only password)",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@UserSignIn"
+    }
+  ]
+});
+formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "tc19 user fortgot password tiklandikdan sonra sayfanin yenilendigi test edilsin",
+  "name": "user on sign in",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user writes false email",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user writes true password",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks login",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "stepdefinitions.US004StepDefinition.tc19_user_fortgot_password_tiklandikdan_sonra_sayfanin_yenilendigi_test_edilsin()"
-});
+formatter.match({});
 formatter.result({
+  "status": "undefined"
+});
+formatter.after({
   "status": "passed"
+});
+formatter.scenario({
+  "name": "run negative test(with wrong email and pass.)",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@UserSignIn"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user on sign in",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user writes false email",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user writes false password",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks login",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.after({
   "status": "passed"

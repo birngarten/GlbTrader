@@ -1,33 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 4,
     "elements": [
       {
-        "line": 4,
-        "name": "User GlobalTrader gider",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 16552000600,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user Seller Sign in a  tiklar",
-            "match": {
-              "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-07T16:16:27.688Z",
+        "start_timestamp": "2020-10-10T06:50:04.378Z",
         "before": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -35,14 +15,14 @@
             }
           }
         ],
-        "line": 40,
-        "name": "TC019 Sayfadaki text kutucuguna email yazilabilmeli ve Forgot Passwort butonuna tiklandiginda sayfa yenilenmelidir.",
+        "line": 5,
+        "name": "run positive test",
         "description": "",
-        "id": "seller-sign-in-testi;tc019-sayfadaki-text-kutucuguna-email-yazilabilmeli-ve-forgot-passwort-butonuna-tiklandiginda-sayfa-yenilenmelidir.",
+        "id": "sign-in;run-positive-test",
         "after": [
           {
             "result": {
-              "duration": 290655400,
+              "duration": 5723000000,
               "status": "passed"
             },
             "match": {
@@ -55,65 +35,275 @@
         "steps": [
           {
             "result": {
-              "duration": 3455449100,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 41,
-            "name": "tc19 user enter your email kusutunsa \"email\" yazsin",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"email\"",
-                  "offset": 37
-                }
-              ],
-              "location": "stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kusutunsa_yazsin(java.lang.String)"
-            },
+            "line": 6,
+            "name": "user on sign in",
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3726154600,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 42,
-            "name": "tc19 user enter your email kutusuna veri girdikten sonra Forgot Password tiklasin",
-            "match": {
-              "location": "stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kutusuna_veri_girdikten_sonra_Forgot_Password_tiklasin()"
-            },
+            "line": 7,
+            "name": "user writes true email",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3841115600,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 43,
-            "name": "tc19 user fortgot password tiklandikdan sonra sayfanin yenilendigi test edilsin",
-            "match": {
-              "location": "stepdefinitions.US004StepDefinition.tc19_user_fortgot_password_tiklandikdan_sonra_sayfanin_yenilendigi_test_edilsin()"
+            "line": 8,
+            "name": "user writes true password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
+            "line": 9,
+            "name": "user clicks login",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@SellerSignIn"
+            "name": "@UserSignIn"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-10T06:50:10.242Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "run negative test(with true only email)",
+        "description": "",
+        "id": "sign-in;run-negative-test(with-true-only-email)",
+        "after": [
+          {
+            "result": {
+              "duration": 97000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "user on sign in",
+            "match": {},
+            "keyword": "Given "
           },
           {
-            "name": "@SellerSign5"
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "user writes true email",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "user writes false password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "user clicks login",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserSignIn"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-10T06:50:10.359Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "run negative test(with true only password)",
+        "description": "",
+        "id": "sign-in;run-negative-test(with-true-only-password)",
+        "after": [
+          {
+            "result": {
+              "duration": 79000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "user on sign in",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "user writes false email",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "user writes true password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "user clicks login",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserSignIn"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-10T06:50:10.457Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "run negative test(with wrong email and pass.)",
+        "description": "",
+        "id": "sign-in;run-negative-test(with-wrong-email-and-pass.)",
+        "after": [
+          {
+            "result": {
+              "duration": 87000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "user on sign in",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26,
+            "name": "user writes false email",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "user writes false password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "user clicks login",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserSignIn"
           }
         ]
       }
     ],
-    "name": "Seller Sign in testi",
+    "name": "Sign In",
     "description": "",
-    "id": "seller-sign-in-testi",
+    "id": "sign-in",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US004.feature",
+    "uri": "file:src/test/resources/features/US001.feature",
     "tags": [
       {
-        "name": "@SellerSignIn",
+        "name": "@UserSignIn",
         "type": "Tag",
         "location": {
           "line": 1,
