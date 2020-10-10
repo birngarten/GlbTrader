@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.385">
-<testcase classname="Sign In" name="run Sign In test" time="27.848">
-<system-out><![CDATA[Given user writes true email and true password..............................passed
-And user writes false email and true password...............................passed
-And user writes true email and false password...............................passed
-Then user writes false email and false password.............................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.477">
+<testcase classname="Sign In" name="run Sign In test" time="18.96">
+<system-out><![CDATA[Given tc01 user writes true email and true password.........................passed
+And tc02 user writes false email and true password..........................passed
+And tc03 user writes true email and false password..........................passed
+Then tc04 user writes false email and false password........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

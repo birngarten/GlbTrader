@@ -3,7 +3,7 @@
     "line": 4,
     "elements": [
       {
-        "start_timestamp": "2020-10-10T19:42:06.235Z",
+        "start_timestamp": "2020-10-10T21:23:25.917Z",
         "before": [
           {
             "result": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 601000000,
+              "duration": 597000000,
               "status": "passed"
             },
             "match": {
@@ -35,49 +35,49 @@
         "steps": [
           {
             "result": {
-              "duration": 21454000000,
+              "duration": 13096000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user writes true email and true password",
+            "name": "tc01 user writes true email and true password",
             "match": {
-              "location": "stepdefinitions.US001StepDefinitions.user_writes_true_email_and_true_password()"
+              "location": "stepdefinitions.US001StepDefinitions.tc01_user_writes_true_email_and_true_password()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3271000000,
+              "duration": 2619000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "user writes false email and true password",
+            "name": "tc02 user writes false email and true password",
             "match": {
-              "location": "stepdefinitions.US001StepDefinitions.user_writes_false_email_and_true_password()"
+              "location": "stepdefinitions.US001StepDefinitions.tc02_user_writes_false_email_and_true_password()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1659000000,
+              "duration": 1775000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "user writes true email and false password",
+            "name": "tc03 user writes true email and false password",
             "match": {
-              "location": "stepdefinitions.US001StepDefinitions.user_writes_true_email_and_false_password()"
+              "location": "stepdefinitions.US001StepDefinitions.tc03_user_writes_true_email_and_false_password()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 766000000,
+              "duration": 753000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "user writes false email and false password",
+            "name": "tc04 user writes false email and false password",
             "match": {
-              "location": "stepdefinitions.US001StepDefinitions.user_writes_false_email_and_false_password()"
+              "location": "stepdefinitions.US001StepDefinitions.tc04_user_writes_false_email_and_false_password()"
             },
             "keyword": "Then "
           }

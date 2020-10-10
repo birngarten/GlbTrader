@@ -3,8 +3,6 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.US001Page;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -12,14 +10,12 @@ import utilities.ReusableMethods;
 public class US001StepDefinitions {
 
     US001Page us001Page = new US001Page();
-    ReusableMethods reuse;
-    WebDriverWait wait=new WebDriverWait(Driver.getDriver(),30);
 
 
 
 
-    @Given("user writes true email and true password")
-    public void user_writes_true_email_and_true_password() {
+    @Given("tc01 user writes true email and true password")
+    public void tc01_user_writes_true_email_and_true_password() {
         Driver.getDriver().get("https://www.glbtrader.com/index.html");
         us001Page.signInButton.click();
         us001Page.emailTextBox.clear();
@@ -32,10 +28,8 @@ public class US001StepDefinitions {
         ReusableMethods.waitFor(1);
 
     }
-    @Given("user writes false email and true password")
-    public void user_writes_false_email_and_true_password() {
-
-        us001Page.signInButton.click();
+    @Given("tc02 user writes false email and true password")
+    public void tc02_user_writes_false_email_and_true_password() {    us001Page.signInButton.click();
         us001Page.emailTextBox.clear();
         us001Page.emailTextBox.sendKeys("fakemail@gmail.com");
         us001Page.passwordTextBox.clear();
@@ -45,9 +39,8 @@ public class US001StepDefinitions {
         ReusableMethods.waitFor(1);
 
     }
-    @Given("user writes true email and false password")
-    public void user_writes_true_email_and_false_password() {
-
+    @Given("tc03 user writes true email and false password")
+    public void tc03_user_writes_true_email_and_false_password() {
         us001Page.emailTextBox.clear();
         us001Page.emailTextBox.sendKeys("ferhatnacioglu@gmail.com");
         us001Page.passwordTextBox.clear();
@@ -57,9 +50,8 @@ public class US001StepDefinitions {
         ReusableMethods.waitFor(1);
 
     }
-    @Then("user writes false email and false password")
-    public void user_writes_false_email_and_false_password() {
-
+    @Then("tc04 user writes false email and false password")
+    public void tc04_user_writes_false_email_and_false_password() {
         us001Page.emailTextBox.clear();
         us001Page.emailTextBox.sendKeys("fakemail@gmail.com");
         us001Page.passwordTextBox.clear();

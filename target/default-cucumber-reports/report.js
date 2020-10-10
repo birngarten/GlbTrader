@@ -23,41 +23,41 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user writes true email and true password",
+  "name": "tc01 user writes true email and true password",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.US001StepDefinitions.user_writes_true_email_and_true_password()"
+  "location": "stepdefinitions.US001StepDefinitions.tc01_user_writes_true_email_and_true_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user writes false email and true password",
+  "name": "tc02 user writes false email and true password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.US001StepDefinitions.user_writes_false_email_and_true_password()"
+  "location": "stepdefinitions.US001StepDefinitions.tc02_user_writes_false_email_and_true_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user writes true email and false password",
+  "name": "tc03 user writes true email and false password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.US001StepDefinitions.user_writes_true_email_and_false_password()"
+  "location": "stepdefinitions.US001StepDefinitions.tc03_user_writes_true_email_and_false_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user writes false email and false password",
+  "name": "tc04 user writes false email and false password",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.US001StepDefinitions.user_writes_false_email_and_false_password()"
+  "location": "stepdefinitions.US001StepDefinitions.tc04_user_writes_false_email_and_false_password()"
 });
 formatter.result({
   "status": "passed"
