@@ -7,7 +7,7 @@ import pages.US001Page;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class US001StepDefinitions {
+public class US001StepDefinition {
 
     US001Page us001Page = new US001Page();
 
