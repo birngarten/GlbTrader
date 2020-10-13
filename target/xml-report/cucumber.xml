@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="35.322">
     <testcase classname="US014 GlbTrader SelectLanguage" name="TC069 Dil secenegi &quot;Almanca&quot; ve &quot;Ingilizce&quot; tiklayinca acilan yeni sayfanin ilgili dilde acildigini" time="34.942">
         <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class='icon_widh'])[1]&quot;}&#10;  (Session info: chrome=86.0.4240.75)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-12C1QN5', ip: '192.168.178.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:10387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: fb2ac71188aee70bb764958027f63553&#10;*** Element info: {Using=xpath, value=(//span[@class='icon_widh'])[1]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user glbTrader sayfasina gider........................................passed
@@ -40,11 +41,226 @@ Session ID: fb2ac71188aee70bb764958027f63553
 ]]></failure>
     </testcase>
 =======
+<testsuite errors="0" failures="8" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="97.017">
+    <testcase classname="US002 User Join Now" name="tc005  gecerli Sign in test" time="17.926">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Sign Up yazisini assert etsin................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+And tc005 user Mobile kutusuna gecerli text girsin..........................passed
+And tc005 user Password kutusuna gecerli text girsin........................passed
+And tc005 user Confirm Password kutusuna gecerli text girsin................passed
+Then tc005 user Sign Up butonuna tiklayabilmelidir..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc006 Gecersiz Email Testi" time="4.997">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc006 user Email "glbtradermail.com" girer..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc006 Gecersiz Email Testi 2" time="5.221">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc006 user Email "@mail.com" girer......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc006 Gecersiz Email Testi 3" time="4.173">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc006 user Email "glbtrader@.com" girer.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc006 Gecersiz Email Testi 4" time="4.904">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc006 user Email "glbtrader@mail." girer................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc007 Gecersiz Name Testi" time="3.641">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+Then tc007 user Name "ABC1 C3" girer........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc007_user_Name_girer(US002StepDefinition.java:101)
+	at ✽.tc007 user Name "ABC1 C3" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:35)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc007 Gecersiz Name Testi 2" time="3.745">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+Then tc007 user Name "3ABC 3L" girer........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc007_user_Name_girer(US002StepDefinition.java:101)
+	at ✽.tc007 user Name "3ABC 3L" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:35)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc007 Gecersiz Name Testi 3" time="3.718">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+Then tc007 user Name "abc5 b5" girer........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc007_user_Name_girer(US002StepDefinition.java:101)
+	at ✽.tc007 user Name "abc5 b5" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:35)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc007 Gecersiz Name Testi 4" time="3.834">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+Then tc007 user Name "8abc 9a" girer........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc007_user_Name_girer(US002StepDefinition.java:101)
+	at ✽.tc007 user Name "8abc 9a" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:35)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc008 Gecersiz Mobile Testi" time="3.892">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+Then tc008 user Mobile "0533A4562" girer....................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc008_user_Mobile_girer(US002StepDefinition.java:109)
+	at ✽.tc008 user Mobile "0533A4562" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:50)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc008 Gecersiz Mobile Testi 2" time="4.023">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+Then tc008 user Mobile "A05335623" girer....................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc008_user_Mobile_girer(US002StepDefinition.java:109)
+	at ✽.tc008 user Mobile "A05335623" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:50)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc008 Gecersiz Mobile Testi 3" time="4.231">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+Then tc008 user Mobile "05334961a" girer....................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc008_user_Mobile_girer(US002StepDefinition.java:109)
+	at ✽.tc008 user Mobile "05334961a" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:50)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc008 Gecersiz Mobile Testi 4" time="4.287">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+Then tc008 user Mobile "a05334466" girer....................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc008_user_Mobile_girer(US002StepDefinition.java:109)
+	at ✽.tc008 user Mobile "a05334466" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:50)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc009 Gecersiz Password Testi" time="5.24">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+And tc005 user Mobile kutusuna gecerli text girsin..........................passed
+Then tc009 user Password "Abc1" girer.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc009 Gecersiz Password Testi 2" time="5.206">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+And tc005 user Mobile kutusuna gecerli text girsin..........................passed
+Then tc009 user Password "aS1" girer........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc009 Gecersiz Password Testi 3" time="5.137">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+And tc005 user Mobile kutusuna gecerli text girsin..........................passed
+Then tc009 user Password "5s" girer.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc009 Gecersiz Password Testi 4" time="5.17">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+And tc005 user Mobile kutusuna gecerli text girsin..........................passed
+Then tc009 user Password "6" girer..........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc010 Login" time="6.555">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc010 user Login Here yazisina tiklasin.................................passed
+And tc010 user yeni acilan sayfada Email ve Password text box'lari goruluyor olmalidir.passed
+And tc010 user password hatirlamiyor ise Forgot Password kutusuna tiklasin..passed
+Then tc010 user Email kutusu oldugu ve veri gonderimi yapilabildigini assert etsin.passed
+>>>>>>> master
+=======
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.982">
 <testcase classname="Women clothing" name="TC043 Bu ürünün anasayfa search box ile" time="11.11">
 <system-out><![CDATA[Given kullanici glbtrader sayfasina gider...................................passed
 And searchboxa urun ismini girer............................................passed
 Then sonuclarda aranilan urun kontrol edilir................................passed
+>>>>>>> master
 ]]></system-out>
 </testcase>
 >>>>>>> master
