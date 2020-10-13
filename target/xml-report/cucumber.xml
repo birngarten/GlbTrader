@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="35.322">
     <testcase classname="US014 GlbTrader SelectLanguage" name="TC069 Dil secenegi &quot;Almanca&quot; ve &quot;Ingilizce&quot; tiklayinca acilan yeni sayfanin ilgili dilde acildigini" time="34.942">
         <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class='icon_widh'])[1]&quot;}&#10;  (Session info: chrome=86.0.4240.75)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-12C1QN5', ip: '192.168.178.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:10387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: fb2ac71188aee70bb764958027f63553&#10;*** Element info: {Using=xpath, value=(//span[@class='icon_widh'])[1]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user glbTrader sayfasina gider........................................passed
@@ -38,4 +39,13 @@ Session ID: fb2ac71188aee70bb764958027f63553
 	at ✽.TC069 Almanca tiklandiginda Almanca dilinde verify ediniz.(file:///C:/Users/LENOVO/IdeaProjects/GlbTrader/src/test/resources/features/US014.feature:27)
 ]]></failure>
     </testcase>
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.982">
+<testcase classname="Women clothing" name="TC043 Bu ürünün anasayfa search box ile" time="11.11">
+<system-out><![CDATA[Given kullanici glbtrader sayfasina gider...................................passed
+And searchboxa urun ismini girer............................................passed
+Then sonuclarda aranilan urun kontrol edilir................................passed
+]]></system-out>
+</testcase>
+>>>>>>> master
 </testsuite>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US014.feature");
 formatter.feature({
   "name": "US014 GlbTrader SelectLanguage",
@@ -14,29 +15,67 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
+=======
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US009.feature");
+formatter.feature({
+  "name": "Women clothing",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "TC043 Bu ürünün anasayfa search box ile",
+  "description": "  aranıp bulunabildiğini assert edin.",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@tc043"
+    },
+    {
+      "name": "@us009"
+    }
+  ]
+});
+>>>>>>> master
 formatter.before({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "user glbTrader sayfasina gider",
   "keyword": "Given "
 });
 formatter.match({
   "location": "stepdefinitions.US012StepDefinitions.user_glbTrader_sayfasina_gider()"
+=======
+  "name": "kullanici glbtrader sayfasina gider",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinitions.US008StepDefinition.kullanici_glbtrader_sayfasina_gider()"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "user SelectLanguage box\u0027a tiklar",
   "keyword": "And "
 });
 formatter.match({
   "location": "stepdefinitions.US014StepDefinitions.user_SelectLanguage_box_a_tiklar()"
+=======
+  "name": "searchboxa urun ismini girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US009StepDefinition.searchboxaUrunIsminiGirer()"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
+<<<<<<< HEAD
 formatter.scenario({
   "name": "TC069 Dil secenegi \"Almanca\" ve \"Ingilizce\" tiklayinca acilan yeni sayfanin ilgili dilde acildigini",
   "description": "  verify ediniz.",
@@ -72,6 +111,18 @@ formatter.result({
   "status": "skipped"
 });
 formatter.embedding("image/png", "embedded0.png", null);
+=======
+formatter.step({
+  "name": "sonuclarda aranilan urun kontrol edilir",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.US009StepDefinition.sonuclardaAranilanUrunKontrolEdilir()"
+});
+formatter.result({
+  "status": "passed"
+});
+>>>>>>> master
 formatter.after({
   "status": "passed"
 });
