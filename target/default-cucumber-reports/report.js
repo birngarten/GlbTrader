@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US013.feature");
 formatter.feature({
   "name": "US013 test",
@@ -56,6 +57,24 @@ formatter.before({
 =======
       "name": "@UserSignIn"
 >>>>>>> zehra
+=======
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US009.feature");
+formatter.feature({
+  "name": "Women clothing",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "TC043 Bu ürünün anasayfa search box ile",
+  "description": "  aranıp bulunabildiğini assert edin.",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@tc043"
+    },
+    {
+      "name": "@us009"
+>>>>>>> master
     }
   ]
 >>>>>>> master
@@ -64,6 +83,7 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
 <<<<<<< HEAD
   "name": "user asserts there are four parcels in page",
   "keyword": "Then "
@@ -149,6 +169,13 @@ formatter.step({
 });
 formatter.match({
   "location": "stepdefinitions.US005StepDefinition.tc020_kullanici_about_us_sayfasi_tiklandiginda_acilabilir_oldugunu_verify_eder()"
+=======
+  "name": "kullanici glbtrader sayfasina gider",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinitions.US008StepDefinition.kullanici_glbtrader_sayfasina_gider()"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
@@ -171,6 +198,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
 <<<<<<< HEAD
   "name": "user clicks min price link",
   "keyword": "Then "
@@ -397,11 +425,19 @@ formatter.step({
 });
 formatter.match({
   "location": "stepdefinitions.US013StepDefinitions.user_clicks_view_more_link()"
+=======
+  "name": "searchboxa urun ismini girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US009StepDefinition.searchboxaUrunIsminiGirer()"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "user clicks home button",
   "keyword": "Then "
 });
@@ -431,6 +467,13 @@ formatter.match({
 formatter.match({
   "location": "stepdefinitions.US001StepDefinitions.tc04_user_writes_false_email_and_false_password()"
 >>>>>>> zehra
+>>>>>>> master
+=======
+  "name": "sonuclarda aranilan urun kontrol edilir",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.US009StepDefinition.sonuclardaAranilanUrunKontrolEdilir()"
 >>>>>>> master
 });
 formatter.result({

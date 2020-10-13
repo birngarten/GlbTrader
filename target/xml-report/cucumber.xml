@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="66.813">
     <testcase classname="US013 test" name="tc059" time="19.106">
         <system-out><![CDATA[Then user asserts there are four parcels in page............................passed
@@ -76,7 +77,13 @@ And tc03 user writes true email and false password..........................pass
 Then tc04 user writes false email and false password........................passed
 >>>>>>> zehra
 >>>>>>> master
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.982">
+<testcase classname="Women clothing" name="TC043 Bu ürünün anasayfa search box ile" time="11.11">
+<system-out><![CDATA[Given kullanici glbtrader sayfasina gider...................................passed
+And searchboxa urun ismini girer............................................passed
+Then sonuclarda aranilan urun kontrol edilir................................passed
+>>>>>>> master
 ]]></system-out>
 </testcase>
 </testsuite>
->>>>>>> 261023d8332c62b490746f9c713046c462c41736

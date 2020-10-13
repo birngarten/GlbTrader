@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-[]
-=======
 [
   {
-    "line": 4,
+    "line": 1,
     "elements": [
       {
+<<<<<<< HEAD
 <<<<<<< HEAD
         "start_timestamp": "2020-10-07T18:36:03.405Z",
         "before": [
@@ -82,6 +80,13 @@
             "result": {
               "duration": 1000000,
 >>>>>>> zehra
+=======
+        "start_timestamp": "2020-10-13T00:20:19.860Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+>>>>>>> master
               "status": "passed"
             },
             "match": {
@@ -98,6 +103,7 @@
             }
           }
         ],
+<<<<<<< HEAD
 <<<<<<< HEAD
         "line": 6,
         "name": "tc060",
@@ -128,6 +134,16 @@
               "duration": 597000000,
 >>>>>>> zehra
 >>>>>>> master
+=======
+        "line": 46,
+        "name": "TC043 Bu ürünün anasayfa search box ile",
+        "description": "  aranıp bulunabildiğini assert edin.",
+        "id": "women-clothing;tc043-bu-ürünün-anasayfa-search-box-ile",
+        "after": [
+          {
+            "result": {
+              "duration": 478000000,
+>>>>>>> master
               "status": "passed"
             },
             "match": {
@@ -141,6 +157,7 @@
           {
             "result": {
 <<<<<<< HEAD
+<<<<<<< HEAD
               "duration": 1329076000,
               "status": "passed"
             },
@@ -151,11 +168,15 @@
 =======
 <<<<<<< HEAD
               "duration": 19301205700,
+=======
+              "duration": 9196000000,
+>>>>>>> master
               "status": "passed"
             },
-            "line": 4,
-            "name": "kullanici \"https://www.glbtrader.com/\" sayfaya gider",
+            "line": 49,
+            "name": "kullanici glbtrader sayfasina gider",
             "match": {
+<<<<<<< HEAD
               "arguments": [
                 {
                   "val": "\"https://www.glbtrader.com/\"",
@@ -173,11 +194,15 @@
               "location": "stepdefinitions.US001StepDefinitions.tc01_user_writes_true_email_and_true_password()"
 >>>>>>> zehra
 >>>>>>> master
+=======
+              "location": "stepdefinitions.US008StepDefinition.kullanici_glbtrader_sayfasina_gider()"
+>>>>>>> master
             },
             "keyword": "Then "
           },
           {
             "result": {
+<<<<<<< HEAD
 <<<<<<< HEAD
               "duration": 86004900,
               "status": "passed"
@@ -227,33 +252,27 @@
               "location": "stepdefinitions.US005StepDefinition.tc022_kullanici_tel_nosunun_oldugunu_verify_eder(java.lang.String)"
 =======
               "duration": 2619000000,
+=======
+              "duration": 1206000000,
+>>>>>>> master
               "status": "passed"
             },
-            "line": 8,
-            "name": "tc02 user writes false email and true password",
+            "line": 50,
+            "name": "searchboxa urun ismini girer",
             "match": {
-              "location": "stepdefinitions.US001StepDefinitions.tc02_user_writes_false_email_and_true_password()"
->>>>>>> zehra
+              "location": "stepdefinitions.US009StepDefinition.searchboxaUrunIsminiGirer()"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 92000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "sonuclarda aranilan urun kontrol edilir",
+            "match": {
 <<<<<<< HEAD
-              "duration": 2067068400,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "TC023 kullanici metnin icerigini verify eder",
-            "match": {
-              "location": "stepdefinitions.US005StepDefinition.tc023_kullanici_metnin_icerigini_verify_eder()"
-=======
-              "duration": 1775000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "tc03 user writes true email and false password",
-            "match": {
               "location": "stepdefinitions.US001StepDefinitions.tc03_user_writes_true_email_and_false_password()"
 >>>>>>> master
             },
@@ -326,6 +345,9 @@
               "location": "stepdefinitions.US001StepDefinitions.tc04_user_writes_false_email_and_false_password()"
 >>>>>>> zehra
 >>>>>>> master
+=======
+              "location": "stepdefinitions.US009StepDefinition.sonuclardaAranilanUrunKontrolEdilir()"
+>>>>>>> master
             },
             "keyword": "Then "
           },
@@ -356,6 +378,7 @@
         ],
         "tags": [
           {
+<<<<<<< HEAD
 <<<<<<< HEAD
             "name": "@US013"
           }
@@ -702,10 +725,17 @@
             "name": "@UserSignIn"
 >>>>>>> zehra
 >>>>>>> master
+=======
+            "name": "@tc043"
+          },
+          {
+            "name": "@us009"
+>>>>>>> master
           }
         ]
       }
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
     "name": "US013 test",
     "description": "",
@@ -718,9 +748,13 @@
 =======
 <<<<<<< HEAD
     "name": "About us",
+=======
+    "name": "Women clothing",
+>>>>>>> master
     "description": "",
-    "id": "about-us",
+    "id": "women-clothing",
     "keyword": "Feature",
+<<<<<<< HEAD
     "uri": "file:src/test/resources/features/US005.feature",
     "tags": [
       {
@@ -743,6 +777,9 @@
         }
       }
     ]
+=======
+    "uri": "file:src/test/resources/features/US009.feature",
+    "tags": []
+>>>>>>> master
   }
 ]
->>>>>>> 261023d8332c62b490746f9c713046c462c41736
