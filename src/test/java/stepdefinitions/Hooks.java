@@ -14,6 +14,7 @@ public class Hooks {
     @Before
     public void setUp(){
         System.out.println("setUp methodu çalıştı.");
+
     }
 
     // TestNG'deki AfterMethod gibi çalışır.
