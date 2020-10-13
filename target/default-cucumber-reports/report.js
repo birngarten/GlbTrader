@@ -1408,6 +1408,24 @@ formatter.scenario({
     },
     {
       "name": "@TC010"
+=======
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US009.feature");
+formatter.feature({
+  "name": "Women clothing",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "TC043 Bu ürünün anasayfa search box ile",
+  "description": "  aranıp bulunabildiğini assert edin.",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@tc043"
+    },
+    {
+      "name": "@us009"
+>>>>>>> master
     }
   ]
 });
@@ -1415,6 +1433,7 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "user GlobalTrader sayfasina gider",
   "keyword": "Given "
 });
@@ -1450,26 +1469,49 @@ formatter.step({
 });
 formatter.match({
   "location": "stepdefinitions.US002StepDefinition.tc010_user_yeni_acilan_sayfada_Email_ve_Password_text_box_lari_goruluyor_olmalidir()"
+=======
+  "name": "kullanici glbtrader sayfasina gider",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinitions.US008StepDefinition.kullanici_glbtrader_sayfasina_gider()"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "tc010 user password hatirlamiyor ise Forgot Password kutusuna tiklasin",
   "keyword": "And "
 });
 formatter.match({
   "location": "stepdefinitions.US002StepDefinition.tc010_user_password_hatirlamiyor_ise_Forgot_Password_kutusuna_tiklasin()"
+=======
+  "name": "searchboxa urun ismini girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US009StepDefinition.searchboxaUrunIsminiGirer()"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "tc010 user Email kutusu oldugu ve veri gonderimi yapilabildigini assert etsin",
   "keyword": "Then "
 });
 formatter.match({
   "location": "stepdefinitions.US002StepDefinition.tc010_user_Email_kutusu_oldugu_ve_veri_gonderimi_yapilabildigini_assert_etsin()"
+=======
+  "name": "sonuclarda aranilan urun kontrol edilir",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.US009StepDefinition.sonuclardaAranilanUrunKontrolEdilir()"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
