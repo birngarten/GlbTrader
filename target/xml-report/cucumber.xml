@@ -1,33 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.001"/>
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.634">
-    <testcase classname="Seller Sign in testi" name="TC019 Sayfadaki text kutucuguna email yazilabilmeli ve Forgot Passwort butonuna tiklandiginda sayfa yenilenmelidir." time="28.055">
-        <system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
-Given tc19 user enter your email kusutunsa "email" yazsin...................passed
-And tc19 user enter your email kutusuna veri girdikten sonra Forgot Password tiklasin.passed
-Then tc19 user fortgot password tiklandikdan sonra sayfanin yenilendigi test edilsin.passed
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.463">
-    <testcase classname="About us" name="US005 kullanici about us sayfasinda islem yapar" time="23.976">
-        <system-out><![CDATA[Given kullanici "https://www.glbtrader.com/" sayfaya gider..................passed
-And TC020 kullanici about us sayfasi tiklandiginda acilabilir oldugunu verify eder.passed
-And TC021 kullanici about us title ve header about us olarak görüldügünü verify eder.passed
-And TC022 kullanici tel nosunun "1-212-217-1900" oldugunu verify eder.......passed
-Then TC023 kullanici metnin icerigini verify eder...........................passed
->>>>>>> 55df090e5b39eaf303391ee53f288a9b0e5cd301
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.477">
-<testcase classname="Sign In" name="run Sign In test" time="18.96">
-<system-out><![CDATA[Given tc01 user writes true email and true password.........................passed
-And tc02 user writes false email and true password..........................passed
-And tc03 user writes true email and false password..........................passed
-Then tc04 user writes false email and false password........................passed
->>>>>>> zehra
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.982">
+<testcase classname="Women clothing" name="TC043 Bu ürünün anasayfa search box ile" time="11.11">
+<system-out><![CDATA[Given kullanici glbtrader sayfasina gider...................................passed
+And searchboxa urun ismini girer............................................passed
+Then sonuclarda aranilan urun kontrol edilir................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
->>>>>>> 261023d8332c62b490746f9c713046c462c41736
