@@ -1,12 +1,13 @@
 
 @Jewelery&Accessories
+Feature: Jewelery&Accessories button
+
 Scenario: TC044 Jewelery&Accessories sekmesi "Women Clothing&Accessories" sekmesinin
 altindadir ve acilabilir
 
 Given tc44 user global trader a gider
 And tc44 user 7 dropdown sekme oldugunu görür
-And tc44 user Jewelery&Accessories sekmesi "Women Clothing&Accessories" sekmesinin
-altinda oldugunu görür
+And tc44 user Jewelery&Accessories sekmesi "Women Clothing&Accessories" sekmesinin altinda oldugunu görür
 Then tc44 user Jewelery&Accessories sekmesini acar
 
 
@@ -24,9 +25,7 @@ Then tc45 user son sütunda 2 baslik oldugunu görür
 Scenario: TC046 soldan saga sirasiyla basliklar testi
 
 Given tc46 Bu basliklari soldan saga sirasiyla görür
-Then tc46 Bu basliklarin ise soldan saga sirasiyla "Earrings", "Wedding&Engagement",
-"Fine Jewelery", "Beads&Jewelery", "Necklaces & Pendants", "Rings",
-"Bracelets & Bangles", "Jewelery Sets & More" oldugunu dogrular
+Then tc46 Bu basliklarin ise soldan saga sirasiyla "Earrings", "Wedding&Engagement","Fine Jewelery", "Beads&Jewelery", "Necklaces & Pendants", "Rings", "Bracelets & Bangles", "Jewelery Sets & More" oldugunu dogrular
 
 
 
@@ -51,8 +50,8 @@ Then tc48 user icindeki Boxlari isaretler
 
 Scenario: TC048 Earrings sekmesi altinda Gold butonu testi
 
-Given tc48 user "Gold" butonuna tiklar
-And tc48 user acilan sayfada, sol altta cikan filtrelme sekmelerini görür
+
+Given tc48 user acilan sayfada, sol altta cikan filtrelme sekmelerini görür
 And tc48 user yukardan asagiya ücüncü sirada "Metals Type" sekmesinin bulundugunu görür
 Then tc48 user icindeki Boxlari isaretler
 
