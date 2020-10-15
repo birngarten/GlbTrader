@@ -1,84 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="17" time="176.356">
-<testcase classname="Sign In" name="run Sign In test" time="27.489">
-<system-out><![CDATA[Given tc01 user writes true email and true password.........................passed
-And tc02 user writes false email and true password..........................passed
-And tc03 user writes true email and false password..........................passed
-Then tc04 user writes false email and false password........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Seller Join Now" name="TC011&#9;Select Vendor Type'da &quot;Agent Seller&quot; secilebilir olmalidir." time="5.362">
-<system-out><![CDATA[Given Seller Join now tiklar................................................passed
-Given tc11 user  Seller Join Now tiklasin...................................passed
-And tc11 user Select Vendor Type da  Agent Seller tiklasin..................passed
-Then tc11   user Agent Seller buttononu aktif oldugunu test etsin...........passed
-]]></system-out>
-</testcase>
-<testcase classname="Seller Join Now" name="TC012 Agent seller altinda ki form doldurulsun ve assert edilsin" time="10.636">
-<system-out><![CDATA[Given Seller Join now tiklar................................................passed
-Given tc12 user name  Text box a "can" girsin...............................passed
-And tc12 user email Text Box a "a@gmail.com" girsin.........................passed
-And tc12 user subDomain "www.abc.com" url girsin............................passed
-And tc12 user mobileNumberBoxa "01605553480" girsin ve asert etsin..........passed
-And tc12 user country Box  olarak "Turkey" secsin...........................passed
-And tc12 user state Boxa "usa" girsin.......................................passed
-And tc12 user city Boxa "Florida" girsin....................................passed
-And tc12 user adress Box a "weidigweg 31,65647" girsin......................passed
-And tc12 user enter Postal Code Box a "64293" girsin........................passed
-And tc12 user categories bir alan secsin....................................passed
-And tc12 user password Box a "1235676" sifre girsin.........................passed
-Then tc12 user Regisration tiklasin ve assert etsin.........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Seller Join Now" name="TC013 Login Here butonuna tiklandiktan sonra acilan sekmede Email ve Password text box'lari goruluyor olmalidir." time="5.813">
-<system-out><![CDATA[Given Seller Join now tiklar................................................passed
-Given tc13 user Login Here butonuna tiklasin................................passed
-Then tc13 user sonraki  linkde Email ve Password textleri assert etsin......passed
-]]></system-out>
-</testcase>
-<testcase classname="Seller Join Now" name="TC 014 Select Vendor Type'da &quot;Company Seller&quot; secilebilir olmalidir." time="2.181">
-<failure message="utilities.ReusableMethods.getHexColor(Lorg/openqa/selenium/WebElement;Ljava/lang/String;)Ljava/lang/String;" type="java.lang.NoSuchMethodError"><![CDATA[Given Seller Join now tiklar................................................passed
-Given tc14 user  Select Vendor Type'da Company Seller Butonnu secsin........passed
-Then tc14 user Company Seller Butonunu secildigi assert edilsin.............failed
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="35.322">
+    <testcase classname="US014 GlbTrader SelectLanguage" name="TC069 Dil secenegi &quot;Almanca&quot; ve &quot;Ingilizce&quot; tiklayinca acilan yeni sayfanin ilgili dilde acildigini" time="34.942">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class='icon_widh'])[1]&quot;}&#10;  (Session info: chrome=86.0.4240.75)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-12C1QN5', ip: '192.168.178.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:10387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: fb2ac71188aee70bb764958027f63553&#10;*** Element info: {Using=xpath, value=(//span[@class='icon_widh'])[1]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user glbTrader sayfasina gider........................................passed
+And user SelectLanguage box'a tiklar........................................passed
+Given TC069 Almanca tiklandiginda Almanca dilinde verify ediniz.............failed
+And TC069 Ingilizce tiklandiginda Ingilizce dilinde verify ediniz...........skipped
 
 StackTrace:
-java.lang.NoSuchMethodError: utilities.ReusableMethods.getHexColor(Lorg/openqa/selenium/WebElement;Ljava/lang/String;)Ljava/lang/String;
-	at stepdefinitions.US003StepDefinition.tc14_user_Company_Seller_Butonunu_secildigi_assert_edilsin(US003StepDefinition.java:173)
-	at ✽.tc14 user Company Seller Butonunu secildigi assert edilsin(file:///C:/Users/fikir/IdeaProjects/GlbTrader/src/test/resources/features/US003.feature:37)
-]]></failure>
-</testcase>
-<testcase classname="Seller Join Now" name="TC015 Company Seller sayfasinin  text Boxlari doldurulsun ve assert edilsin" time="23.333">
-<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@class='text-center'])[2]&quot;}&#10;  (Session info: chrome=86.0.4240.75)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-2AP8DN0', ip: '172.20.10.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\fikir\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54425}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: a32942db7396fc233745c97eddc46079&#10;*** Element info: {Using=xpath, value=(//p[@class='text-center'])[2]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Seller Join now tiklar................................................passed
-Given tc15 user company Name " sirket" girsin...............................passed
-And tc15 user company Mobile "+49" girsin...................................passed
-And tc15 user company Adress "weidigweg 34" girsin..........................passed
-And tc15 user name Box "isim" girsin........................................passed
-And tc15 user emailText Box "sss@ggg.com" girsin............................passed
-And tc15 user subDomain "www.gogle.com" girsin..............................passed
-And tc15 user mobil Number "05333338221" girsin.............................passed
-And tc15 user country secsin................................................passed
-And tc15 user state Box "usa" girsin........................................passed
-And tc15 user city Box a "Florida" girsin...................................passed
-And tc15 user addres Box "buraya adresgir" girsin...........................passed
-And tc15 user postal Code Box a "64291" girsin..............................passed
-And tc15 user categories den bir secim yapsin...............................passed
-And tc15 user password Box a "123467" girsin................................passed
-Then tc15 registration tiklasin ve Succesfully ifadesini gorsun.............failed
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@class='text-center'])[2]"}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='icon_widh'])[1]"}
   (Session info: chrome=86.0.4240.75)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-2AP8DN0', ip: '172.20.10.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'DESKTOP-12C1QN5', ip: '192.168.178.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\fikir\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54425}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a32942db7396fc233745c97eddc46079
-*** Element info: {Using=xpath, value=(//p[@class='text-center'])[2]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:10387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fb2ac71188aee70bb764958027f63553
+*** Element info: {Using=xpath, value=(//span[@class='icon_widh'])[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -91,110 +36,312 @@ Session ID: a32942db7396fc233745c97eddc46079
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.getText(Unknown Source)
-	at stepdefinitions.US003StepDefinition.tc15_registration_tiklasin_ve_Succesfully_ifadesini_gorsun(US003StepDefinition.java:281)
-	at ✽.tc15 registration tiklasin ve Succesfully ifadesini gorsun(file:///C:/Users/fikir/IdeaProjects/GlbTrader/src/test/resources/features/US003.feature:56)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at stepdefinitions.US014StepDefinitions.tc069_Almanca_tiklandiginda_Almanca_dilinde_verify_ediniz(US014StepDefinitions.java:101)
+	at ✽.TC069 Almanca tiklandiginda Almanca dilinde verify ediniz.(file:///C:/Users/LENOVO/IdeaProjects/GlbTrader/src/test/resources/features/US014.feature:27)
 ]]></failure>
-</testcase>
-<testcase classname="Seller Sign in testi" name="TC016 seller Login butonu https://www.glbtrader.com/vendor_login.html sayfasina yönlendirmelidir." time="4.605">
-<system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
-Given tc16 user "https://www.glbtrader.com/vendor_login.html" sayfasina gitsin.passed
+    </testcase>
+=======
+<<<<<<< HEAD
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="66.813">
+    <testcase classname="US013 test" name="tc059" time="19.106">
+        <system-out><![CDATA[Then user asserts there are four parcels in page............................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Seller Sign in testi" name="TC017 sing In icin  negatif testler yapilsin" time="10.08">
-<system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
-Given tc17 user enter your email icin negatif  gecersiz "a@g." girsin.......passed
-Then tc17 user enter Password icin  negatif gecersiz "...1" girsin..........passed
+    </testcase>
+    <testcase classname="US013 test" name="tc060" time="3.5">
+        <system-out><![CDATA[Then user clicks view more link.............................................passed
+And user veryfies the website...............................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Seller Sign in testi" name="TC017 sing In icin  negatif testler yapilsin 2" time="10.736">
-<system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
-Given tc17 user enter your email icin negatif  gecersiz "1@." girsin........passed
-Then tc17 user enter Password icin  negatif gecersiz "abc" girsin...........passed
+    </testcase>
+    <testcase classname="US013 test" name="tc061" time="5.784">
+        <system-out><![CDATA[Then user clicks view more link.............................................passed
+Then user clicks min price link.............................................passed
+And user veryfies parcels are listed from min price to max price............passed
 ]]></system-out>
-</testcase>
-<testcase classname="Seller Sign in testi" name="TC017 sing In icin  negatif testler yapilsin 3" time="10.607">
-<system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
-Given tc17 user enter your email icin negatif  gecersiz "@.com" girsin......passed
-Then tc17 user enter Password icin  negatif gecersiz "can22" girsin.........passed
+    </testcase>
+    <testcase classname="US013 test" name="tc062" time="5.42">
+        <system-out><![CDATA[Then user clicks view more link.............................................passed
+Then user clicks max price link.............................................passed
+And user veryfies parcels are listed from max price to min price............passed
 ]]></system-out>
-</testcase>
-<testcase classname="Seller Sign in testi" name="TC017 sing In icin  pozitif testler yapilsin" time="6.669">
-<system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
-Given tc17 user enter your email  icin pozitif  GECERLI "a@gmail.com" girsin.passed
-Then tc17 user enter Password icin pozitif  gecerli "aba234." girsin........passed
+    </testcase>
+    <testcase classname="US013 test" name="tc063" time="23.816">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Then user clicks view more link.............................................passed
+Then user clicks left side M size...........................................passed
+Then user veryfies at least one parcel are listed...........................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.US013StepDefinitions.user_veryfies_at_least_one_parcel_are_listed(US013StepDefinitions.java:70)
+	at ✽.user veryfies at least one parcel are listed(file:///C:/Users/SAM/IdeaProjects/GlbTrader/src/test/resources/features/US013.feature:23)
+]]></failure>
+    </testcase>
+    <testcase classname="US013 test" name="tc064" time="4.278">
+        <system-out><![CDATA[Then user clicks view more link.............................................passed
+Then user clicks free shippping link........................................passed
+And user veryfies minimum nine parcels are listed...........................passed
 ]]></system-out>
-</testcase>
-<testcase classname="Seller Sign in testi" name="TC017 sing In icin  pozitif testler yapilsin 2" time="6.178">
-<system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
-Given tc17 user enter your email  icin pozitif  GECERLI "aba1@a.com" girsin.passed
-Then tc17 user enter Password icin pozitif  gecerli "12345A." girsin........passed
-]]></system-out>
-</testcase>
-<testcase classname="Seller Sign in testi" name="TC017 sing In icin  pozitif testler yapilsin 3" time="6.103">
-<system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
-Given tc17 user enter your email  icin pozitif  GECERLI "net@gmail.com" girsin.passed
-Then tc17 user enter Password icin pozitif  gecerli "bet2017!" girsin.......passed
-]]></system-out>
-</testcase>
-<testcase classname="Seller Sign in testi" name="TC018 Forgot Password menu linki https://www.glbtrader.com/vendor_forgot.html sayfasina yonlendirmelidir." time="7.993">
-<system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
-Given tc18 user forgot Password linkine tiklasin............................passed
-Then tc18 user linkini "https://www.glbtrader.com/vendor_forgot.html" assert etsin.passed
-]]></system-out>
-</testcase>
-<testcase classname="Seller Sign in testi" name="TC019 Sayfadaki text kutucuguna email yazilabilmeli ve Forgot Passwort butonuna tiklandiginda sayfa yenilenmelidir." time="15.916">
-<system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
+    </testcase>
+    <testcase classname="US013 test" name="tc065" time="4.298">
+        <system-out><![CDATA[Then user clicks view more link.............................................passed
+Then user clicks home button................................................passed
+And user verifies home page.................................................passed
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.001"/>
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.634">
+    <testcase classname="Seller Sign in testi" name="TC019 Sayfadaki text kutucuguna email yazilabilmeli ve Forgot Passwort butonuna tiklandiginda sayfa yenilenmelidir." time="28.055">
+        <system-out><![CDATA[Given user Seller Sign in a  tiklar.........................................passed
 Given tc19 user enter your email kusutunsa "email" yazsin...................passed
 And tc19 user enter your email kutusuna veri girdikten sonra Forgot Password tiklasin.passed
 Then tc19 user fortgot password tiklandikdan sonra sayfanin yenilendigi test edilsin.passed
-]]></system-out>
-</testcase>
-<testcase classname="About us" name="US005 kullanici about us sayfasinda islem yapar" time="4.641">
-<system-out><![CDATA[Given kullanici "https://www.glbtrader.com/" sayfaya gider..................passed
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.463">
+    <testcase classname="About us" name="US005 kullanici about us sayfasinda islem yapar" time="23.976">
+        <system-out><![CDATA[Given kullanici "https://www.glbtrader.com/" sayfaya gider..................passed
 And TC020 kullanici about us sayfasi tiklandiginda acilabilir oldugunu verify eder.passed
 And TC021 kullanici about us title ve header about us olarak görüldügünü verify eder.passed
 And TC022 kullanici tel nosunun "1-212-217-1900" oldugunu verify eder.......passed
 Then TC023 kullanici metnin icerigini verify eder...........................passed
+>>>>>>> 55df090e5b39eaf303391ee53f288a9b0e5cd301
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.477">
+<testcase classname="Sign In" name="run Sign In test" time="18.96">
+<system-out><![CDATA[Given tc01 user writes true email and true password.........................passed
+And tc02 user writes false email and true password..........................passed
+And tc03 user writes true email and false password..........................passed
+Then tc04 user writes false email and false password........................passed
+>>>>>>> zehra
+>>>>>>> master
+>>>>>>> master
+=======
+<testsuite errors="0" failures="8" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="97.017">
+    <testcase classname="US002 User Join Now" name="tc005  gecerli Sign in test" time="17.926">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Sign Up yazisini assert etsin................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+And tc005 user Mobile kutusuna gecerli text girsin..........................passed
+And tc005 user Password kutusuna gecerli text girsin........................passed
+And tc005 user Confirm Password kutusuna gecerli text girsin................passed
+Then tc005 user Sign Up butonuna tiklayabilmelidir..........................passed
 ]]></system-out>
-</testcase>
-<testcase classname="All Categories Computer &amp; Office Menu Linkinde Test Yapma" name="US007 kullanici computer &amp; office menu linkinde urun aramasi yapar" time="17.235">
-<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@style='display: inline-block;']&quot;}&#10;  (Session info: chrome=86.0.4240.75)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-2AP8DN0', ip: '172.20.10.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\fikir\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54425}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: a32942db7396fc233745c97eddc46079&#10;*** Element info: {Using=xpath, value=//img[@style='display: inline-block;']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given kullanici "https://www.glbtrader.com/" sayfaya gider..................passed
-And tc029 kullanici all categories de dropbox secenek sayisini bulur........passed
-And tc030 kullanici besinci sirada computer&office secer ve bir urun ismi girip sonuc alir.passed
-And tc031 kullanici computer&office aranan urunun  sayfasinda  GLOBAL TRADER  logosu gorur.passed
-And tc032 kullanici urunu All Categories,Computer and Office,Electronic Components & Supplies arar ve karsilastirir.passed
-Then tc033 kullanici ranan urunun  fiyati, resmi ve titlesinin gorunup gorunmedini verify edr.failed
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc006 Gecersiz Email Testi" time="4.997">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc006 user Email "glbtradermail.com" girer..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc006 Gecersiz Email Testi 2" time="5.221">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc006 user Email "@mail.com" girer......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc006 Gecersiz Email Testi 3" time="4.173">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc006 user Email "glbtrader@.com" girer.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc006 Gecersiz Email Testi 4" time="4.904">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc006 user Email "glbtrader@mail." girer................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc007 Gecersiz Name Testi" time="3.641">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+Then tc007 user Name "ABC1 C3" girer........................................failed
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@style='display: inline-block;']"}
-  (Session info: chrome=86.0.4240.75)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-2AP8DN0', ip: '172.20.10.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\fikir\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54425}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a32942db7396fc233745c97eddc46079
-*** Element info: {Using=xpath, value=//img[@style='display: inline-block;']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
-	at stepdefinitions.US007StepDefinition.tc033_kullanici_ranan_urunun_fiyati_resmi_ve_titlesinin_gorunup_gorunmedini_verify_edr(US007StepDefinition.java:96)
-	at ✽.tc033 kullanici ranan urunun  fiyati, resmi ve titlesinin gorunup gorunmedini verify edr(file:///C:/Users/fikir/IdeaProjects/GlbTrader/src/test/resources/features/US007.feature:9)
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc007_user_Name_girer(US002StepDefinition.java:101)
+	at ✽.tc007 user Name "ABC1 C3" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:35)
 ]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc007 Gecersiz Name Testi 2" time="3.745">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+Then tc007 user Name "3ABC 3L" girer........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc007_user_Name_girer(US002StepDefinition.java:101)
+	at ✽.tc007 user Name "3ABC 3L" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:35)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc007 Gecersiz Name Testi 3" time="3.718">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+Then tc007 user Name "abc5 b5" girer........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc007_user_Name_girer(US002StepDefinition.java:101)
+	at ✽.tc007 user Name "abc5 b5" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:35)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc007 Gecersiz Name Testi 4" time="3.834">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+Then tc007 user Name "8abc 9a" girer........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc007_user_Name_girer(US002StepDefinition.java:101)
+	at ✽.tc007 user Name "8abc 9a" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:35)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc008 Gecersiz Mobile Testi" time="3.892">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+Then tc008 user Mobile "0533A4562" girer....................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc008_user_Mobile_girer(US002StepDefinition.java:109)
+	at ✽.tc008 user Mobile "0533A4562" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:50)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc008 Gecersiz Mobile Testi 2" time="4.023">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+Then tc008 user Mobile "A05335623" girer....................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc008_user_Mobile_girer(US002StepDefinition.java:109)
+	at ✽.tc008 user Mobile "A05335623" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:50)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc008 Gecersiz Mobile Testi 3" time="4.231">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+Then tc008 user Mobile "05334961a" girer....................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc008_user_Mobile_girer(US002StepDefinition.java:109)
+	at ✽.tc008 user Mobile "05334961a" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:50)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc008 Gecersiz Mobile Testi 4" time="4.287">
+        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+Then tc008 user Mobile "a05334466" girer....................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<3> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.US002StepDefinition.tc008_user_Mobile_girer(US002StepDefinition.java:109)
+	at ✽.tc008 user Mobile "a05334466" girer(file:///C:/Users/saltu/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:50)
+]]></failure>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc009 Gecersiz Password Testi" time="5.24">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+And tc005 user Mobile kutusuna gecerli text girsin..........................passed
+Then tc009 user Password "Abc1" girer.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc009 Gecersiz Password Testi 2" time="5.206">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+And tc005 user Mobile kutusuna gecerli text girsin..........................passed
+Then tc009 user Password "aS1" girer........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc009 Gecersiz Password Testi 3" time="5.137">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+And tc005 user Mobile kutusuna gecerli text girsin..........................passed
+Then tc009 user Password "5s" girer.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc009 Gecersiz Password Testi 4" time="5.17">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc005 user Email kutusuna gecerli text girsin...........................passed
+And tc005 user Name kutusuna gecerli text girsin............................passed
+And tc005 user Mobile kutusuna gecerli text girsin..........................passed
+Then tc009 user Password "6" girer..........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US002 User Join Now" name="tc010 Login" time="6.555">
+        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
+And user Join now tiklar....................................................passed
+And tc010 user Login Here yazisina tiklasin.................................passed
+And tc010 user yeni acilan sayfada Email ve Password text box'lari goruluyor olmalidir.passed
+And tc010 user password hatirlamiyor ise Forgot Password kutusuna tiklasin..passed
+Then tc010 user Email kutusu oldugu ve veri gonderimi yapilabildigini assert etsin.passed
+>>>>>>> master
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.982">
+<testcase classname="Women clothing" name="TC043 Bu ürünün anasayfa search box ile" time="11.11">
+<system-out><![CDATA[Given kullanici glbtrader sayfasina gider...................................passed
+And searchboxa urun ismini girer............................................passed
+Then sonuclarda aranilan urun kontrol edilir................................passed
+>>>>>>> master
+]]></system-out>
 </testcase>
+>>>>>>> master
 </testsuite>
