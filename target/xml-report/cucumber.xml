@@ -1,48 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="35.322">
-    <testcase classname="US014 GlbTrader SelectLanguage" name="TC069 Dil secenegi &quot;Almanca&quot; ve &quot;Ingilizce&quot; tiklayinca acilan yeni sayfanin ilgili dilde acildigini" time="34.942">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class='icon_widh'])[1]&quot;}&#10;  (Session info: chrome=86.0.4240.75)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-12C1QN5', ip: '192.168.178.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:10387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: fb2ac71188aee70bb764958027f63553&#10;*** Element info: {Using=xpath, value=(//span[@class='icon_widh'])[1]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user glbTrader sayfasina gider........................................passed
-And user SelectLanguage box'a tiklar........................................passed
-Given TC069 Almanca tiklandiginda Almanca dilinde verify ediniz.............failed
-And TC069 Ingilizce tiklandiginda Ingilizce dilinde verify ediniz...........skipped
+
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="33.215">
+<testcase classname="Jewelery&amp;Accessories button" name="TC044 Jewelery&amp;Accessories sekmesi &quot;Women Clothing&amp;Accessories&quot; sekmesinin" time="17.503">
+<system-out><![CDATA[Given tc44 user global trader a gider.......................................passed
+And tc44 user 7 dropdown sekme oldugunu görür...............................passed
+And tc44 user Jewelery&Accessories sekmesi "Women Clothing&Accessories" sekmesinin altinda oldugunu görür.passed
+Then tc44 user Jewelery&Accessories sekmesini acar..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Jewelery&amp;Accessories button" name="TC045 Jewelery&amp;Accessories sekmesi sütun sirasi ve baslik sayisi testi" time="1.056">
+<system-out><![CDATA[Given tc45 user ilk sutunda 3 baslik oldugunu görür.........................passed
+And tc45 user orta sütunda 3 baslik oldugunu görür..........................passed
+Then tc45 user son sütunda 2 baslik oldugunu görür..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Jewelery&amp;Accessories button" name="TC046 soldan saga sirasiyla basliklar testi" time="0.87">
+<system-out><![CDATA[Given tc46 Bu basliklari soldan saga sirasiyla görür........................passed
+Then tc46 Bu basliklarin ise soldan saga sirasiyla "Earrings", "Wedding&Engagement","Fine Jewelery", "Beads&Jewelery", "Necklaces & Pendants", "Rings", "Bracelets & Bangles", "Jewelery Sets & More" oldugunu dogrular.passed
+]]></system-out>
+</testcase>
+<testcase classname="Jewelery&amp;Accessories button" name="TC047 Jewelery&amp;Accessories sekmesi altinda Earrings butonu testi" time="2.545">
+<failure message="expected:&lt;#[eeeee]e&gt; but was:&lt;#[bebeb]e&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given tc47 user "Earrings" basligini görür..................................passed
+And tc47 user "Earrings" basligi altinda sirasiyla "Earrings", "Gold", "Drop Earrings", Hoop Earrings" sekmelerinin oldugunu görür.passed
+Then tc47 user üzerine gelinen sekmenin gri font rengine büründügünü görür..failed
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='icon_widh'])[1]"}
-  (Session info: chrome=86.0.4240.75)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-12C1QN5', ip: '192.168.178.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:10387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: fb2ac71188aee70bb764958027f63553
-*** Element info: {Using=xpath, value=(//span[@class='icon_widh'])[1]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.getText(Unknown Source)
-	at stepdefinitions.US014StepDefinitions.tc069_Almanca_tiklandiginda_Almanca_dilinde_verify_ediniz(US014StepDefinitions.java:101)
-	at ✽.TC069 Almanca tiklandiginda Almanca dilinde verify ediniz.(file:///C:/Users/LENOVO/IdeaProjects/GlbTrader/src/test/resources/features/US014.feature:27)
+org.junit.ComparisonFailure: expected:<#[eeeee]e> but was:<#[bebeb]e>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinitions.US010StepDefinition.tc47_user_üzerine_gelinen_sekmenin_gri_font_rengine_büründügünü_görür(US010StepDefinition.java:164)
+	at ✽.tc47 user üzerine gelinen sekmenin gri font rengine büründügünü görür(file:///C:/Users/fikir/IdeaProjects/GlbTrader/src/test/resources/features/US010.feature:36)
 ]]></failure>
+</testcase>
+<testcase classname="Jewelery&amp;Accessories button" name="TC048 Earrings sekmesi altinda Gold butonu testi" time="2.831">
+<system-out><![CDATA[Given tc48 user "Gold" butonuna tiklar......................................passed
+And tc48 user acilan sayfada, sol altta cikan filtrelme sekmelerini görür...passed
+And tc48 user yukardan asagiya ücüncü sirada "Metals Type" sekmesinin bulundugunu görür.passed
+Then tc48 user icindeki Boxlari isaretler...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Jewelery&amp;Accessories button" name="TC048 Earrings sekmesi altinda Gold butonu testi 2" time="1.597">
+<system-out><![CDATA[Given tc48 user acilan sayfada, sol altta cikan filtrelme sekmelerini görür.passed
+And tc48 user yukardan asagiya ücüncü sirada "Metals Type" sekmesinin bulundugunu görür.passed
+Then tc48 user icindeki Boxlari isaretler...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Jewelery&amp;Accessories button" name="TC049 Jewelery Sets &amp; More sekmesi testi" time="4.272">
+<system-out><![CDATA[Given tc49 user Jewelery&Accessories butonuna tiklar........................passed
+And tc49 user "Jewelery Sets & More"butonuna tiklar.........................passed
+Then tc49 user resimli ürünlerden birinci sirada "Jewelery Sets" in oldugunu görür.passed
+]]></system-out>
+</testcase>
+<testcase classname="Jewelery&amp;Accessories button" name="TC050 Jewelery Sets &amp; More sekmesi Prev ve Next butonlari testi" time="1.417">
+
     </testcase>
-=======
-<<<<<<< HEAD
+
 <testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="66.813">
     <testcase classname="US013 test" name="tc059" time="19.106">
         <system-out><![CDATA[Then user asserts there are four parcels in page............................passed
@@ -341,7 +353,10 @@ Then tc010 user Email kutusu oldugu ve veri gonderimi yapilabildigini assert ets
 And searchboxa urun ismini girer............................................passed
 Then sonuclarda aranilan urun kontrol edilir................................passed
 >>>>>>> master
+>>>>>>> master
 ]]></system-out>
 </testcase>
->>>>>>> master
+
+
+</testsuite>
 </testsuite>
