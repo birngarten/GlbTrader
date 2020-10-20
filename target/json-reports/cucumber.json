@@ -3,11 +3,40 @@
     "line": 2,
     "elements": [
       {
+<<<<<<< HEAD
         "start_timestamp": "2020-10-20T18:23:46.155Z",
         "before": [
           {
             "result": {
               "duration": 1998800,
+=======
+        "line": 4,
+        "name": "User GlobalTradera gider",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5497058000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Package Linkine tiklar",
+            "match": {
+              "location": "stepdefinitions.US015StepDefinition.package_Linkine_tiklar()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-20T17:39:42.863Z",
+        "before": [
+          {
+            "result": {
+              "duration": 997300,
+>>>>>>> 026547eac9a2f32ea064ac3ee3ee45c208bbc9d3
               "status": "passed"
             },
             "match": {
@@ -16,7 +45,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 9801871000,
+=======
+              "duration": 22737594900,
+>>>>>>> 026547eac9a2f32ea064ac3ee3ee45c208bbc9d3
               "status": "passed"
             },
             "match": {
@@ -24,6 +57,7 @@
             }
           }
         ],
+<<<<<<< HEAD
         "line": 3,
         "name": "US005 kullanici about us sayfasinda islem yapar",
         "description": "",
@@ -32,6 +66,16 @@
           {
             "result": {
               "duration": 415312500,
+=======
+        "line": 26,
+        "name": "TC074 soldan saga sirasiyla : \"Company Verified - ✔ - ✔ - ✔ - ✔ \" oldugu verify edilir",
+        "description": "",
+        "id": "package-sayfasi;tc074-soldan-saga-sirasiyla-:-\"company-verified---✔---✔---✔---✔-\"-oldugu-verify-edilir",
+        "after": [
+          {
+            "result": {
+              "duration": 370866500,
+>>>>>>> 026547eac9a2f32ea064ac3ee3ee45c208bbc9d3
               "status": "passed"
             },
             "match": {
@@ -44,6 +88,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1141254700,
               "status": "passed"
             },
@@ -113,15 +158,129 @@
               "location": "stepdefinitions.US005StepDefinition.tc023_kullanici_metnin_icerigini_verify_eder()"
             },
             "keyword": "Then "
+=======
+              "duration": 2032272800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "TC074 user soldan saga sirasiyla :\"Company Verified - ✔ - ✔ - ✔ - ✔ \" oldugunu check eder",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Company Verified - ✔ - ✔ - ✔ - ✔ \"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinitions.US015StepDefinition.tc074_user_soldan_saga_sirasiyla_oldugunu_check_eder(java.lang.String)"
+            },
+            "keyword": "Given "
           }
         ],
         "tags": [
           {
+            "name": "@package"
+          },
+          {
+            "name": "@package074"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User GlobalTradera gider",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4354348600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Package Linkine tiklar",
+            "match": {
+              "location": "stepdefinitions.US015StepDefinition.package_Linkine_tiklar()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-20T17:40:13.573Z",
+        "before": [
+          {
+            "result": {
+              "duration": 995600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1330656800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.US006StepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "TC075 soldan saga sirasiyla : \"Company Trust Seal - X - ✔ - ✔ - ✔ \" oldugunu verify edilir",
+        "description": "",
+        "id": "package-sayfasi;tc075-soldan-saga-sirasiyla-:-\"company-trust-seal---x---✔---✔---✔-\"-oldugunu-verify-edilir",
+        "after": [
+          {
+            "result": {
+              "duration": 359078800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 24879400,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "TC075 user soldan saga sirasiyla : \"Company Trust Seal - X - ✔ - ✔ - ✔ \" oldugu verify edilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Company Trust Seal - X - ✔ - ✔ - ✔ \"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinitions.US015StepDefinition.tc075_user_soldan_saga_sirasiyla_oldugu_verify_edilir(java.lang.String)"
+            },
+            "keyword": "Given "
+>>>>>>> 026547eac9a2f32ea064ac3ee3ee45c208bbc9d3
+          }
+        ],
+        "tags": [
+          {
+<<<<<<< HEAD
             "name": "@us005"
+=======
+            "name": "@package"
+          },
+          {
+            "name": "@package074"
+>>>>>>> 026547eac9a2f32ea064ac3ee3ee45c208bbc9d3
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "About us",
     "description": "",
     "id": "about-us",
@@ -130,6 +289,16 @@
     "tags": [
       {
         "name": "@us005",
+=======
+    "name": "Package Sayfasi",
+    "description": "",
+    "id": "package-sayfasi",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US015.feature",
+    "tags": [
+      {
+        "name": "@package",
+>>>>>>> 026547eac9a2f32ea064ac3ee3ee45c208bbc9d3
         "type": "Tag",
         "location": {
           "line": 1,

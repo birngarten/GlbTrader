@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.032">
     <testcase classname="About us" name="US005 kullanici about us sayfasinda islem yapar" time="14.344">
         <system-out><![CDATA[Given kullanici "https://www.glbtrader.com/" sayfaya gider..................passed
@@ -6,6 +7,17 @@ And TC020 kullanici about us sayfasi tiklandiginda acilabilir oldugunu verify ed
 And TC021 kullanici about us title ve header about us olarak görüldügünü verify eder.passed
 And TC022 kullanici tel nosunun "1-212-217-1900" oldugunu verify eder.......passed
 Then TC023 kullanici metnin icerigini verify eder...........................passed
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="36.995">
+    <testcase classname="Package Sayfasi" name="TC074 soldan saga sirasiyla : &quot;Company Verified - ✔ - ✔ - ✔ - ✔ &quot; oldugu verify edilir" time="30.686">
+        <system-out><![CDATA[Given Package Linkine tiklar................................................passed
+Given TC074 user soldan saga sirasiyla :"Company Verified - ✔ - ✔ - ✔ - ✔ " oldugunu check eder.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Package Sayfasi" name="TC075 soldan saga sirasiyla : &quot;Company Trust Seal - X - ✔ - ✔ - ✔ &quot; oldugunu verify edilir" time="6.069">
+        <system-out><![CDATA[Given Package Linkine tiklar................................................passed
+Given TC075 user soldan saga sirasiyla : "Company Trust Seal - X - ✔ - ✔ - ✔ " oldugu verify edilir.passed
+>>>>>>> 026547eac9a2f32ea064ac3ee3ee45c208bbc9d3
 ]]></system-out>
     </testcase>
 </testsuite>
