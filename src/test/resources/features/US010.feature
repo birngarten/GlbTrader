@@ -48,14 +48,6 @@ Then tc48 user icindeki Boxlari isaretler
 
 
 
-Scenario: TC048 Earrings sekmesi altinda Gold butonu testi
-
-
-Given tc48 user acilan sayfada, sol altta cikan filtrelme sekmelerini görür
-And tc48 user yukardan asagiya ücüncü sirada "Metals Type" sekmesinin bulundugunu görür
-Then tc48 user icindeki Boxlari isaretler
-
-
 
 
 Scenario: TC049 Jewelery Sets & More sekmesi testi

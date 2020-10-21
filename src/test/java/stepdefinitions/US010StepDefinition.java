@@ -130,6 +130,8 @@ public class US010StepDefinition {
 
     @Given("tc47 user {string} basligini görür")
     public void tc47_user_basligini_görür(String string) {
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
         Assert.assertTrue(us010Page.earringsButton.isDisplayed());
 
         Driver.getDriver().findElement(By.linkText("Earrings")).click();
@@ -170,6 +172,11 @@ public class US010StepDefinition {
 
     @Given("tc48 user {string} butonuna tiklar")
     public void tc48_user_butonuna_tiklar(String string) {
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.waitFor(2);
+        us010Page.earringsButton.click();
+        ReusableMethods.waitFor(2);
         Driver.getDriver().findElement(By.xpath("/html/body/div[1]/div/div[1]/div/div/div[2]/ul/li[2]/a")).click();
 
     }
@@ -215,19 +222,21 @@ public class US010StepDefinition {
 
     @Given("tc49 user Jewelery&Accessories butonuna tiklar")
     public void tc49_user_Jewelery_Accessories_butonuna_tiklar() {
-        actions.sendKeys(Keys.PAGE_UP).perform();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        us010Page.earringsButton.click();
+        us010Page.jeweleryAndAccessories.click();
+
         ReusableMethods.waitFor(1);
-        Driver.getDriver().findElement(By.linkText("Jewelry & Accessories")).click();
+
 
 
     }
 
     @Given("tc49 user \"Jewelery Sets & More\"butonuna tiklar")
     public void tc49_user_Jewelery_Sets_More_butonuna_tiklar() {
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        Driver.getDriver().findElement(By.linkText("Jewelry Sets & More")).click();
 
-
+        us010Page.jewSetsAndMore.click();
 
     }
 
@@ -243,6 +252,12 @@ public class US010StepDefinition {
 
     @Given("tc50 user {string} sekmesinde Prev ve Next butonlarini görür")
     public void tc50_user_sekmesinde_Prev_ve_Next_butonlarini_görür(String string) {
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        us010Page.earringsButton.click();
+        ReusableMethods.waitFor(2);
+        us010Page.jeweleryAndAccessories.click();
+        us010Page.jewSetsAndMore.click();
         us010Page.imageSetsMore.get(0).click();
         Assert.assertTrue(us010Page.prev.isDisplayed());
         Assert.assertTrue(us010Page.next.isDisplayed());
