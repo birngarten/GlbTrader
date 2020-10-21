@@ -1,12 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="29.043">
-    <testcase classname="All Categories Computer &amp; Office Menu Linkinde Test Yapma" name="US007 kullanici computer &amp; office menu linkinde urun aramasi yapar" time="27.488">
-        <system-out><![CDATA[Given kullanici "https://www.glbtrader.com/" sayfaya gider..................passed
-And tc029 kullanici all categories de dropbox secenek sayisini bulur........passed
-And tc030 kullanici besinci sirada computer&office secer ve bir urun ismi girip sonuc alir.passed
-And tc031 kullanici computer&office aranan urunun  sayfasinda  GLOBAL TRADER  logosu gorur.passed
-And tc032 kullanici urunu All Categories,Computer and Office,Electronic Components & Supplies arar ve karsilastirir.passed
-Then tc033 kullanici ranan urunun  fiyati, resmi ve titlesinin gorunup gorunmedini verify edr.passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="45.89">
+    <testcase classname="Jewelery&amp;Accessories button" name="TC044 Jewelery&amp;Accessories sekmesi &quot;Women Clothing&amp;Accessories&quot; sekmesinin" time="12.302">
+        <system-out><![CDATA[Given tc44 user global trader a gider.......................................passed
+And tc44 user 7 dropdown sekme oldugunu görür...............................passed
+And tc44 user Jewelery&Accessories sekmesi "Women Clothing&Accessories" sekmesinin altinda oldugunu görür.passed
+Then tc44 user Jewelery&Accessories sekmesini acar..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Jewelery&amp;Accessories button" name="TC045 Jewelery&amp;Accessories sekmesi sütun sirasi ve baslik sayisi testi" time="2.893">
+        <system-out><![CDATA[Given tc45 user ilk sutunda 3 baslik oldugunu görür.........................passed
+And tc45 user orta sütunda 3 baslik oldugunu görür..........................passed
+Then tc45 user son sütunda 2 baslik oldugunu görür..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Jewelery&amp;Accessories button" name="TC046 soldan saga sirasiyla basliklar testi" time="3.15">
+        <system-out><![CDATA[Given tc46 Bu basliklari soldan saga sirasiyla görür........................passed
+Then tc46 Bu basliklarin ise soldan saga sirasiyla "Earrings", "Wedding&Engagement","Fine Jewelery", "Beads&Jewelery", "Necklaces & Pendants", "Rings", "Bracelets & Bangles", "Jewelery Sets & More" oldugunu dogrular.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Jewelery&amp;Accessories button" name="TC047 Jewelery&amp;Accessories sekmesi altinda Earrings butonu testi" time="3.979">
+        <failure message="expected:&lt;#[eeeee]e&gt; but was:&lt;#[bebeb]e&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given tc47 user "Earrings" basligini görür..................................passed
+And tc47 user "Earrings" basligi altinda sirasiyla "Earrings", "Gold", "Drop Earrings", Hoop Earrings" sekmelerinin oldugunu görür.passed
+Then tc47 user üzerine gelinen sekmenin gri font rengine büründügünü görür..failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<#[eeeee]e> but was:<#[bebeb]e>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinitions.US010StepDefinition.tc47_user_üzerine_gelinen_sekmenin_gri_font_rengine_büründügünü_görür(US010StepDefinition.java:166)
+	at ✽.tc47 user üzerine gelinen sekmenin gri font rengine büründügünü görür(file:///C:/Users/SAM/IdeaProjects/GlbTrader/src/test/resources/features/US010.feature:35)
+]]></failure>
+    </testcase>
+    <testcase classname="Jewelery&amp;Accessories button" name="TC048 Earrings sekmesi altinda Gold butonu testi" time="9.8">
+        <system-out><![CDATA[Given tc48 user "Gold" butonuna tiklar......................................passed
+And tc48 user acilan sayfada, sol altta cikan filtrelme sekmelerini görür...passed
+And tc48 user yukardan asagiya ücüncü sirada "Metals Type" sekmesinin bulundugunu görür.passed
+Then tc48 user icindeki Boxlari isaretler...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Jewelery&amp;Accessories button" name="TC049 Jewelery Sets &amp; More sekmesi testi" time="5.604">
+        <system-out><![CDATA[Given tc49 user Jewelery&Accessories butonuna tiklar........................passed
+And tc49 user "Jewelery Sets & More"butonuna tiklar.........................passed
+Then tc49 user resimli ürünlerden birinci sirada "Jewelery Sets" in oldugunu görür.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Jewelery&amp;Accessories button" name="TC050 Jewelery Sets &amp; More sekmesi Prev ve Next butonlari testi" time="7.197">
+        <system-out><![CDATA[Given tc50 user "Jewelery Sets & More" sekmesinde Prev ve Next butonlarini görür.passed
+And tc50 user Prev butonuna tiklar ve kutucugun calistigini görür...........passed
+Then tc50 user Next butonuna tiklar ve kutucugun calistigini görür..........passed
 ]]></system-out>
     </testcase>
 </testsuite>
