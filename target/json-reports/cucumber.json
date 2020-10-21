@@ -3,32 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "User GlobalTradera gider",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 5497058000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Package Linkine tiklar",
-            "match": {
-              "location": "stepdefinitions.US015StepDefinition.package_Linkine_tiklar()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-20T17:39:42.863Z",
+        "start_timestamp": "2020-10-20T20:00:09.347Z",
         "before": [
           {
             "result": {
-              "duration": 997300,
+              "duration": 3997400,
               "status": "passed"
             },
             "match": {
@@ -37,7 +16,7 @@
           },
           {
             "result": {
-              "duration": 22737594900,
+              "duration": 13778159400,
               "status": "passed"
             },
             "match": {
@@ -45,14 +24,14 @@
             }
           }
         ],
-        "line": 26,
-        "name": "TC074 soldan saga sirasiyla : \"Company Verified - ✔ - ✔ - ✔ - ✔ \" oldugu verify edilir",
+        "line": 3,
+        "name": "US007 kullanici computer \u0026 office menu linkinde urun aramasi yapar",
         "description": "",
-        "id": "package-sayfasi;tc074-soldan-saga-sirasiyla-:-\"company-verified---✔---✔---✔---✔-\"-oldugu-verify-edilir",
+        "id": "all-categories-computer-\u0026-office-menu-linkinde-test-yapma;us007-kullanici-computer-\u0026-office-menu-linkinde-urun-aramasi-yapar",
         "after": [
           {
             "result": {
-              "duration": 370866500,
+              "duration": 562654300,
               "status": "passed"
             },
             "match": {
@@ -65,130 +44,98 @@
         "steps": [
           {
             "result": {
-              "duration": 2032272800,
+              "duration": 1641539900,
               "status": "passed"
             },
-            "line": 27,
-            "name": "TC074 user soldan saga sirasiyla :\"Company Verified - ✔ - ✔ - ✔ - ✔ \" oldugunu check eder",
+            "line": 4,
+            "name": "kullanici \"https://www.glbtrader.com/\" sayfaya gider",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Company Verified - ✔ - ✔ - ✔ - ✔ \"",
-                  "offset": 34
+                  "val": "\"https://www.glbtrader.com/\"",
+                  "offset": 10
                 }
               ],
-              "location": "stepdefinitions.US015StepDefinition.tc074_user_soldan_saga_sirasiyla_oldugunu_check_eder(java.lang.String)"
+              "location": "stepdefinitions.US005StepDefinition.kullanici_sayfaya_gider(java.lang.String)"
             },
             "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@package"
           },
           {
-            "name": "@package074"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "User GlobalTradera gider",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
             "result": {
-              "duration": 4354348600,
+              "duration": 294403100,
               "status": "passed"
             },
             "line": 5,
-            "name": "Package Linkine tiklar",
+            "name": "tc029 kullanici all categories de dropbox secenek sayisini bulur",
             "match": {
-              "location": "stepdefinitions.US015StepDefinition.package_Linkine_tiklar()"
+              "location": "stepdefinitions.US007StepDefinition.tc029_kullanici_all_categories_de_dropbox_secenek_sayisini_bulur()"
             },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-20T17:40:13.573Z",
-        "before": [
-          {
-            "result": {
-              "duration": 995600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 1330656800,
+              "duration": 2080044400,
               "status": "passed"
             },
+            "line": 6,
+            "name": "tc030 kullanici besinci sirada computer\u0026office secer ve bir urun ismi girip sonuc alir",
             "match": {
-              "location": "stepdefinitions.US006StepDefinitions.setUp()"
-            }
-          }
-        ],
-        "line": 30,
-        "name": "TC075 soldan saga sirasiyla : \"Company Trust Seal - X - ✔ - ✔ - ✔ \" oldugunu verify edilir",
-        "description": "",
-        "id": "package-sayfasi;tc075-soldan-saga-sirasiyla-:-\"company-trust-seal---x---✔---✔---✔-\"-oldugunu-verify-edilir",
-        "after": [
+              "location": "stepdefinitions.US007StepDefinition.tc030_kullanici_besinci_sirada_computer_office_secer_ve_bir_urun_ismi_girip_sonuc_alir()"
+            },
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 359078800,
+              "duration": 1492660900,
               "status": "passed"
             },
+            "line": 7,
+            "name": "tc031 kullanici computer\u0026office aranan urunun  sayfasinda  GLOBAL TRADER  logosu gorur",
             "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+              "location": "stepdefinitions.US007StepDefinition.tc031_kullanici_computer_office_aranan_urunun_sayfasinda_GLOBAL_TRADER_logosu_gorur()"
+            },
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 24879400,
+              "duration": 4776718600,
               "status": "passed"
             },
-            "line": 31,
-            "name": "TC075 user soldan saga sirasiyla : \"Company Trust Seal - X - ✔ - ✔ - ✔ \" oldugu verify edilir",
+            "line": 8,
+            "name": "tc032 kullanici urunu All Categories,Computer and Office,Electronic Components \u0026 Supplies arar ve karsilastirir",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Company Trust Seal - X - ✔ - ✔ - ✔ \"",
-                  "offset": 35
-                }
-              ],
-              "location": "stepdefinitions.US015StepDefinition.tc075_user_soldan_saga_sirasiyla_oldugu_verify_edilir(java.lang.String)"
+              "location": "stepdefinitions.US007StepDefinition.tc032_kullanici_urunu_All_Categories_Computer_and_Office_Electronic_Components_Supplies_arar_ve_karsilastirir()"
             },
-            "keyword": "Given "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2500447600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "tc033 kullanici ranan urunun  fiyati, resmi ve titlesinin gorunup gorunmedini verify edr",
+            "match": {
+              "location": "stepdefinitions.US007StepDefinition.tc033_kullanici_ranan_urunun_fiyati_resmi_ve_titlesinin_gorunup_gorunmedini_verify_edr()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@package"
-          },
-          {
-            "name": "@package074"
+            "name": "@us007"
           }
         ]
       }
     ],
-    "name": "Package Sayfasi",
+    "name": "All Categories Computer \u0026 Office Menu Linkinde Test Yapma",
     "description": "",
-    "id": "package-sayfasi",
+    "id": "all-categories-computer-\u0026-office-menu-linkinde-test-yapma",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US015.feature",
+    "uri": "file:src/test/resources/features/US007.feature",
     "tags": [
       {
-        "name": "@package",
+        "name": "@us007",
         "type": "Tag",
         "location": {
           "line": 1,

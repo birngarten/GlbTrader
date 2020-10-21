@@ -92,6 +92,8 @@ public class US007StepDefinition {
         String canonTitle = Driver.getDriver().getTitle();
 
         Assert.assertTrue(canonTitle.equals(""));
+        Actions actions = new Actions(Driver.getDriver());
+        actions.sendKeys(Keys.ARROW_DOWN).perform();
         Assert.assertTrue(us007Page.canonFiyat.isDisplayed());
         Assert.assertTrue(us007Page.canonFoto.isDisplayed());
 
