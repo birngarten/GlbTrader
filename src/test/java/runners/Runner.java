@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@SellerSignIn",
+        tags = "@Jewelery&Accessories",
         dryRun = false
 
 

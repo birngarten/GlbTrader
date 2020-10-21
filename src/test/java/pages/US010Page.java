@@ -15,11 +15,15 @@ public class US010Page {
     @FindBy(xpath = "//li[@class='dropdown ttmenu-full']")
     public List<WebElement> dropdownSekme;
 
-    @FindBy(xpath = "(//ul//li//h4)[32]")
-    public WebElement earrings;
 
-    @FindBy(xpath = "(//ul)[36]//li//h4")
+    @FindBy(xpath = "//a[.='Earrings']")
     public WebElement earringsButton;
+
+    @FindBy(xpath = "(//h4[.='Jewelry & Accessories'])[1]")
+    public WebElement jeweleryAndAccessories;
+
+    @FindBy(xpath = "//p[.='Jewelry Sets & More']")
+    public WebElement jewSetsAndMore;
 
     @FindBy(xpath = "//p[@class='cat_bg_top']")
     public List<WebElement> imageSetsMore;
@@ -40,4 +44,9 @@ public class US010Page {
 
 
 
+
+
 }
+
+
+
