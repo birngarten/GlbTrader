@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>cucumber-jvm-example</td>
+        <td>1</td>
+      <td>21 Oct 2020, 21:27</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">stepdefinitions.DenemeWait.user_clicks_on_start_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="127921400">0.127</td>
+              <td class="duration" data-value="127921400">0.127</td>
+              <td class="duration" data-value="127921400">0.127</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DenemeWait.user_is_on_the_demo_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="2518429700">2.518</td>
+              <td class="duration" data-value="2518429700">2.518</td>
+              <td class="duration" data-value="2518429700">2.518</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DenemeWait.user_wait_until_the_page_loads()</td>
+              <td>1</td>
+              <td class="duration" data-value="5455423900">5.455</td>
+              <td class="duration" data-value="5455423900">5.455</td>
+              <td class="duration" data-value="5455423900">5.455</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DenemeWait.verify_the_Hello_World_text_is_visible()</td>
+              <td>1</td>
+              <td class="duration" data-value="65962600">0.065</td>
+              <td class="duration" data-value="65962600">0.065</td>
+              <td class="duration" data-value="65962600">0.065</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Hooks.setUp()</td>
+              <td>83</td>
+              <td class="duration" data-value="252921">0.000</td>
+              <td class="duration" data-value="252921">0.005</td>
+              <td class="duration" data-value="20992500">0.020</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>83</td>
+              <td class="duration" data-value="655082283">0.655</td>
+              <td class="duration" data-value="655082283">1.221</td>
+              <td class="duration" data-value="54371829500">54.371</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US001StepDefinition.tc01_user_writes_true_email_and_true_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="8429600100">8.429</td>
+              <td class="duration" data-value="8429600100">8.429</td>
+              <td class="duration" data-value="8429600100">8.429</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US001StepDefinition.tc02_user_writes_false_email_and_true_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="2925682400">2.925</td>
+              <td class="duration" data-value="2925682400">2.925</td>
+              <td class="duration" data-value="2925682400">2.925</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US001StepDefinition.tc03_user_writes_true_email_and_false_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="1992346000">1.992</td>
+              <td class="duration" data-value="1992346000">1.992</td>
+              <td class="duration" data-value="1992346000">1.992</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US001StepDefinition.tc04_user_writes_false_email_and_false_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="927460500">0.927</td>
+              <td class="duration" data-value="927460500">0.927</td>
+              <td class="duration" data-value="927460500">0.927</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc005_user_Confirm_Password_kutusuna_gecerli_text_girsin()</td>
+              <td>1</td>
+              <td class="duration" data-value="299814200">0.299</td>
+              <td class="duration" data-value="299814200">0.299</td>
+              <td class="duration" data-value="299814200">0.299</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc005_user_Email_kutusuna_gecerli_text_girsin()</td>
+              <td>13</td>
+              <td class="duration" data-value="312840100">0.312</td>
+              <td class="duration" data-value="312840100">0.474</td>
+              <td class="duration" data-value="4066921300">4.066</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc005_user_Mobile_kutusuna_gecerli_text_girsin()</td>
+              <td>5</td>
+              <td class="duration" data-value="279030420">0.279</td>
+              <td class="duration" data-value="279030420">0.586</td>
+              <td class="duration" data-value="1395152100">1.395</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc005_user_Name_kutusuna_gecerli_text_girsin()</td>
+              <td>9</td>
+              <td class="duration" data-value="175028644">0.175</td>
+              <td class="duration" data-value="175028644">0.226</td>
+              <td class="duration" data-value="1575257800">1.575</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc005_user_Password_kutusuna_gecerli_text_girsin()</td>
+              <td>1</td>
+              <td class="duration" data-value="151936500">0.151</td>
+              <td class="duration" data-value="151936500">0.151</td>
+              <td class="duration" data-value="151936500">0.151</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc005_user_Sign_Up_butonuna_tiklayabilmelidir()</td>
+              <td>1</td>
+              <td class="duration" data-value="63295420000">1:3.295</td>
+              <td class="duration" data-value="63295420000">1:3.295</td>
+              <td class="duration" data-value="63295420000">1:3.295</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc005_user_Sign_Up_yazisini_assert_etsin()</td>
+              <td>1</td>
+              <td class="duration" data-value="121924700">0.121</td>
+              <td class="duration" data-value="121924700">0.121</td>
+              <td class="duration" data-value="121924700">0.121</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc006_user_Email_girer(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="1531972575">1.531</td>
+              <td class="duration" data-value="1531972575">1.660</td>
+              <td class="duration" data-value="6127890300">6.127</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc007_user_Name_girer(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="526020425">0.526</td>
+              <td class="duration" data-value="526020425">0.662</td>
+              <td class="duration" data-value="2104081700">2.104</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc008_user_Mobile_girer(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="723652275">0.723</td>
+              <td class="duration" data-value="723652275">0.879</td>
+              <td class="duration" data-value="2894609100">2.894</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc009_user_Password_girer(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="1574365325">1.574</td>
+              <td class="duration" data-value="1574365325">1.710</td>
+              <td class="duration" data-value="6297461300">6.297</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc010_user_Email_kutusu_oldugu_ve_veri_gonderimi_yapilabildigini_assert_etsin()</td>
+              <td>1</td>
+              <td class="duration" data-value="494242000">0.494</td>
+              <td class="duration" data-value="494242000">0.494</td>
+              <td class="duration" data-value="494242000">0.494</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc010_user_Login_Here_yazisina_tiklasin()</td>
+              <td>1</td>
+              <td class="duration" data-value="710921700">0.710</td>
+              <td class="duration" data-value="710921700">0.710</td>
+              <td class="duration" data-value="710921700">0.710</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc010_user_password_hatirlamiyor_ise_Forgot_Password_kutusuna_tiklasin()</td>
+              <td>1</td>
+              <td class="duration" data-value="1267333100">1.267</td>
+              <td class="duration" data-value="1267333100">1.267</td>
+              <td class="duration" data-value="1267333100">1.267</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.tc010_user_yeni_acilan_sayfada_Email_ve_Password_text_box_lari_goruluyor_olmalidir()</td>
+              <td>1</td>
+              <td class="duration" data-value="72954700">0.072</td>
+              <td class="duration" data-value="72954700">0.072</td>
+              <td class="duration" data-value="72954700">0.072</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.user_GlobalTrader_sayfasina_gider()</td>
+              <td>21</td>
+              <td class="duration" data-value="1369728161">1.369</td>
+              <td class="duration" data-value="1369728161">2.043</td>
+              <td class="duration" data-value="28764291400">28.764</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US002StepDefinition.user_Join_now_tiklar()</td>
+              <td>18</td>
+              <td class="duration" data-value="978883933">0.978</td>
+              <td class="duration" data-value="978883933">1.341</td>
+              <td class="duration" data-value="17619910800">17.619</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.seller_Join_now_tiklar()</td>
+              <td>5</td>
+              <td class="duration" data-value="2561076540">2.561</td>
+              <td class="duration" data-value="2561076540">3.048</td>
+              <td class="duration" data-value="12805382700">12.805</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc11_user_Agent_Seller_buttononu_aktif_oldugunu_test_etsin()</td>
+              <td>1</td>
+              <td class="duration" data-value="20986500">0.020</td>
+              <td class="duration" data-value="20986500">0.020</td>
+              <td class="duration" data-value="20986500">0.020</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc11_user_Select_Vendor_Type_da_Agent_Seller_tiklasin()</td>
+              <td>1</td>
+              <td class="duration" data-value="2158436800">2.158</td>
+              <td class="duration" data-value="2158436800">2.158</td>
+              <td class="duration" data-value="2158436800">2.158</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc11_user_Seller_Join_Now_tiklasin()</td>
+              <td>1</td>
+              <td class="duration" data-value="192877900">0.192</td>
+              <td class="duration" data-value="192877900">0.192</td>
+              <td class="duration" data-value="192877900">0.192</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc12_user_Regisration_tiklasin_ve_assert_etsin()</td>
+              <td>1</td>
+              <td class="duration" data-value="2397584300">2.397</td>
+              <td class="duration" data-value="2397584300">2.397</td>
+              <td class="duration" data-value="2397584300">2.397</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc12_user_adress_Box_a_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="276829000">0.276</td>
+              <td class="duration" data-value="276829000">0.276</td>
+              <td class="duration" data-value="276829000">0.276</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc12_user_categories_bir_alan_secsin()</td>
+              <td>1</td>
+              <td class="duration" data-value="2248187200">2.248</td>
+              <td class="duration" data-value="2248187200">2.248</td>
+              <td class="duration" data-value="2248187200">2.248</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc12_user_city_Boxa_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="251845700">0.251</td>
+              <td class="duration" data-value="251845700">0.251</td>
+              <td class="duration" data-value="251845700">0.251</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc12_user_country_Box_olarak_secsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1246837900">1.246</td>
+              <td class="duration" data-value="1246837900">1.246</td>
+              <td class="duration" data-value="1246837900">1.246</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc12_user_email_Text_Box_a_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="295823400">0.295</td>
+              <td class="duration" data-value="295823400">0.295</td>
+              <td class="duration" data-value="295823400">0.295</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc12_user_enter_Postal_Code_Box_a_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="166897600">0.166</td>
+              <td class="duration" data-value="166897600">0.166</td>
+              <td class="duration" data-value="166897600">0.166</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc12_user_mobileNumberBoxa_girsin_ve_asert_etsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="251847100">0.251</td>
+              <td class="duration" data-value="251847100">0.251</td>
+              <td class="duration" data-value="251847100">0.251</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc12_user_name_Text_box_a_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="235854600">0.235</td>
+              <td class="duration" data-value="235854600">0.235</td>
+              <td class="duration" data-value="235854600">0.235</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc12_user_password_Box_a_sifre_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2260207800">2.260</td>
+              <td class="duration" data-value="2260207800">2.260</td>
+              <td class="duration" data-value="2260207800">2.260</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc12_user_state_Boxa_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="187883600">0.187</td>
+              <td class="duration" data-value="187883600">0.187</td>
+              <td class="duration" data-value="187883600">0.187</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc12_user_subDomain_url_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="184109000">0.184</td>
+              <td class="duration" data-value="184109000">0.184</td>
+              <td class="duration" data-value="184109000">0.184</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc13_user_Login_Here_butonuna_tiklasin()</td>
+              <td>1</td>
+              <td class="duration" data-value="2450197800">2.450</td>
+              <td class="duration" data-value="2450197800">2.450</td>
+              <td class="duration" data-value="2450197800">2.450</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc13_user_sonraki_linkde_Email_ve_Password_textleri_assert_etsin()</td>
+              <td>1</td>
+              <td class="duration" data-value="1270158000">1.270</td>
+              <td class="duration" data-value="1270158000">1.270</td>
+              <td class="duration" data-value="1270158000">1.270</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc14_user_Company_Seller_Butonunu_secildigi_assert_edilsin()</td>
+              <td>1</td>
+              <td class="duration" data-value="237924500">0.237</td>
+              <td class="duration" data-value="237924500">0.237</td>
+              <td class="duration" data-value="237924500">0.237</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc14_user_Select_Vendor_Type_da_Company_Seller_Butonnu_secsin()</td>
+              <td>1</td>
+              <td class="duration" data-value="265837000">0.265</td>
+              <td class="duration" data-value="265837000">0.265</td>
+              <td class="duration" data-value="265837000">0.265</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_registration_tiklasin_ve_Succesfully_ifadesini_gorsun()</td>
+              <td>1</td>
+              <td class="duration" data-value="24352165300">24.352</td>
+              <td class="duration" data-value="24352165300">24.352</td>
+              <td class="duration" data-value="24352165300">24.352</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_addres_Box_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="286821900">0.286</td>
+              <td class="duration" data-value="286821900">0.286</td>
+              <td class="duration" data-value="286821900">0.286</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_categories_den_bir_secim_yapsin()</td>
+              <td>1</td>
+              <td class="duration" data-value="2530639100">2.530</td>
+              <td class="duration" data-value="2530639100">2.530</td>
+              <td class="duration" data-value="2530639100">2.530</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_city_Box_a_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="209870100">0.209</td>
+              <td class="duration" data-value="209870100">0.209</td>
+              <td class="duration" data-value="209870100">0.209</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_company_Adress_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="329796300">0.329</td>
+              <td class="duration" data-value="329796300">0.329</td>
+              <td class="duration" data-value="329796300">0.329</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_company_Mobile_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="194878900">0.194</td>
+              <td class="duration" data-value="194878900">0.194</td>
+              <td class="duration" data-value="194878900">0.194</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_company_Name_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="290820500">0.290</td>
+              <td class="duration" data-value="290820500">0.290</td>
+              <td class="duration" data-value="290820500">0.290</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_country_secsin()</td>
+              <td>1</td>
+              <td class="duration" data-value="2900574200">2.900</td>
+              <td class="duration" data-value="2900574200">2.900</td>
+              <td class="duration" data-value="2900574200">2.900</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_emailText_Box_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="278829500">0.278</td>
+              <td class="duration" data-value="278829500">0.278</td>
+              <td class="duration" data-value="278829500">0.278</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_mobil_Number_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="180880600">0.180</td>
+              <td class="duration" data-value="180880600">0.180</td>
+              <td class="duration" data-value="180880600">0.180</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_name_Box_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="239851900">0.239</td>
+              <td class="duration" data-value="239851900">0.239</td>
+              <td class="duration" data-value="239851900">0.239</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_password_Box_a_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="213539400">0.213</td>
+              <td class="duration" data-value="213539400">0.213</td>
+              <td class="duration" data-value="213539400">0.213</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_postal_Code_Box_a_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="283827000">0.283</td>
+              <td class="duration" data-value="283827000">0.283</td>
+              <td class="duration" data-value="283827000">0.283</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_state_Box_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="305811000">0.305</td>
+              <td class="duration" data-value="305811000">0.305</td>
+              <td class="duration" data-value="305811000">0.305</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US003StepDefinition.tc15_user_subDomain_girsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="218872600">0.218</td>
+              <td class="duration" data-value="218872600">0.218</td>
+              <td class="duration" data-value="218872600">0.218</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US004StepDefinition.tc16_user_sayfasina_gitsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="52952500">0.052</td>
+              <td class="duration" data-value="52952500">0.052</td>
+              <td class="duration" data-value="52952500">0.052</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US004StepDefinition.tc17_user_enter_Password_icin_negatif_gecersiz_girsin(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="3836906266">3.836</td>
+              <td class="duration" data-value="3836906266">3.970</td>
+              <td class="duration" data-value="11510718800">11.510</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US004StepDefinition.tc17_user_enter_Password_icin_pozitif_gecerli_girsin(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="897975566">0.897</td>
+              <td class="duration" data-value="897975566">1.018</td>
+              <td class="duration" data-value="2693926700">2.693</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US004StepDefinition.tc17_user_enter_your_email_icin_negatif_gecersiz_girsin(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="3887887500">3.887</td>
+              <td class="duration" data-value="3887887500">4.008</td>
+              <td class="duration" data-value="11663662500">11.663</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US004StepDefinition.tc17_user_enter_your_email_icin_pozitif_GECERLI_girsin(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="792822133">0.792</td>
+              <td class="duration" data-value="792822133">0.817</td>
+              <td class="duration" data-value="2378466400">2.378</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US004StepDefinition.tc18_user_forgot_Password_linkine_tiklasin()</td>
+              <td>1</td>
+              <td class="duration" data-value="2585188900">2.585</td>
+              <td class="duration" data-value="2585188900">2.585</td>
+              <td class="duration" data-value="2585188900">2.585</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US004StepDefinition.tc18_user_linkini_assert_etsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="799142100">0.799</td>
+              <td class="duration" data-value="799142100">0.799</td>
+              <td class="duration" data-value="799142100">0.799</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kusutunsa_yazsin(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3732728600">3.732</td>
+              <td class="duration" data-value="3732728600">3.732</td>
+              <td class="duration" data-value="3732728600">3.732</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kutusuna_veri_girdikten_sonra_Forgot_Password_tiklasin()</td>
+              <td>1</td>
+              <td class="duration" data-value="3597562400">3.597</td>
+              <td class="duration" data-value="3597562400">3.597</td>
+              <td class="duration" data-value="3597562400">3.597</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US004StepDefinition.tc19_user_fortgot_password_tiklandikdan_sonra_sayfanin_yenilendigi_test_edilsin()</td>
+              <td>1</td>
+              <td class="duration" data-value="3457844300">3.457</td>
+              <td class="duration" data-value="3457844300">3.457</td>
+              <td class="duration" data-value="3457844300">3.457</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()</td>
+              <td>9</td>
+              <td class="duration" data-value="4620394055">4.620</td>
+              <td class="duration" data-value="4620394055">6.227</td>
+              <td class="duration" data-value="41583546500">41.583</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US005StepDefinition.kullanici_sayfaya_gider(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1358452150">1.358</td>
+              <td class="duration" data-value="1358452150">1.417</td>
+              <td class="duration" data-value="2716904300">2.716</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US005StepDefinition.tc020_kullanici_about_us_sayfasi_tiklandiginda_acilabilir_oldugunu_verify_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="1105620600">1.105</td>
+              <td class="duration" data-value="1105620600">1.105</td>
+              <td class="duration" data-value="1105620600">1.105</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US005StepDefinition.tc021_kullanici_about_us_title_ve_header_about_us_olarak_g&ouml;r&uuml;ld&uuml;g&uuml;n&uuml;_verify_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="77954300">0.077</td>
+              <td class="duration" data-value="77954300">0.077</td>
+              <td class="duration" data-value="77954300">0.077</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US005StepDefinition.tc022_kullanici_tel_nosunun_oldugunu_verify_eder(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="45969300">0.045</td>
+              <td class="duration" data-value="45969300">0.045</td>
+              <td class="duration" data-value="45969300">0.045</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US005StepDefinition.tc023_kullanici_metnin_icerigini_verify_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="2057605500">2.057</td>
+              <td class="duration" data-value="2057605500">2.057</td>
+              <td class="duration" data-value="2057605500">2.057</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US006StepDefinitions.setUp()</td>
+              <td>83</td>
+              <td class="duration" data-value="1585766581">1.585</td>
+              <td class="duration" data-value="1585766581">24.282</td>
+              <td class="duration" data-value="131618626300">2:11.618</td>
+              <td class="failed">98.80%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US006StepDefinitions.user_asserts_in_text_box_data_can_be_sent()</td>
+              <td>1</td>
+              <td class="duration" data-value="34978800">0.034</td>
+              <td class="duration" data-value="34978800">0.034</td>
+              <td class="duration" data-value="34978800">0.034</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US006StepDefinitions.user_asserts_searchBox_text()</td>
+              <td>1</td>
+              <td class="duration" data-value="92943400">0.092</td>
+              <td class="duration" data-value="92943400">0.092</td>
+              <td class="duration" data-value="92943400">0.092</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US006StepDefinitions.user_asserts_searchbutton_text()</td>
+              <td>1</td>
+              <td class="duration" data-value="102985200">0.102</td>
+              <td class="duration" data-value="102985200">0.102</td>
+              <td class="duration" data-value="102985200">0.102</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US006StepDefinitions.user_clicks_Alle_Categories_Cellphones_Telecommunications()</td>
+              <td>1</td>
+              <td class="duration" data-value="5204898300">5.204</td>
+              <td class="duration" data-value="5204898300">5.204</td>
+              <td class="duration" data-value="5204898300">5.204</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US006StepDefinitions.user_clicks_search_Button()</td>
+              <td>3</td>
+              <td class="duration" data-value="1035392766">1.035</td>
+              <td class="duration" data-value="1035392766">1.160</td>
+              <td class="duration" data-value="3106178300">3.106</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US006StepDefinitions.user_finds_ipad()</td>
+              <td>1</td>
+              <td class="duration" data-value="59964400">0.059</td>
+              <td class="duration" data-value="59964400">0.059</td>
+              <td class="duration" data-value="59964400">0.059</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US006StepDefinitions.user_send_Maniac_Solid_Mens_Round_data()</td>
+              <td>1</td>
+              <td class="duration" data-value="1289609700">1.289</td>
+              <td class="duration" data-value="1289609700">1.289</td>
+              <td class="duration" data-value="1289609700">1.289</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US006StepDefinitions.user_send_data_to_seachBox()</td>
+              <td>1</td>
+              <td class="duration" data-value="154903900">0.154</td>
+              <td class="duration" data-value="154903900">0.154</td>
+              <td class="duration" data-value="154903900">0.154</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US006StepDefinitions.user_verifiy_the_data_with_results()</td>
+              <td>2</td>
+              <td class="duration" data-value="64960700">0.064</td>
+              <td class="duration" data-value="64960700">0.129</td>
+              <td class="duration" data-value="129921400">0.129</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US007StepDefinition.tc029_kullanici_all_categories_de_dropbox_secenek_sayisini_bulur()</td>
+              <td>1</td>
+              <td class="duration" data-value="143911700">0.143</td>
+              <td class="duration" data-value="143911700">0.143</td>
+              <td class="duration" data-value="143911700">0.143</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US007StepDefinition.tc030_kullanici_besinci_sirada_computer_office_secer_ve_bir_urun_ismi_girip_sonuc_alir()</td>
+              <td>1</td>
+              <td class="duration" data-value="1454827400">1.454</td>
+              <td class="duration" data-value="1454827400">1.454</td>
+              <td class="duration" data-value="1454827400">1.454</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US007StepDefinition.tc031_kullanici_computer_office_aranan_urunun_sayfasinda_GLOBAL_TRADER_logosu_gorur()</td>
+              <td>1</td>
+              <td class="duration" data-value="1116822000">1.116</td>
+              <td class="duration" data-value="1116822000">1.116</td>
+              <td class="duration" data-value="1116822000">1.116</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US007StepDefinition.tc032_kullanici_urunu_All_Categories_Computer_and_Office_Electronic_Components_Supplies_arar_ve_karsilastirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="3494997400">3.494</td>
+              <td class="duration" data-value="3494997400">3.494</td>
+              <td class="duration" data-value="3494997400">3.494</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US007StepDefinition.tc033_kullanici_ranan_urunun_fiyati_resmi_ve_titlesinin_gorunup_gorunmedini_verify_edr()</td>
+              <td>1</td>
+              <td class="duration" data-value="1214885400">1.214</td>
+              <td class="duration" data-value="1214885400">1.214</td>
+              <td class="duration" data-value="1214885400">1.214</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.all_categories_dropboxuna_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="563653700">0.563</td>
+              <td class="duration" data-value="563653700">0.563</td>
+              <td class="duration" data-value="563653700">0.563</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.blazerLinkineTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="848514600">0.848</td>
+              <td class="duration" data-value="848514600">0.848</td>
+              <td class="duration" data-value="848514600">0.848</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.bootsLinkineTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="899416600">0.899</td>
+              <td class="duration" data-value="899416600">0.899</td>
+              <td class="duration" data-value="899416600">0.899</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.categories_See_All_linkine_tiklar()</td>
+              <td>4</td>
+              <td class="duration" data-value="1136050750">1.136</td>
+              <td class="duration" data-value="1136050750">1.250</td>
+              <td class="duration" data-value="4544203000">4.544</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.gerekliKisimlariAssertEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="365774100">0.365</td>
+              <td class="duration" data-value="365774100">0.365</td>
+              <td class="duration" data-value="365774100">0.365</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.iceridekiUrunSayisiniAssertEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="25985200">0.025</td>
+              <td class="duration" data-value="25985200">0.025</td>
+              <td class="duration" data-value="25985200">0.025</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.ilkUrununFontSizeniAssertEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="55964100">0.055</td>
+              <td class="duration" data-value="55964100">0.055</td>
+              <td class="duration" data-value="55964100">0.055</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.jacketsCoatsMenusuneTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="1775842500">1.775</td>
+              <td class="duration" data-value="1775842500">1.775</td>
+              <td class="duration" data-value="1775842500">1.775</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.jeans_linkine_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="817656600">0.817</td>
+              <td class="duration" data-value="817656600">0.817</td>
+              <td class="duration" data-value="817656600">0.817</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.kullanici_glbtrader_sayfasina_gider()</td>
+              <td>10</td>
+              <td class="duration" data-value="1137638280">1.137</td>
+              <td class="duration" data-value="1137638280">1.422</td>
+              <td class="duration" data-value="11376382800">11.376</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.linkeTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="2304881700">2.304</td>
+              <td class="duration" data-value="2304881700">2.304</td>
+              <td class="duration" data-value="2304881700">2.304</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.menClothingAccessoriesLinkineTiklar()</td>
+              <td>3</td>
+              <td class="duration" data-value="1590458500">1.590</td>
+              <td class="duration" data-value="1590458500">1.901</td>
+              <td class="duration" data-value="4771375500">4.771</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.men_Clothing_Accessories_var_mi_verify_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.numaraninSecilebildigiAssertEdilir()</td>
+              <td>1</td>
+              <td class="duration" data-value="150908200">0.150</td>
+              <td class="duration" data-value="150908200">0.150</td>
+              <td class="duration" data-value="150908200">0.150</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.shoesMenusuneTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="1223337400">1.223</td>
+              <td class="duration" data-value="1223337400">1.223</td>
+              <td class="duration" data-value="1223337400">1.223</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US008StepDefinition.urunSayisiniAssertEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="69957200">0.069</td>
+              <td class="duration" data-value="69957200">0.069</td>
+              <td class="duration" data-value="69957200">0.069</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US009StepDefinition.bedenleriAssertEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="402101000">0.402</td>
+              <td class="duration" data-value="402101000">0.402</td>
+              <td class="duration" data-value="402101000">0.402</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US009StepDefinition.fiyatlariAssertEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="47272564800">47.272</td>
+              <td class="duration" data-value="47272564800">47.272</td>
+              <td class="duration" data-value="47272564800">47.272</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US009StepDefinition.ilkUruneMenusuneTiklar()</td>
+              <td>4</td>
+              <td class="duration" data-value="2137615275">2.137</td>
+              <td class="duration" data-value="2137615275">4.286</td>
+              <td class="duration" data-value="8550461100">8.550</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US009StepDefinition.renkleriVeErisilebilirOlduklariniAssertEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="659596700">0.659</td>
+              <td class="duration" data-value="659596700">0.659</td>
+              <td class="duration" data-value="659596700">0.659</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US009StepDefinition.searchboxaUrunIsminiGirer()</td>
+              <td>1</td>
+              <td class="duration" data-value="2268505500">2.268</td>
+              <td class="duration" data-value="2268505500">2.268</td>
+              <td class="duration" data-value="2268505500">2.268</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US009StepDefinition.sonuclardaAranilanUrunKontrolEdilir()</td>
+              <td>1</td>
+              <td class="duration" data-value="192883000">0.192</td>
+              <td class="duration" data-value="192883000">0.192</td>
+              <td class="duration" data-value="192883000">0.192</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US009StepDefinition.tasselsDressesMenusuneTiklar()</td>
+              <td>4</td>
+              <td class="duration" data-value="923667875">0.923</td>
+              <td class="duration" data-value="923667875">1.084</td>
+              <td class="duration" data-value="3694671500">3.694</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US009StepDefinition.urununIsmininIstenilenSekildeOldugunuAssertEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="81949300">0.081</td>
+              <td class="duration" data-value="81949300">0.081</td>
+              <td class="duration" data-value="81949300">0.081</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US009StepDefinition.women_clothing_menusune_tiklar()</td>
+              <td>4</td>
+              <td class="duration" data-value="361910025">0.361</td>
+              <td class="duration" data-value="361910025">0.419</td>
+              <td class="duration" data-value="1447640100">1.447</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc44_user_Jewelery_Accessories_sekmesi_sekmesinin_altinda_oldugunu_g&ouml;r&uuml;r(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1325182800">1.325</td>
+              <td class="duration" data-value="1325182800">1.325</td>
+              <td class="duration" data-value="1325182800">1.325</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc44_user_Jewelery_Accessories_sekmesini_acar()</td>
+              <td>1</td>
+              <td class="duration" data-value="132919000">0.132</td>
+              <td class="duration" data-value="132919000">0.132</td>
+              <td class="duration" data-value="132919000">0.132</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc44_user_dropdown_sekme_oldugunu_g&ouml;r&uuml;r(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="51968500">0.051</td>
+              <td class="duration" data-value="51968500">0.051</td>
+              <td class="duration" data-value="51968500">0.051</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc44_user_global_trader_a_gider()</td>
+              <td>1</td>
+              <td class="duration" data-value="954411700">0.954</td>
+              <td class="duration" data-value="954411700">0.954</td>
+              <td class="duration" data-value="954411700">0.954</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc45_user_ilk_sutunda_baslik_oldugunu_g&ouml;r&uuml;r(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="271832500">0.271</td>
+              <td class="duration" data-value="271832500">0.271</td>
+              <td class="duration" data-value="271832500">0.271</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc45_user_orta_s&uuml;tunda_baslik_oldugunu_g&ouml;r&uuml;r(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="205872500">0.205</td>
+              <td class="duration" data-value="205872500">0.205</td>
+              <td class="duration" data-value="205872500">0.205</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc45_user_son_s&uuml;tunda_baslik_oldugunu_g&ouml;r&uuml;r(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="111930300">0.111</td>
+              <td class="duration" data-value="111930300">0.111</td>
+              <td class="duration" data-value="111930300">0.111</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc46_Bu_basliklari_soldan_saga_sirasiyla_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="441035100">0.441</td>
+              <td class="duration" data-value="441035100">0.441</td>
+              <td class="duration" data-value="441035100">0.441</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc46_Bu_basliklarin_ise_soldan_saga_sirasiyla_oldugunu_dogrular(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc47_user_basligi_altinda_sirasiyla_Hoop_Earrings_sekmelerinin_oldugunu_g&ouml;r&uuml;r(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc47_user_basligini_g&ouml;r&uuml;r(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="101850500">0.101</td>
+              <td class="duration" data-value="101850500">0.101</td>
+              <td class="duration" data-value="101850500">0.101</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc47_user_&uuml;zerine_gelinen_sekmenin_gri_font_rengine_b&uuml;r&uuml;nd&uuml;g&uuml;n&uuml;_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc48_user_acilan_sayfada_sol_altta_cikan_filtrelme_sekmelerini_g&ouml;r&uuml;r()</td>
+              <td>2</td>
+              <td class="duration" data-value="10227154850">10.227</td>
+              <td class="duration" data-value="10227154850">20.454</td>
+              <td class="duration" data-value="20454309700">20.454</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc48_user_butonuna_tiklar(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="20170184500">20.170</td>
+              <td class="duration" data-value="20170184500">20.170</td>
+              <td class="duration" data-value="20170184500">20.170</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc48_user_icindeki_Boxlari_isaretler()</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc48_user_yukardan_asagiya_&uuml;c&uuml;nc&uuml;_sirada_sekmesinin_bulundugunu_g&ouml;r&uuml;r(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc49_user_Jewelery_Accessories_butonuna_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="2515162000">2.515</td>
+              <td class="duration" data-value="2515162000">2.515</td>
+              <td class="duration" data-value="2515162000">2.515</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc49_user_Jewelery_Sets_More_butonuna_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc49_user_resimli_&uuml;r&uuml;nlerden_birinci_sirada_in_oldugunu_g&ouml;r&uuml;r(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc50_user_Next_butonuna_tiklar_ve_kutucugun_calistigini_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc50_user_Prev_butonuna_tiklar_ve_kutucugun_calistigini_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US010StepDefinition.tc50_user_sekmesinde_Prev_ve_Next_butonlarini_g&ouml;r&uuml;r(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="20138071900">20.138</td>
+              <td class="duration" data-value="20138071900">20.138</td>
+              <td class="duration" data-value="20138071900">20.138</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US011StepDefinition.tc051_user_Cellphones_Telecommunications_linkine_tiklandiginda_ilgili_sayfaya_ulassin()</td>
+              <td>1</td>
+              <td class="duration" data-value="460281300">0.460</td>
+              <td class="duration" data-value="460281300">0.460</td>
+              <td class="duration" data-value="460281300">0.460</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US011StepDefinition.tc052_user_CATEGORIES_altinda_Mobile_Phone_Accessories_elementinin_goruldugunu_assert_ediniz()</td>
+              <td>1</td>
+              <td class="duration" data-value="67956900">0.067</td>
+              <td class="duration" data-value="67956900">0.067</td>
+              <td class="duration" data-value="67956900">0.067</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US011StepDefinition.tc052_user_CATEGORIES_altinda_Mobile_Phone_Parts_elementinin_goruldugunu_assert_ediniz()</td>
+              <td>1</td>
+              <td class="duration" data-value="64960200">0.064</td>
+              <td class="duration" data-value="64960200">0.064</td>
+              <td class="duration" data-value="64960200">0.064</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US011StepDefinition.tc052_user_CATEGORIES_altinda_Mobile_Phones_elementinin_goruldugunu_assert_ediniz()</td>
+              <td>1</td>
+              <td class="duration" data-value="160899100">0.160</td>
+              <td class="duration" data-value="160899100">0.160</td>
+              <td class="duration" data-value="160899100">0.160</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US011StepDefinition.tc052_user_CATEGORIES_altinda_Phone_Bags_Cases_elementinin_goruldugunu_assert_ediniz()</td>
+              <td>1</td>
+              <td class="duration" data-value="72955700">0.072</td>
+              <td class="duration" data-value="72955700">0.072</td>
+              <td class="duration" data-value="72955700">0.072</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US011StepDefinition.tc052_user_CATEGORIES_altinda_Power_Bank_elementinin_goruldugunu_assert_ediniz()</td>
+              <td>1</td>
+              <td class="duration" data-value="46971500">0.046</td>
+              <td class="duration" data-value="46971500">0.046</td>
+              <td class="duration" data-value="46971500">0.046</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US011StepDefinition.tc053_user_Mobile_Phone_Accessories_yazisina_tiklasin_ve_sayfadaki_ilk_urune_ulassin()</td>
+              <td>1</td>
+              <td class="duration" data-value="3212230500">3.212</td>
+              <td class="duration" data-value="3212230500">3.212</td>
+              <td class="duration" data-value="3212230500">3.212</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US011StepDefinition.tc053_user_Mobile_Phone_Parts_yazisina_tiklasin_ve_sayfadaki_ilk_urune_ulassin()</td>
+              <td>1</td>
+              <td class="duration" data-value="3097010300">3.097</td>
+              <td class="duration" data-value="3097010300">3.097</td>
+              <td class="duration" data-value="3097010300">3.097</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US011StepDefinition.tc053_user_Mobile_Phones_yazisina_tiklasin_ve_ilgili_sayfadaki_ilk_urune_ulassin()</td>
+              <td>1</td>
+              <td class="duration" data-value="1729032100">1.729</td>
+              <td class="duration" data-value="1729032100">1.729</td>
+              <td class="duration" data-value="1729032100">1.729</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US011StepDefinition.tc053_user_Phone_Bags_Cases_yazisina_tiklasin_ve_ilgili_sayfadaki_ilk_urune_ulassin()</td>
+              <td>1</td>
+              <td class="duration" data-value="3706720200">3.706</td>
+              <td class="duration" data-value="3706720200">3.706</td>
+              <td class="duration" data-value="3706720200">3.706</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US011StepDefinition.tc053_user_Power_Bank_yazisina_tiklasin_ve_sayfadaki_ilk_urune_ulassin()</td>
+              <td>1</td>
+              <td class="duration" data-value="4530112600">4.530</td>
+              <td class="duration" data-value="4530112600">4.530</td>
+              <td class="duration" data-value="4530112600">4.530</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US011StepDefinition.user_Cellphones_Telecommunications_linkine_tiklasin()</td>
+              <td>2</td>
+              <td class="duration" data-value="220364950">0.220</td>
+              <td class="duration" data-value="220364950">0.307</td>
+              <td class="duration" data-value="440729900">0.440</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc054_user_Computer_Office_menususu_aktifmi()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc055_Ana_sayfadan_Computer_Office_Tablets_iPad_Apple_iPad_Pro_secenekleri_sirasiyla_tiklandigini_assert_edin()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc055_user_Buy_Now_linkine_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc055_user_verileri_girmeden_Login_ine_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc055_user_&uuml;r&uuml;n&uuml;n_alinabilirligini_test_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc056_user_Add_to_wish_liste_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc056_user_alert_olarak_ilgili_bilgiyi_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc057_user_Feedback_box_a_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc057_user_Leave_a_Rivew_butonuna_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc057_user_adini_girer_ve_comment_yazar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc057_user_alert_olarak_ilgili_bilgiyi_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc058_Store_info_bolumundeki_contact_now_linkine_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc058_user_Contact_Us_taki_Inquiry_Formu_doldurur()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.tc058_user_Send_butonunu_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.user_Apple_iPad_Pro_&uuml;r&uuml;nene_tiklar()</td>
+              <td>5</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.user_Computer_Office_menusune_tiklar()</td>
+              <td>5</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.user_HomePage_Tablets_linkine_tiklar()</td>
+              <td>5</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.user_Tablets_in_altindaki_iPad_linkine_tiklar()</td>
+              <td>5</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US012StepDefinitions.user_glbTrader_sayfasina_gider()</td>
+              <td>9</td>
+              <td class="duration" data-value="94830722">0.094</td>
+              <td class="duration" data-value="94830722">0.207</td>
+              <td class="duration" data-value="853476500">0.853</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US013StepDefinitions.user_asserts_there_are_parcels_in_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="213869000">0.213</td>
+              <td class="duration" data-value="213869000">0.213</td>
+              <td class="duration" data-value="213869000">0.213</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US013StepDefinitions.user_clicks_free_shippping_link()</td>
+              <td>1</td>
+              <td class="duration" data-value="979213700">0.979</td>
+              <td class="duration" data-value="979213700">0.979</td>
+              <td class="duration" data-value="979213700">0.979</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US013StepDefinitions.user_clicks_home_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="1274144300">1.274</td>
+              <td class="duration" data-value="1274144300">1.274</td>
+              <td class="duration" data-value="1274144300">1.274</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US013StepDefinitions.user_clicks_left_side_M_size()</td>
+              <td>1</td>
+              <td class="duration" data-value="2982178300">2.982</td>
+              <td class="duration" data-value="2982178300">2.982</td>
+              <td class="duration" data-value="2982178300">2.982</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US013StepDefinitions.user_clicks_max_price_link()</td>
+              <td>1</td>
+              <td class="duration" data-value="1219935900">1.219</td>
+              <td class="duration" data-value="1219935900">1.219</td>
+              <td class="duration" data-value="1219935900">1.219</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US013StepDefinitions.user_clicks_min_price_link()</td>
+              <td>1</td>
+              <td class="duration" data-value="1458762400">1.458</td>
+              <td class="duration" data-value="1458762400">1.458</td>
+              <td class="duration" data-value="1458762400">1.458</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US013StepDefinitions.user_clicks_view_more_link()</td>
+              <td>6</td>
+              <td class="duration" data-value="1041318983">1.041</td>
+              <td class="duration" data-value="1041318983">1.320</td>
+              <td class="duration" data-value="6247913900">6.247</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US013StepDefinitions.user_verifies_home_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="14991200">0.014</td>
+              <td class="duration" data-value="14991200">0.014</td>
+              <td class="duration" data-value="14991200">0.014</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US013StepDefinitions.user_veryfies_at_least_one_parcel_are_listed()</td>
+              <td>1</td>
+              <td class="duration" data-value="40120057300">40.120</td>
+              <td class="duration" data-value="40120057300">40.120</td>
+              <td class="duration" data-value="40120057300">40.120</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US013StepDefinitions.user_veryfies_minimum_parcels_are_listed()</td>
+              <td>1</td>
+              <td class="duration" data-value="15987400">0.015</td>
+              <td class="duration" data-value="15987400">0.015</td>
+              <td class="duration" data-value="15987400">0.015</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US013StepDefinitions.user_veryfies_parcels_are_listed_from_max_price_to_min_price()</td>
+              <td>1</td>
+              <td class="duration" data-value="2158224500">2.158</td>
+              <td class="duration" data-value="2158224500">2.158</td>
+              <td class="duration" data-value="2158224500">2.158</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US013StepDefinitions.user_veryfies_parcels_are_listed_from_min_price_to_max_price()</td>
+              <td>1</td>
+              <td class="duration" data-value="2121692100">2.121</td>
+              <td class="duration" data-value="2121692100">2.121</td>
+              <td class="duration" data-value="2121692100">2.121</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US013StepDefinitions.user_veryfies_the_website()</td>
+              <td>1</td>
+              <td class="duration" data-value="30984500">0.030</td>
+              <td class="duration" data-value="30984500">0.030</td>
+              <td class="duration" data-value="30984500">0.030</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US014StepDefinitions.tc066_user_menu_box_aktif_mi()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US014StepDefinitions.tc066_user_tiklayinca_asagida_t&uuml;m_dil_seceneklerinin_gorundugunu_verify_ediniz()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US014StepDefinitions.tc067_Dil_secenek_tablosu_sayfada_bos_bir_yere_tiklandiginda_kapanir()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US014StepDefinitions.tc068_Secilen_dil_Hover_yapildiginda_mavi_oldugunu_verify_ediniz()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US014StepDefinitions.tc069_Almanca_tiklandiginda_Almanca_dilinde_verify_ediniz()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US014StepDefinitions.tc069_Ingilizce_tiklandiginda_Ingilizce_dilinde_verify_ediniz()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US014StepDefinitions.user_SelectLanguage_box_a_tiklar()</td>
+              <td>4</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US015StepDefinition.package_Linkine_tiklar()</td>
+              <td>6</td>
+              <td class="duration" data-value="3074944033">3.074</td>
+              <td class="duration" data-value="3074944033">5.389</td>
+              <td class="duration" data-value="18449664200">18.449</td>
+              <td class="failed">66.67%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US015StepDefinition.tc070_user_Package_linkini_test_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="29980600">0.029</td>
+              <td class="duration" data-value="29980600">0.029</td>
+              <td class="duration" data-value="29980600">0.029</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US015StepDefinition.tc071_user_Join_Now_textini_check_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="60673500">0.060</td>
+              <td class="duration" data-value="60673500">0.060</td>
+              <td class="duration" data-value="60673500">0.060</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US015StepDefinition.tc072_user_Join_now_un_altindaki_tablonun_varligi_verfy_edilir()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US015StepDefinition.tc072_user_basliklarin_sirasiyla_oldugunu_test_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US015StepDefinition.tc072_user_basliklarinin_isimlerinin_oldugunu_check_eder(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US015StepDefinition.tc073_user_soldan_saga_sirasiyla_oldugunu_check_eder(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US015StepDefinition.tc074_user_soldan_saga_sirasiyla_oldugunu_check_eder(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2034293200">2.034</td>
+              <td class="duration" data-value="2034293200">2.034</td>
+              <td class="duration" data-value="2034293200">2.034</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.US015StepDefinition.tc075_user_soldan_saga_sirasiyla_oldugu_verify_edilir(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="78951900">0.078</td>
+              <td class="duration" data-value="78951900">0.078</td>
+              <td class="duration" data-value="78951900">0.078</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>200</td>
+            <td>607</td>
+            <td class="duration">1.276</td>
+            <td class="duration">2:11.618</td>
+            <td class="duration">12:54.772</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
