@@ -3,11 +3,32 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-10-20T20:00:09.347Z",
+        "line": 4,
+        "name": "User GlobalTrader gider",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4421252900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user Seller Sign in a  tiklar",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-21T19:12:56.472Z",
         "before": [
           {
             "result": {
-              "duration": 3997400,
+              "duration": 2000100,
               "status": "passed"
             },
             "match": {
@@ -16,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 13778159400,
+              "duration": 7546431600,
               "status": "passed"
             },
             "match": {
@@ -24,14 +45,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "US007 kullanici computer \u0026 office menu linkinde urun aramasi yapar",
+        "line": 8,
+        "name": "TC016 seller Login butonu https://www.glbtrader.com/vendor_login.html sayfasina yönlendirmelidir.",
         "description": "",
-        "id": "all-categories-computer-\u0026-office-menu-linkinde-test-yapma;us007-kullanici-computer-\u0026-office-menu-linkinde-urun-aramasi-yapar",
+        "id": "seller-sign-in-testi;tc016-seller-login-butonu-https://www.glbtrader.com/vendor-login.html-sayfasina-yönlendirmelidir.",
         "after": [
           {
             "result": {
-              "duration": 562654300,
+              "duration": 1522087100,
               "status": "passed"
             },
             "match": {
@@ -44,98 +65,892 @@
         "steps": [
           {
             "result": {
-              "duration": 1641539900,
+              "duration": 89005100,
               "status": "passed"
             },
-            "line": 4,
-            "name": "kullanici \"https://www.glbtrader.com/\" sayfaya gider",
+            "line": 9,
+            "name": "tc16 user \"https://www.glbtrader.com/vendor_login.html\" sayfasina gitsin",
             "match": {
               "arguments": [
                 {
-                  "val": "\"https://www.glbtrader.com/\"",
+                  "val": "\"https://www.glbtrader.com/vendor_login.html\"",
                   "offset": 10
                 }
               ],
-              "location": "stepdefinitions.US005StepDefinition.kullanici_sayfaya_gider(java.lang.String)"
+              "location": "stepdefinitions.US004StepDefinition.tc16_user_sayfasina_gitsin(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SellerSignIn"
+          },
+          {
+            "name": "@SellerSign1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User GlobalTrader gider",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3580204800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user Seller Sign in a  tiklar",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-21T19:13:10.279Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1037059300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.US006StepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "TC017 sing In icin  negatif testler yapilsin",
+        "description": "",
+        "id": "seller-sign-in-testi;tc017-sing-in-icin--negatif-testler-yapilsin;hatali-veriler-listesi;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1605091900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4232242000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "tc17 user enter your email icin negatif  gecersiz \"a@g.\" girsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@g.\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc17_user_enter_your_email_icin_negatif_gecersiz_girsin(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 294403100,
+              "duration": 4419252800,
               "status": "passed"
             },
-            "line": 5,
-            "name": "tc029 kullanici all categories de dropbox secenek sayisini bulur",
+            "line": 14,
+            "name": "tc17 user enter Password icin  negatif gecersiz \"...1\" girsin",
             "match": {
-              "location": "stepdefinitions.US007StepDefinition.tc029_kullanici_all_categories_de_dropbox_secenek_sayisini_bulur()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2080044400,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "tc030 kullanici besinci sirada computer\u0026office secer ve bir urun ismi girip sonuc alir",
-            "match": {
-              "location": "stepdefinitions.US007StepDefinition.tc030_kullanici_besinci_sirada_computer_office_secer_ve_bir_urun_ismi_girip_sonuc_alir()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1492660900,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "tc031 kullanici computer\u0026office aranan urunun  sayfasinda  GLOBAL TRADER  logosu gorur",
-            "match": {
-              "location": "stepdefinitions.US007StepDefinition.tc031_kullanici_computer_office_aranan_urunun_sayfasinda_GLOBAL_TRADER_logosu_gorur()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4776718600,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "tc032 kullanici urunu All Categories,Computer and Office,Electronic Components \u0026 Supplies arar ve karsilastirir",
-            "match": {
-              "location": "stepdefinitions.US007StepDefinition.tc032_kullanici_urunu_All_Categories_Computer_and_Office_Electronic_Components_Supplies_arar_ve_karsilastirir()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2500447600,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "tc033 kullanici ranan urunun  fiyati, resmi ve titlesinin gorunup gorunmedini verify edr",
-            "match": {
-              "location": "stepdefinitions.US007StepDefinition.tc033_kullanici_ranan_urunun_fiyati_resmi_ve_titlesinin_gorunup_gorunmedini_verify_edr()"
+              "arguments": [
+                {
+                  "val": "\"...1\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc17_user_enter_Password_icin_negatif_gecersiz_girsin(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@us007"
+            "name": "@SellerSignIn"
+          },
+          {
+            "name": "@SellerSign2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User GlobalTrader gider",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10125579100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user Seller Sign in a  tiklar",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-21T19:13:25.208Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3340191000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.US006StepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "TC017 sing In icin  negatif testler yapilsin",
+        "description": "",
+        "id": "seller-sign-in-testi;tc017-sing-in-icin--negatif-testler-yapilsin;hatali-veriler-listesi;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1505086100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3838219600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "tc17 user enter your email icin negatif  gecersiz \"1@.\" girsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1@.\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc17_user_enter_your_email_icin_negatif_gecersiz_girsin(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4308246400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "tc17 user enter Password icin  negatif gecersiz \"abc\" girsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc17_user_enter_Password_icin_negatif_gecersiz_girsin(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SellerSignIn"
+          },
+          {
+            "name": "@SellerSign2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User GlobalTrader gider",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4229241900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user Seller Sign in a  tiklar",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-21T19:13:48.359Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1281073300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.US006StepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "TC017 sing In icin  negatif testler yapilsin",
+        "description": "",
+        "id": "seller-sign-in-testi;tc017-sing-in-icin--negatif-testler-yapilsin;hatali-veriler-listesi;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1583090500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4038231000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "tc17 user enter your email icin negatif  gecersiz \"@.com\" girsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"@.com\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc17_user_enter_your_email_icin_negatif_gecersiz_girsin(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3864221000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "tc17 user enter Password icin  negatif gecersiz \"can22\" girsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"can22\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc17_user_enter_Password_icin_negatif_gecersiz_girsin(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SellerSignIn"
+          },
+          {
+            "name": "@SellerSign2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User GlobalTrader gider",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3833219300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user Seller Sign in a  tiklar",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-21T19:14:03.391Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1427081600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.US006StepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "TC017 sing In icin  pozitif testler yapilsin",
+        "description": "",
+        "id": "seller-sign-in-testi;tc017-sing-in-icin--pozitif-testler-yapilsin;dogru-veriler-listesi;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1696097000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 706040400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "tc17 user enter your email  icin pozitif  GECERLI \"a@gmail.com\" girsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@gmail.com\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc17_user_enter_your_email_icin_pozitif_GECERLI_girsin(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 809046300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "tc17 user enter Password icin pozitif  gecerli \"aba234.\" girsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"aba234.\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc17_user_enter_Password_icin_pozitif_gecerli_girsin(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SellerSignIn"
+          },
+          {
+            "name": "@SellerSign3"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User GlobalTrader gider",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3731213400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user Seller Sign in a  tiklar",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-21T19:14:11.905Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 986056400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.US006StepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "TC017 sing In icin  pozitif testler yapilsin",
+        "description": "",
+        "id": "seller-sign-in-testi;tc017-sing-in-icin--pozitif-testler-yapilsin;dogru-veriler-listesi;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1718098200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 810046300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "tc17 user enter your email  icin pozitif  GECERLI \"aba1@a.com\" girsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"aba1@a.com\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc17_user_enter_your_email_icin_pozitif_GECERLI_girsin(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 773044200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "tc17 user enter Password icin pozitif  gecerli \"12345A.\" girsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345A.\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc17_user_enter_Password_icin_pozitif_gecerli_girsin(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SellerSignIn"
+          },
+          {
+            "name": "@SellerSign3"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User GlobalTrader gider",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3709212200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user Seller Sign in a  tiklar",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-21T19:14:19.954Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 914052200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.US006StepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "TC017 sing In icin  pozitif testler yapilsin",
+        "description": "",
+        "id": "seller-sign-in-testi;tc017-sing-in-icin--pozitif-testler-yapilsin;dogru-veriler-listesi;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1660095000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 639036500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "tc17 user enter your email  icin pozitif  GECERLI \"net@gmail.com\" girsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"net@gmail.com\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc17_user_enter_your_email_icin_pozitif_GECERLI_girsin(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 832047600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "tc17 user enter Password icin pozitif  gecerli \"bet2017!\" girsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bet2017!\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc17_user_enter_Password_icin_pozitif_gecerli_girsin(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SellerSignIn"
+          },
+          {
+            "name": "@SellerSign3"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User GlobalTrader gider",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3765215400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user Seller Sign in a  tiklar",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-21T19:14:27.739Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 889050900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.US006StepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "TC018 Forgot Password menu linki https://www.glbtrader.com/vendor_forgot.html sayfasina yonlendirmelidir.",
+        "description": "",
+        "id": "seller-sign-in-testi;tc018-forgot-password-menu-linki-https://www.glbtrader.com/vendor-forgot.html-sayfasina-yonlendirmelidir.",
+        "after": [
+          {
+            "result": {
+              "duration": 1390079500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2496142800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "tc18 user forgot Password linkine tiklasin",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.tc18_user_forgot_Password_linkine_tiklasin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 723041300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "tc18 user linkini \"https://www.glbtrader.com/vendor_forgot.html\" assert etsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.glbtrader.com/vendor_forgot.html\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc18_user_linkini_assert_etsin(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SellerSignIn"
+          },
+          {
+            "name": "@SellerSign4"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User GlobalTrader gider",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3586205100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user Seller Sign in a  tiklar",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.user_Seller_Sign_in_a_tiklar()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-21T19:14:37.031Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 954054500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.US006StepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "TC019 Sayfadaki text kutucuguna email yazilabilmeli ve Forgot Passwort butonuna tiklandiginda sayfa yenilenmelidir.",
+        "description": "",
+        "id": "seller-sign-in-testi;tc019-sayfadaki-text-kutucuguna-email-yazilabilmeli-ve-forgot-passwort-butonuna-tiklandiginda-sayfa-yenilenmelidir.",
+        "after": [
+          {
+            "result": {
+              "duration": 1366078100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3380193400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "tc19 user enter your email kusutunsa \"email\" yazsin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kusutunsa_yazsin(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3724213000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "tc19 user enter your email kutusuna veri girdikten sonra Forgot Password tiklasin",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.tc19_user_enter_your_email_kutusuna_veri_girdikten_sonra_Forgot_Password_tiklasin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3676210200,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "tc19 user fortgot password tiklandikdan sonra sayfanin yenilendigi test edilsin",
+            "match": {
+              "location": "stepdefinitions.US004StepDefinition.tc19_user_fortgot_password_tiklandikdan_sonra_sayfanin_yenilendigi_test_edilsin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SellerSignIn"
+          },
+          {
+            "name": "@SellerSign5"
           }
         ]
       }
     ],
-    "name": "All Categories Computer \u0026 Office Menu Linkinde Test Yapma",
+    "name": "Seller Sign in testi",
     "description": "",
-    "id": "all-categories-computer-\u0026-office-menu-linkinde-test-yapma",
+    "id": "seller-sign-in-testi",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US007.feature",
+    "uri": "file:src/test/resources/features/US004.feature",
     "tags": [
       {
-        "name": "@us007",
+        "name": "@SellerSignIn",
         "type": "Tag",
         "location": {
           "line": 1,
