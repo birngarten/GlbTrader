@@ -5,6 +5,7 @@ pages\US008Page.class
 stepdefinitions\US010StepDefinition.class
 stepdefinitions\US009StepDefinition.class
 stepdefinitions\US013StepDefinitions.class
+runners\US001Runner.class
 pages\US012Page.class
 stepdefinitions\US014StepDefinitions.class
 stepdefinitions\US012StepDefinitions.class
