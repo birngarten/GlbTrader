@@ -14,7 +14,7 @@ Feature: Seller Join Now
   @agentSellerFormu2
   Scenario: TC012 Agent seller altinda ki form doldurulsun ve assert edilsin
     Given tc12 user name  Text box a "can" girsin
-    And   tc12 user email Text Box a "a@gmail.com" girsin
+    And   tc12 user email Text Box a "ae@gmail.com" girsin
     And   tc12 user subDomain "www.abc.com" url girsin
     And   tc12 user mobileNumberBoxa "01605553480" girsin ve asert etsin
     And   tc12 user country Box  olarak "Turkey" secsin
@@ -39,13 +39,13 @@ Feature: Seller Join Now
 
   @companySellerFormu2
   Scenario: TC015 Company Seller sayfasinin  text Boxlari doldurulsun ve assert edilsin
-    Given tc15 user company Name " sirket" girsin
-    And   tc15 user company Mobile "+49" girsin
-    And   tc15 user company Adress "weidigweg 34" girsin
+    Given tc15 user company Name " siroet" girsin
+    And   tc15 user company Mobile "+48" girsin
+    And   tc15 user company Adress "weidugweg 34" girsin
     And   tc15 user name Box "isim" girsin
-    And   tc15 user emailText Box "sss@ggg.com" girsin
+    And   tc15 user emailText Box "stgjss@ggg.com" girsin
     And   tc15 user subDomain "www.gogle.com" girsin
-    And   tc15 user mobil Number "05333338221" girsin
+    And   tc15 user mobil Number "05333638221" girsin
     And   tc15 user country secsin
     And   tc15 user state Box "usa" girsin
     And   tc15 user city Box a "Florida" girsin
