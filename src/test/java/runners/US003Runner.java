@@ -13,10 +13,10 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "",
+        tags = "@Cellphones",
         dryRun = false
 
 
 )
-public class Runner {
+public class US003Runner {
 }

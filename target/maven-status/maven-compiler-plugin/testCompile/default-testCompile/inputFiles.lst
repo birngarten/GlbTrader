@@ -1,5 +1,4 @@
-C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\stepdefinitions\US012StepDefinitions.java
-C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\pages\US014Page.java
+C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\runners\US003Runner.java
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\utilities\ConfigurationReader.java
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\pages\US009Page.java
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\utilities\Driver.java
@@ -14,6 +13,7 @@ C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\stepdefinitions\Hook
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\stepdefinitions\US006StepDefinitions.java
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\pages\US004Page.java
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\pages\US013Page.java
+C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\runners\US001Runner.java
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\pages\US007Page.java
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\pages\US001Page.java
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\pages\US010Page.java
@@ -22,8 +22,7 @@ C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\utilities\ReusableMe
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\stepdefinitions\DenemeWait.java
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\stepdefinitions\US013StepDefinitions.java
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\stepdefinitions\US009StepDefinition.java
-C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\pages\US012Page.java
-C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\stepdefinitions\US014StepDefinitions.java
+C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\runners\US002Runner.java
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\pages\US005Page.java
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\stepdefinitions\US007StepDefinition.java
 C:\Users\Administrator\IdeaProjects\GlbTrader\src\test\java\pages\US003Page.java
