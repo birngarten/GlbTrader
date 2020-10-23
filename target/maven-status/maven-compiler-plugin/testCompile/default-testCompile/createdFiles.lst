@@ -6,9 +6,8 @@ stepdefinitions\US010StepDefinition.class
 stepdefinitions\US009StepDefinition.class
 stepdefinitions\US013StepDefinitions.class
 runners\US001Runner.class
-pages\US012Page.class
-stepdefinitions\US014StepDefinitions.class
-stepdefinitions\US012StepDefinitions.class
+runners\US002Runner.class
+runners\US003Runner.class
 utilities\ReusableMethods$2.class
 pages\US004Page.class
 runners\Runner.class
@@ -18,7 +17,6 @@ pages\US007Page.class
 stepdefinitions\US005StepDefinition.class
 pages\US013Page.class
 stepdefinitions\DenemeWait.class
-pages\US014Page.class
 utilities\ReusableMethods$1.class
 utilities\ConfigurationReader.class
 pages\US003Page.class

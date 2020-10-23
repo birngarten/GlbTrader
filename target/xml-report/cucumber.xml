@@ -1,31 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="9" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="252.405">
-    <testcase classname="US002 User Join Now" name="tc005  gecerli Sign in test" time="140.657">
-        <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='alert alert-success']' (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc005 user Sign Up yazisini assert etsin................................passed
-And tc005 user Email kutusuna gecerli text girsin...........................passed
-And tc005 user Name kutusuna gecerli text girsin............................passed
-And tc005 user Mobile kutusuna gecerli text girsin..........................passed
-And tc005 user Password kutusuna gecerli text girsin........................passed
-And tc005 user Confirm Password kutusuna gecerli text girsin................passed
-Then tc005 user Sign Up butonuna tiklayabilmelidir..........................failed
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="130.184">
+    <testcase classname="US006 test" name="tc024 &quot;I'm Shopping for&quot;ifadesi gorunur olsun ve arama Butono Kirmizi olsun ." time="56.651">
+        <failure message="chrome not reachable&#10;  (Session info: chrome=86.0.4240.111)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'USER-BILGISAYAR', ip: '192.168.178.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 13a3aa1436935547ec23db83f7dbab89&#10;*** Element info: {Using=id, value=typeahead}" type="org.openqa.selenium.WebDriverException"><![CDATA[Given user asserts searchBox text...........................................failed
+Then user asserts searchbutton color........................................skipped
 
 StackTrace:
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='alert alert-success']' (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at stepdefinitions.US002StepDefinition.tc005_user_Sign_Up_butonuna_tiklayabilmelidir(US002StepDefinition.java:83)
-	at ✽.tc005 user Sign Up butonuna tiklayabilmelidir(file:///C:/Users/Administrator/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:15)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success']"}
+org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=86.0.4240.111)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'USER-BILGISAYAR', ip: '192.168.178.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58985}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a9d0c072e5ca0f0e11fd27daf837fef8
-*** Element info: {Using=xpath, value=//div[@class='alert alert-success']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 13a3aa1436935547ec23db83f7dbab89
+*** Element info: {Using=id, value=typeahead}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -38,29 +25,32 @@ Session ID: a9d0c072e5ca0f0e11fd27daf837fef8
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at stepdefinitions.US002StepDefinition.tc005_user_Sign_Up_butonuna_tiklayabilmelidir(US002StepDefinition.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at com.sun.proxy.$Proxy19.getAttribute(Unknown Source)
+	at stepdefinitions.US006StepDefinitions.user_asserts_searchBox_text(US006StepDefinitions.java:22)
+	at ✽.user asserts searchBox text(file:///C:/Users/Administrator/IdeaProjects/GlbTrader/src/test/resources/features/US006.feature:5)
+]]></failure>
+    </testcase>
+    <testcase classname="US006 test" name="tc025 &quot;I'm Shopping for&quot; Text Box una  &quot; Maniac Solid Mens Round Neck T-Shirtsdafas &quot; girilebilir olsun" time="24.075">
+        <failure message="Failed to instantiate class stepdefinitions.US006StepDefinitions" type="io.cucumber.core.exception.CucumberException"><![CDATA[Then user clicks search Button..............................................skipped
+Given user send Maniac Solid Mens Round data................................skipped
+Then user clicks search Button..............................................skipped
+Given user asserts in text box data can be sent.............................skipped
+
+StackTrace:
+io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.US006StepDefinitions
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:61)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:31)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:20)
 	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
 	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:47)
 	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
 	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
 	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
@@ -93,207 +83,200 @@ Session ID: a9d0c072e5ca0f0e11fd27daf837fef8
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)
+	... 39 more
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=86.0.4240.111)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'USER-BILGISAYAR', ip: '192.168.178.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 13a3aa1436935547ec23db83f7dbab89
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at utilities.Driver.getDriver(Driver.java:51)
+	at pages.US006Page.<init>(US006Page.java:12)
+	at stepdefinitions.US006StepDefinitions.<init>(US006StepDefinitions.java:13)
+	... 45 more
 ]]></failure>
     </testcase>
-    <testcase classname="US002 User Join Now" name="tc006 Gecersiz Email Testi" time="6.383">
-        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc006 user Email "glbtradermail.com" girer..............................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc006 Gecersiz Email Testi 2" time="6.16">
-        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc006 user Email "@mail.com" girer......................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc006 Gecersiz Email Testi 3" time="7.244">
-        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc006 user Email "glbtrader@.com" girer.................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc006 Gecersiz Email Testi 4" time="7.142">
-        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc006 user Email "glbtrader@mail." girer................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc007 Gecersiz Name Testi" time="6.367">
-        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc005 user Email kutusuna gecerli text girsin...........................passed
-Then tc007 user Name "ABC1 C3" girer........................................failed
+    <testcase classname="US006 test" name="tc026 Arama alanina  &quot;Ipad&quot;ifadesi girilip  sonraki cikan sonucu verifiye ediniz" time="24.071">
+        <failure message="Failed to instantiate class stepdefinitions.US006StepDefinitions" type="io.cucumber.core.exception.CucumberException"><![CDATA[Given user send data to seachBox............................................skipped
+Then user clicks search Button..............................................skipped
+Then user verifiy the data with results.....................................skipped
 
 StackTrace:
-java.lang.AssertionError: expected:<3> but was:<5>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepdefinitions.US002StepDefinition.tc007_user_Name_girer(US002StepDefinition.java:101)
-	at ✽.tc007 user Name "ABC1 C3" girer(file:///C:/Users/Administrator/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:35)
+io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.US006StepDefinitions
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:61)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:31)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:20)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:47)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:362)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)
+	... 39 more
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=86.0.4240.111)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'USER-BILGISAYAR', ip: '192.168.178.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 13a3aa1436935547ec23db83f7dbab89
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at utilities.Driver.getDriver(Driver.java:51)
+	at pages.US006Page.<init>(US006Page.java:12)
+	at stepdefinitions.US006StepDefinitions.<init>(US006StepDefinitions.java:13)
+	... 45 more
 ]]></failure>
     </testcase>
-    <testcase classname="US002 User Join Now" name="tc007 Gecersiz Name Testi 2" time="6.298">
-        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc005 user Email kutusuna gecerli text girsin...........................passed
-Then tc007 user Name "3ABC 3L" girer........................................failed
+    <testcase classname="US006 test" name="tc027 Arama alanina &quot;Ipad&quot; ifadesi girilip ve  Alle Categories &quot; Cellphones &amp; Telecommunications &quot;  secilip  cikan sonucu verify ediniz , Ipad olup olmadinigi." time="24.066">
+        <failure message="Failed to instantiate class stepdefinitions.US006StepDefinitions" type="io.cucumber.core.exception.CucumberException"><![CDATA[Given user clicks Alle Categories Cellphones & Telecommunications...........skipped
+And user finds ipad.........................................................skipped
+Then user verifiy the data with results.....................................skipped
 
 StackTrace:
-java.lang.AssertionError: expected:<3> but was:<5>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepdefinitions.US002StepDefinition.tc007_user_Name_girer(US002StepDefinition.java:101)
-	at ✽.tc007 user Name "3ABC 3L" girer(file:///C:/Users/Administrator/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:35)
+io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.US006StepDefinitions
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:61)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:31)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:20)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:47)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:362)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)
+	... 39 more
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=86.0.4240.111)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'USER-BILGISAYAR', ip: '192.168.178.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 13a3aa1436935547ec23db83f7dbab89
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at utilities.Driver.getDriver(Driver.java:51)
+	at pages.US006Page.<init>(US006Page.java:12)
+	at stepdefinitions.US006StepDefinitions.<init>(US006StepDefinitions.java:13)
+	... 45 more
 ]]></failure>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc007 Gecersiz Name Testi 3" time="6.699">
-        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc005 user Email kutusuna gecerli text girsin...........................passed
-Then tc007 user Name "abc5 b5" girer........................................failed
-
-StackTrace:
-java.lang.AssertionError: expected:<3> but was:<5>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepdefinitions.US002StepDefinition.tc007_user_Name_girer(US002StepDefinition.java:101)
-	at ✽.tc007 user Name "abc5 b5" girer(file:///C:/Users/Administrator/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:35)
-]]></failure>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc007 Gecersiz Name Testi 4" time="5.03">
-        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc005 user Email kutusuna gecerli text girsin...........................passed
-Then tc007 user Name "8abc 9a" girer........................................failed
-
-StackTrace:
-java.lang.AssertionError: expected:<3> but was:<5>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepdefinitions.US002StepDefinition.tc007_user_Name_girer(US002StepDefinition.java:101)
-	at ✽.tc007 user Name "8abc 9a" girer(file:///C:/Users/Administrator/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:35)
-]]></failure>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc008 Gecersiz Mobile Testi" time="6.724">
-        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc005 user Email kutusuna gecerli text girsin...........................passed
-And tc005 user Name kutusuna gecerli text girsin............................passed
-Then tc008 user Mobile "0533A4562" girer....................................failed
-
-StackTrace:
-java.lang.AssertionError: expected:<3> but was:<5>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepdefinitions.US002StepDefinition.tc008_user_Mobile_girer(US002StepDefinition.java:109)
-	at ✽.tc008 user Mobile "0533A4562" girer(file:///C:/Users/Administrator/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:50)
-]]></failure>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc008 Gecersiz Mobile Testi 2" time="5.881">
-        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc005 user Email kutusuna gecerli text girsin...........................passed
-And tc005 user Name kutusuna gecerli text girsin............................passed
-Then tc008 user Mobile "A05335623" girer....................................failed
-
-StackTrace:
-java.lang.AssertionError: expected:<3> but was:<5>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepdefinitions.US002StepDefinition.tc008_user_Mobile_girer(US002StepDefinition.java:109)
-	at ✽.tc008 user Mobile "A05335623" girer(file:///C:/Users/Administrator/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:50)
-]]></failure>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc008 Gecersiz Mobile Testi 3" time="6.252">
-        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc005 user Email kutusuna gecerli text girsin...........................passed
-And tc005 user Name kutusuna gecerli text girsin............................passed
-Then tc008 user Mobile "05334961a" girer....................................failed
-
-StackTrace:
-java.lang.AssertionError: expected:<3> but was:<5>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepdefinitions.US002StepDefinition.tc008_user_Mobile_girer(US002StepDefinition.java:109)
-	at ✽.tc008 user Mobile "05334961a" girer(file:///C:/Users/Administrator/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:50)
-]]></failure>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc008 Gecersiz Mobile Testi 4" time="7.437">
-        <failure message="expected:&lt;3&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc005 user Email kutusuna gecerli text girsin...........................passed
-And tc005 user Name kutusuna gecerli text girsin............................passed
-Then tc008 user Mobile "a05334466" girer....................................failed
-
-StackTrace:
-java.lang.AssertionError: expected:<3> but was:<5>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepdefinitions.US002StepDefinition.tc008_user_Mobile_girer(US002StepDefinition.java:109)
-	at ✽.tc008 user Mobile "a05334466" girer(file:///C:/Users/Administrator/IdeaProjects/GlbTrader/src/test/resources/features/US002.feature:50)
-]]></failure>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc009 Gecersiz Password Testi" time="6.517">
-        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc005 user Email kutusuna gecerli text girsin...........................passed
-And tc005 user Name kutusuna gecerli text girsin............................passed
-And tc005 user Mobile kutusuna gecerli text girsin..........................passed
-Then tc009 user Password "Abc1" girer.......................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc009 Gecersiz Password Testi 2" time="6.151">
-        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc005 user Email kutusuna gecerli text girsin...........................passed
-And tc005 user Name kutusuna gecerli text girsin............................passed
-And tc005 user Mobile kutusuna gecerli text girsin..........................passed
-Then tc009 user Password "aS1" girer........................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc009 Gecersiz Password Testi 3" time="5.715">
-        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc005 user Email kutusuna gecerli text girsin...........................passed
-And tc005 user Name kutusuna gecerli text girsin............................passed
-And tc005 user Mobile kutusuna gecerli text girsin..........................passed
-Then tc009 user Password "5s" girer.........................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc009 Gecersiz Password Testi 4" time="6.254">
-        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc005 user Email kutusuna gecerli text girsin...........................passed
-And tc005 user Name kutusuna gecerli text girsin............................passed
-And tc005 user Mobile kutusuna gecerli text girsin..........................passed
-Then tc009 user Password "6" girer..........................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US002 User Join Now" name="tc010 Login" time="7.314">
-        <system-out><![CDATA[Given user GlobalTrader sayfasina gider.....................................passed
-And user Join now tiklar....................................................passed
-And tc010 user Login Here yazisina tiklasin.................................passed
-And tc010 user yeni acilan sayfada Email ve Password text box'lari goruluyor olmalidir.passed
-And tc010 user password hatirlamiyor ise Forgot Password kutusuna tiklasin..passed
-Then tc010 user Email kutusu oldugu ve veri gonderimi yapilabildigini assert etsin.passed
-]]></system-out>
     </testcase>
 </testsuite>
